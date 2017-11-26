@@ -19,10 +19,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-/**
- * Created by Linus on 18.11.2017.
- */
 public class LocationCreator {
+
+
+    ///https://developers.google.com/places/web-service/details dokumentacje
+
+
+    //zwraca placeId do miejsc poleconych w google
     public static List<String> getGoogleLocationList(){
 
             String content =
@@ -70,7 +73,7 @@ public class LocationCreator {
         return url;
     }
 
-
+// przy pomocy placeid POBIERA dane o jakiejś lokacji
     private static Location createLocationUsingPlaceId(String placeId){
         //TODO try with resource
         try {
@@ -90,7 +93,7 @@ public class LocationCreator {
             return null;
         }
     }
-
+    // tworzy lista lokacji na podstawie polecanych w gogle
     public static List<Location> getLocationList(){
       return   getGoogleLocationList().stream().map(
                 id -> createLocationUsingPlaceId(id))

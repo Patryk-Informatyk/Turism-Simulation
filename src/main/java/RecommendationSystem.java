@@ -18,6 +18,8 @@ private Weather  weather = new Weather();
 private List<Location> locationList =  LocationCreator.getLocationList();
 
 
+
+/// wyższe lepiej
 private  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);
@@ -25,6 +27,7 @@ private  double countAttractiveInCurrentWeather(int month, int day, Location loc
         return covered ? 100 : indicator;
 }
 
+//TODO zle liczy nie weim jak uzwglednić bogactwo gościa i czy drogie mijsce
 private double countAttractiveForPerson(Person person,Location location){
     return (((person.getActivity()/100)*location.getTypes().getLocationProperties().getActivity())
             +((person.getArt()/100)*location.getTypes().getLocationProperties().getArt()))/2;
@@ -37,7 +40,9 @@ private double countAttractive(int month,int day,Location location,Person person
     return (countAttractiveForPerson(person,location) + countAttractiveInCurrentWeather(month,day,location))/2;
 }
 
-
+//działa raczej dobrze
+//liczy mape skumulowaną i ocena wszystkich okacji sumuje sie do 100
+    // czyli <zamek,33>,<inny zamek, 66>
 public Map<Location,Double> rateLocations(int month, int day, Person person){
     Map<Location,Double> ratesMap = new LinkedHashMap<>();
     double lastRate=0;
@@ -61,7 +66,10 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
     return  ratesMap;
 }
 
+//działa te zraczej dobrze
+//rand wybiuera 0-100 ui sprawdza pierwsza lokacje która   ma ta skumulowana wartość wieksa niż liczba wylosowana
 public Location recommendLocation(int month, int day, Person person) {
+    //lokacje dodane  testowe
     Location l1 = new Location("Name","12",LocationType.old_town);
     Location l2 = new Location("sqr","12",LocationType.square);
     Location l3 = new Location("Name","12",LocationType.amusement_park);

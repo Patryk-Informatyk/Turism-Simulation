@@ -22,6 +22,12 @@ public class WeatherChecker {
   private static  String token =  getAuthorizationToken();
 
 
+   /// http://developer.awhere.com/api/reference/weather/norms
+    //do kożdego zapytania trzeb adodać token con.setRequestProperty("Authorization", "Bearer "+token);
+    //token ważny godzine
+
+
+
     private static String getAuthorizationResponse(){
         try {
             URL urlToConnection = new URL("https://api.awhere.com/oauth/token");
@@ -96,6 +102,11 @@ public class WeatherChecker {
 
     }
 
+    //TODO zrobić pobieranie pogody na cły rok
+    //zeby pobrać na cąły rok  pod adres "https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/01-01,12-30/years/2013,2016"))
+   // i jsona prezkształcis na liste miesiecy MonthWeather
+
+    ///chujowo zrobione możne pobrać jednen misiac nie do uzywania w petlach bo sie wyjebie
  public static MonthWeather getWeatherInMonth(int month){
         try {
             String monthUrl = month < 9 ? "0" + month: Integer.toString(month);

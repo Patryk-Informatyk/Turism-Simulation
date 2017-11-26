@@ -12,7 +12,8 @@ public class Location {
     String name;
     @JsonProperty("place_id")
     String placeId;
-    @JsonProperty("types")
+    //TODO ystwanie typu na podstawie typu z google
+
     LocationType types;
 
     public String getName() {
