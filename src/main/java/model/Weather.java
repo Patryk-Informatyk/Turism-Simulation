@@ -13,12 +13,9 @@ public class Weather {
     private List<MonthWeather> monthWeathers = new LinkedList();
 
 
-/// nie działa pobieranie n acły rok trezba zrobic w WeatherChecker
-  public  Weather(){
-        for(int i =1;i <= 1;i++){
-            monthWeathers.add(WeatherChecker.getWeatherInMonth(i));
 
-        }
+  public  Weather(){
+      monthWeathers  = WeatherChecker.getWeatherForYear();
     }
 
 

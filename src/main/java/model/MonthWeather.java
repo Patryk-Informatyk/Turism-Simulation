@@ -24,4 +24,12 @@ public class MonthWeather {
                 ", days=" + days +
                 '}';
     }
+
+    public int getAmountOfDays(){
+        return days.size();
+    }
+
+    public List<DayWeather> getDays() {
+        return days;
+    }
 }

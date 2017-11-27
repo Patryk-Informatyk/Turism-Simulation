@@ -16,6 +16,8 @@ public class Location {
 
     LocationType types;
 
+    int amountOfTuristt =0;
+
     public String getName() {
         return name;
     }

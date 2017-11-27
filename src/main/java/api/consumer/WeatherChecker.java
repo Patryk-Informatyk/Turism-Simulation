@@ -3,7 +3,6 @@ package api.consumer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.DayWeather;
 import model.MonthWeather;
-import model.Weather;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,6 +11,8 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by Linus on 19.11.2017.
@@ -74,14 +75,13 @@ public class WeatherChecker {
         return null;
     }
 
-    public static String getWeatherInMonthResponse(String url){
+    public static String getWeatherResponse(String url){
         try {
             URL urlToConnection = new URL(url);
             HttpURLConnection con = null;
             con = (HttpURLConnection) urlToConnection.openConnection();
             con.setRequestMethod("GET");
             con.setRequestProperty("Content-Type", "application/json");
-            System.out.print(token);
             con.setRequestProperty("Authorization", "Bearer "+token);
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(con.getInputStream()));
@@ -102,19 +102,14 @@ public class WeatherChecker {
 
     }
 
-    //TODO zrobić pobieranie pogody na cły rok
-    //zeby pobrać na cąły rok  pod adres "https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/01-01,12-30/years/2013,2016"))
-   // i jsona prezkształcis na liste miesiecy MonthWeather
-
-    ///chujowo zrobione możne pobrać jednen misiac nie do uzywania w petlach bo sie wyjebie
  public static MonthWeather getWeatherInMonth(int month){
         try {
             String monthUrl = month < 9 ? "0" + month: Integer.toString(month);
-            JSONObject jsonMonth = new JSONObject(getWeatherInMonthResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/"+monthUrl+"-01," +monthUrl+"-30/years/2013,2016"));
+            JSONObject jsonMonth = new JSONObject(
+                    getWeatherResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/"+monthUrl+"-01," +monthUrl+"-30/years/2013,2016"));
              JSONArray jsonMonthArr = jsonMonth.getJSONArray("norms");
              MonthWeather monthWeather = new MonthWeather();
              for(int i=0;i<jsonMonthArr.length();i++){
-                 ObjectMapper mapper = new ObjectMapper();
                  monthWeather.addDay(parseJsonToDay(i,jsonMonthArr.getJSONObject(i)));
              }
              return monthWeather;
@@ -123,6 +118,36 @@ public class WeatherChecker {
         }
         return null;
     }
+
+    public static List<MonthWeather> getWeatherForYear(){
+        try {
+            JSONObject jsonYear = new JSONObject(
+                    getWeatherResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/01-01,12-30/years/2013,2016"));
+            JSONArray jsonYearArr = jsonYear.getJSONArray("norms");
+            List<MonthWeather> months = new LinkedList<>();
+            int month,day;
+            for(int i=0;i<jsonYearArr.length();i++){
+                month = Integer.parseInt(jsonYearArr.getJSONObject(i).getString("day").split("-")[0]);
+                if(month > months.size()){
+                    months.add(new MonthWeather());
+                }
+                months.get(month-1).addDay(parseJsonToDay(i,jsonYearArr.getJSONObject(i)));
+            }
+
+            return  months;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return  null;
+    }
+
+  /*  private static MonthWeather parseJsonToMont(int month,JSONObject jsonObject){
+
+
+    }*/
+
+
+
 
     private static DayWeather parseJsonToDay(int i,JSONObject jsonObject) {
         final String[] propertiesArr ={"meanTemp","precipitation","solar","averageWind"};
@@ -142,7 +167,13 @@ public class WeatherChecker {
     public static void main(String[] args)  {
 
         System.out.println(WeatherChecker.token);
-        System.out.println(WeatherChecker.getWeatherInMonth(5));
+        List<MonthWeather>   m = WeatherChecker.getWeatherForYear();;
+        for (MonthWeather mw:m
+             ) {
+            System.out.println(mw.getAmountOfDays());
+
+        }
+
 
     }
 

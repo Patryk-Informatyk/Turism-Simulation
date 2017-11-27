@@ -8,7 +8,7 @@ public class LocationProperties {
     private double history;
     private double activity;
     private double art;
-    private double expensive;
+    private double cost;
 
     public LocationProperties(boolean covered) {
         this.covered = covered;
@@ -26,16 +26,16 @@ public class LocationProperties {
         return art;
     }
 
-    public double getExpensive() {
-        return expensive;
+    public double getCost() {
+        return cost;
     }
 
-    public LocationProperties(boolean covered, double history, double activity, double art, double expensive) {
+    public LocationProperties(boolean covered, double history, double activity, double art, double cost) {
         this.covered = covered;
         this.history = history;
         this.activity = activity;
         this.art = art;
-        this.expensive = expensive;
+        this.cost = cost;
     }
 
     public boolean isCovered() {

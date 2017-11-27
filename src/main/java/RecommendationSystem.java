@@ -4,10 +4,7 @@ import model.LocationType;
 import model.Person;
 import model.Weather;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Linus on 25.11.2017.
@@ -15,11 +12,13 @@ import java.util.Map;
 public class RecommendationSystem {
 
 private Weather  weather = new Weather();
-private List<Location> locationList =  LocationCreator.getLocationList();
+private List<Location> locationList;
 
+    public RecommendationSystem( List<Location> locationList) {
+        this.locationList = locationList;
+    }
 
-
-/// wyższe lepiej
+    /// wyższe lepiej
 private  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);
@@ -27,14 +26,17 @@ private  double countAttractiveInCurrentWeather(int month, int day, Location loc
         return covered ? 100 : indicator;
 }
 
-//TODO zle liczy nie weim jak uzwglednić bogactwo gościa i czy drogie mijsce
+///jakoś liczy to bogactwo chyba dobrze
 private double countAttractiveForPerson(Person person,Location location){
     return (((person.getActivity()/100)*location.getTypes().getLocationProperties().getActivity())
-            +((person.getArt()/100)*location.getTypes().getLocationProperties().getArt()))/2;
-           // +((person.getRich()/100)*location.getTypes().getLocationProperties().getExpensive()))/3;
+            +((person.getArt()/100)*location.getTypes().getLocationProperties().getArt())
+            +(getCostIndicator(location.getTypes().getLocationProperties().getCost(),person.getRich())))/3;
 }
 
+private double getCostIndicator(double locationCost, double turistRich){
+    return (100 -(locationCost * (turistRich/100)));
 
+}
 
 private double countAttractive(int month,int day,Location location,Person person){
     return (countAttractiveForPerson(person,location) + countAttractiveInCurrentWeather(month,day,location))/2;
@@ -60,9 +62,6 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
             return (d/finalCumulatedRate)*100;
         });
     });
-
-
-
     return  ratesMap;
 }
 
@@ -94,7 +93,7 @@ public Location recommendLocation(int month, int day, Person person) {
 
 
     public static void main(String[] args)  {
-    RecommendationSystem rc = new RecommendationSystem();
+    RecommendationSystem rc = new RecommendationSystem(new LinkedList<>());
     Person person = new Person(12,40.0,12.0,40.0);
         Location l = new Location("Name","12",LocationType.old_town);
         System .out.println(rc.weather.getWeatherInDay(1,26));
