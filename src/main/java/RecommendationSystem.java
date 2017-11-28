@@ -11,15 +11,26 @@ import java.util.*;
  */
 public class RecommendationSystem {
 
-private Weather  weather = new Weather();
-private List<Location> locationList;
+private Weather  weather;
 
-    public RecommendationSystem( List<Location> locationList) {
+    public void setLocationList(List<Location> locationList) {
         this.locationList = locationList;
     }
 
+    public RecommendationSystem() {
+    }
+
+    private List<Location> locationList;
+
+    public RecommendationSystem( List<Location> locationList) {
+        this.locationList = locationList;
+        weather = new Weather();
+    }
+
+
+
     /// wyższe lepiej
-private  double countAttractiveInCurrentWeather(int month, int day, Location location){
+public  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);
     boolean covered =  location.getTypes().getLocationProperties().isCovered();
@@ -27,14 +38,14 @@ private  double countAttractiveInCurrentWeather(int month, int day, Location loc
 }
 
 ///jakoś liczy to bogactwo chyba dobrze
-private double countAttractiveForPerson(Person person,Location location){
+public double countAttractiveForPerson(Person person,Location location){
     return (((person.getActivity()/100)*location.getTypes().getLocationProperties().getActivity())
             +((person.getArt()/100)*location.getTypes().getLocationProperties().getArt())
             +(getCostIndicator(location.getTypes().getLocationProperties().getCost(),person.getRich())))/3;
 }
-
-private double getCostIndicator(double locationCost, double turistRich){
-    return (100 -(locationCost * (turistRich/100)));
+//bug
+private double getCostIndicator(double locationCost, double touristRich){
+    return (100 -(locationCost * ((101-touristRich)/100)));
 
 }
 
@@ -55,7 +66,7 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
         cumulatedRate+=lastRate;
             ratesMap.put(location,lastRate);
     }
-    System.out.println(ratesMap);
+  //  System.out.println(ratesMap);
   final double finalCumulatedRate = cumulatedRate;
     locationList.stream().forEach(loc->{
         ratesMap.computeIfPresent(loc,(l,d)->{
@@ -66,26 +77,21 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
 }
 
 //działa te zraczej dobrze
-//rand wybiuera 0-100 ui sprawdza pierwsza lokacje która   ma ta skumulowana wartość wieksa niż liczba wylosowana
+//rand wybiuera 0-100 i sprawdza pierwsza lokacje która   ma ta skumulowana wartość wieksa niż liczba wylosowana
 public Location recommendLocation(int month, int day, Person person) {
     //lokacje dodane  testowe
-    Location l1 = new Location("Name","12",LocationType.old_town);
-    Location l2 = new Location("sqr","12",LocationType.square);
-    Location l3 = new Location("Name","12",LocationType.amusement_park);
-    locationList.clear();
-    locationList.add(l1);
-    locationList.add(l2);
-    locationList.add(l3);
+    int iterator=0;
     Map<Location,Double> ratesMap = rateLocations(month,day,person);
-    System.out.println(ratesMap);
     List<Location>  result = new ArrayList<>();
    double randomValue = Math.random()*100;
-   System.out.println(randomValue);
 
-   ratesMap.forEach((l,d)->{
-       if (d > randomValue) result.add(l);
+    for (Map.Entry<Location, Double> entry : ratesMap.entrySet()) {
+        if (entry.getValue() > randomValue || ++iterator==ratesMap.size()) result.add(entry.getKey());
+    }
+/*  ratesMap.forEach((l,d)->{
+       if (d > randomValue || ratesMap.get(l).==ratesMap.size()) result.add(l);
 
-   });
+   });*/
    return result.get(0);
 }
 

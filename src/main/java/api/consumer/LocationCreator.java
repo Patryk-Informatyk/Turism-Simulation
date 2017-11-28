@@ -40,7 +40,7 @@ public class LocationCreator {
             for(int i=0;i<places.length();i++){
                     locationsId.add(places.getJSONObject(i).getString("place_id"));
             }
-            System.out.println(locationsId);
+          //  System.out.println(locationsId);
             return locationsId;
         } catch (JSONException e) {
             e.printStackTrace();
@@ -82,7 +82,7 @@ public class LocationCreator {
             ObjectMapper mapper = new ObjectMapper();
             JSONObject jsonObject = new JSONObject(content.toString());
             Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
-            System.out.println(location);
+          //  System.out.println(location);
             return location;
         }
         catch (JSONException e) {

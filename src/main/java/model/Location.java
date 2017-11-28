@@ -16,7 +16,7 @@ public class Location {
 
     LocationType types;
 
-    int amountOfTuristt =0;
+  private int amountOfTourists =0;
 
     public String getName() {
         return name;
@@ -39,6 +39,14 @@ public class Location {
     public Location() {
     }
 
+    public void addTourist(){
+        ++amountOfTourists;
+    }
+
+    public int getAmountOfTourists() {
+        return amountOfTourists;
+    }
+
     @Override
 
     public String toString() {
@@ -46,5 +54,30 @@ public class Location {
                 "name='" + name + '\'' +
                 ", placeId='" + placeId + '\'' +
                 '}';
+    }
+
+    @Override public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        Location location = (Location) o;
+
+        if (amountOfTourists != location.amountOfTourists)
+            return false;
+        if (name != null ? !name.equals(location.name) : location.name != null)
+            return false;
+        if (placeId != null ? !placeId.equals(location.placeId) : location.placeId != null)
+            return false;
+        return types == location.types;
+    }
+
+    @Override public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (placeId != null ? placeId.hashCode() : 0);
+        result = 31 * result + (types != null ? types.hashCode() : 0);
+        result = 31 * result + amountOfTourists;
+        return result;
     }
 }

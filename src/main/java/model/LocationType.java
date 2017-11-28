@@ -4,7 +4,7 @@ package model;
  * Created by Linus on 25.11.2017.
  */
 public enum LocationType {
-    amusement_park(new LocationProperties(false,0.1,90.0,0.1,0.1)),
+    amusement_park(new LocationProperties(false,1,50,50,1)),
     aquarium(new LocationProperties(true)),
     art_gallery(new LocationProperties(true)),
     bar(new LocationProperties(true)),
@@ -14,8 +14,8 @@ public enum LocationType {
     city_hall(new LocationProperties(true)),
     natural_feature(new LocationProperties(false)),
     place_of_worship(new LocationProperties(false)),
-    square(new LocationProperties(false,20,80,10,0.1)),
-    old_town(new LocationProperties(false,80.0,50.0,20.0,0.1));
+    square(new LocationProperties(false,1,1,1,1)),
+    old_town(new LocationProperties(false,80.0,1,100,1));
 
     private LocationProperties locationProperties;
 

@@ -1,18 +1,26 @@
 package api.consumer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 import model.DayWeather;
 import model.MonthWeather;
 import org.json.JSONArray;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * Created by Linus on 19.11.2017.
@@ -48,9 +56,12 @@ public class WeatherChecker {
                     new InputStreamReader(con.getInputStream()));
             String inputLine;
             StringBuffer content = new StringBuffer();
+
             while ((inputLine = in.readLine()) != null) {
                 content.append(inputLine);
+
             }
+
             con.disconnect();
             in.close();
 
@@ -87,11 +98,15 @@ public class WeatherChecker {
                     new InputStreamReader(con.getInputStream()));
             String inputLine;
             StringBuffer content = new StringBuffer();
+            BufferedWriter writer = new BufferedWriter(new FileWriter("weather.json"));
             while ((inputLine = in.readLine()) != null) {
                 content.append(inputLine);
+                writer.append(inputLine);
+                writer.newLine();
             }
             con.disconnect();
             in.close();
+            writer.close();
             return content.toString();
         }
         catch (ProtocolException e) {
@@ -102,11 +117,18 @@ public class WeatherChecker {
 
     }
 
+
+
+
+
  public static MonthWeather getWeatherInMonth(int month){
         try {
             String monthUrl = month < 9 ? "0" + month: Integer.toString(month);
-            JSONObject jsonMonth = new JSONObject(
+           JSONObject jsonMonth = new JSONObject(
                     getWeatherResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/"+monthUrl+"-01," +monthUrl+"-30/years/2013,2016"));
+        /*    JSONParser parser = new JSONParser();
+
+            JSONObject jsonMonth = (JSONObject)parser.parse(new FileReader("weather.json"));*/
              JSONArray jsonMonthArr = jsonMonth.getJSONArray("norms");
              MonthWeather monthWeather = new MonthWeather();
              for(int i=0;i<jsonMonthArr.length();i++){
@@ -116,13 +138,22 @@ public class WeatherChecker {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return null;
+     return null;
     }
 
+
+//now read from file
     public static List<MonthWeather> getWeatherForYear(){
         try {
-            JSONObject jsonYear = new JSONObject(
-                    getWeatherResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/01-01,12-30/years/2013,2016"));
+          //  JSONObject jsonYear = new JSONObject(
+                //    getWeatherResponse("https://api.awhere.com/v2/weather/fields/dfs45eg34522/norms/01-01,12-30/years/2013,2016"));
+            Path path = Paths.get("weather.json");
+
+            StringBuilder data = new StringBuilder();
+            Stream<String> lines = Files.lines(path);
+            lines.forEach(line -> data.append(line));
+            lines.close();
+            JSONObject jsonYear = new JSONObject(data.toString());
             JSONArray jsonYearArr = jsonYear.getJSONArray("norms");
             List<MonthWeather> months = new LinkedList<>();
             int month,day;
@@ -137,8 +168,11 @@ public class WeatherChecker {
             return  months;
         } catch (JSONException e) {
             e.printStackTrace();
-        }
-        return  null;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } return  null;
     }
 
   /*  private static MonthWeather parseJsonToMont(int month,JSONObject jsonObject){
