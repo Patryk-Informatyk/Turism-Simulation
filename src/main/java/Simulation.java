@@ -51,7 +51,7 @@ public class Simulation {
         Location pLocation;
         for(int i=0;i<amountOfTourists;i++){
             pLocation = recommendationSystem.recommendLocation(month,day,tourists.get(i));
-            locations.get(1).addTourist();
+            locations.get(locations.indexOf(pLocation)).addTourist();
         }
     }
 
@@ -60,6 +60,9 @@ public class Simulation {
         locations.stream().forEach(l->System.out.println("  Location: " +l.getName() + ">>"+ l.getAmountOfTourists()));
     }
 
+    public void endDayInLocations(){
+        locations.stream().forEach(l->l.endDay());
+    }
 
 
     public static void main(String[] args){
@@ -69,6 +72,7 @@ public class Simulation {
             System.out.println(">>DAY:"+i);
             simulation.simulateForDay(1,i);
             simulation.checkAmountofTouristsInLocations();
+            simulation.endDayInLocations();
         }
 
 

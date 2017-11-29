@@ -43,6 +43,10 @@ public class Location {
         ++amountOfTourists;
     }
 
+    public void endDay(){
+        this.amountOfTourists = 0;
+    }
+
     public int getAmountOfTourists() {
         return amountOfTourists;
     }
