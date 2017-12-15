@@ -1,6 +1,6 @@
 package model;
 
-import api.consumer.WeatherChecker;
+import init.WeatherChecker;
 
 import java.util.LinkedList;
 import java.util.List;

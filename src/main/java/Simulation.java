@@ -1,4 +1,3 @@
-import api.consumer.LocationCreator;
 import model.Location;
 import model.LocationType;
 import model.Person;
@@ -6,9 +5,6 @@ import model.Person;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by Comarch on 2017-11-27.
- */
 
 
 //TODO
@@ -23,10 +19,12 @@ public class Simulation {
         Location l1 = new Location("Name","12", LocationType.old_town);
         Location l2 = new Location("sqr","12",LocationType.square);
         Location l3 = new Location("Park","12",LocationType.amusement_park);
-
+        Location l4 = new Location("Museum","12",LocationType.museum);
+        l4.setMaxSize(30);
         locations.add(l1);
         locations.add(l2);
         locations.add(l3);
+        locations.add(l4);
        // locations = LocationCreator.getLocationList();
         this.recommendationSystem = new RecommendationSystem(locations);
         this.tourists = touristInit();

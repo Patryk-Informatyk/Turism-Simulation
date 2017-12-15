@@ -50,14 +50,14 @@ class RecommendationSystemTest {
    @Test
    void countAttractiveForPerson(){
 
-       Location l3 = new Location("Park","12",LocationType.amusement_park);
+      Location l3 = new Location("Park","12",LocationType.museum);
        Location lo = new Location("Park","12",LocationType.old_town);
-        System.out.println(rc.countAttractiveForPerson(pArt,l3));
+        System.out.println(rc.countAttractive(2,2,l3,pArt));
 
-       System.out.println(rc.countAttractiveForPerson(pSport,l3));
-       Location ls = new Location("Park","12",LocationType.square);
+     System.out.println(rc.countAttractive(2,2,l3,pArt));
+   /*    Location ls = new Location("Park","12",LocationType.square);
        System.out.println(rc.countAttractiveForPerson(pArt,ls));
-       System.out.println(rc.countAttractiveForPerson(pSport,ls));
+       System.out.println(rc.countAttractiveForPerson(pSport,ls));*/
    }
 
 }

@@ -15,7 +15,8 @@ public enum LocationType {
     natural_feature(new LocationProperties(false)),
     place_of_worship(new LocationProperties(false)),
     square(new LocationProperties(false,1,1,1,1)),
-    old_town(new LocationProperties(false,80.0,1,100,1));
+    museum(new LocationProperties(true,70,20,90,1)),
+    old_town(new LocationProperties(false,80.0,100,100,1));
 
     private LocationProperties locationProperties;
 

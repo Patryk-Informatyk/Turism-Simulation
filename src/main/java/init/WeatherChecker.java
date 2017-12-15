@@ -1,7 +1,4 @@
-package api.consumer;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-
+package init;
 
 import model.DayWeather;
 import model.MonthWeather;

@@ -17,6 +17,14 @@ private double rich;
         this.rich = rich;
     }
 
+    public double getHistory() {
+        return history;
+    }
+
+    public void setHistory(double history) {
+        this.history = history;
+    }
+
     public int getAge() {
         return age;
     }

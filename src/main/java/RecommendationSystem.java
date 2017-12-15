@@ -1,4 +1,4 @@
-import api.consumer.LocationCreator;
+import function.Functions;
 import model.Location;
 import model.LocationType;
 import model.Person;
@@ -29,7 +29,6 @@ private Weather  weather;
 
 
 
-    /// wyższe lepiej
 public  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);
@@ -37,23 +36,34 @@ public  double countAttractiveInCurrentWeather(int month, int day, Location loca
         return covered ? 100 : indicator;
 }
 
-///jakoś liczy to bogactwo chyba dobrze
-public double countAttractiveForPerson(Person person,Location location){
-    return (((person.getActivity()/100)*location.getTypes().getLocationProperties().getActivity())
-            +((person.getArt()/100)*location.getTypes().getLocationProperties().getArt())
-            +(getCostIndicator(location.getTypes().getLocationProperties().getCost(),person.getRich())))/3;
+public double countAttractiveForPersonWithoutCost(Person person,Location location){
+    return Functions.attractiveForPersonWithoutCostFunction(
+            person.getActivity(),location.getTypes().getLocationProperties().getActivity(),
+            person.getArt(),location.getTypes().getLocationProperties().getArt(),
+            person.getHistory(),location.getTypes().getLocationProperties().getHistory());
 }
 //bug
-private double getCostIndicator(double locationCost, double touristRich){
-    return (100 -(locationCost * ((101-touristRich)/100)));
+private double getCostIndicator( Person person,Location location){
+    return Functions.expensiveIndicatorForPersonFunction
+            (location.getTypes().getLocationProperties().getCost(),person.getRich());
+}
+
+private double getIndicatorForLocationOverflow(Location location){
+    return location.countPlaceOverflow();
+}
+
+
+  private double countAttractiveForPerson(Person person,Location location){
+    return Functions.attractiveForPersonWithCostFunction(countAttractiveForPersonWithoutCost(person,location),getCostIndicator(person,location));
+  }
+
+public double countAttractive(int month,int day,Location location,Person person){
+      return Functions.attractiveFunction(
+              countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location),getIndicatorForLocationOverflow(location));
 
 }
 
-private double countAttractive(int month,int day,Location location,Person person){
-    return (countAttractiveForPerson(person,location) + countAttractiveInCurrentWeather(month,day,location))/2;
-}
-
-//działa raczej dobrze
+//TODO turyst moze nie wybrac zadnej lokalizacji
 //liczy mape skumulowaną i ocena wszystkich okacji sumuje sie do 100
     // czyli <zamek,33>,<inny zamek, 66>
 public Map<Location,Double> rateLocations(int month, int day, Person person){
@@ -69,14 +79,14 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
   //  System.out.println(ratesMap);
   final double finalCumulatedRate = cumulatedRate;
     locationList.stream().forEach(loc->{
-        ratesMap.computeIfPresent(loc,(l,d)->{
-            return (d/finalCumulatedRate)*100;
-        });
+        ratesMap.computeIfPresent(loc,(l,d)->
+           (d/finalCumulatedRate)*100
+        );
     });
     return  ratesMap;
 }
 
-//działa te zraczej dobrze
+
 //rand wybiuera 0-100 i sprawdza pierwsza lokacje która   ma ta skumulowana wartość wieksa niż liczba wylosowana
 public Location recommendLocation(int month, int day, Person person) {
     //lokacje dodane  testowe
@@ -88,10 +98,7 @@ public Location recommendLocation(int month, int day, Person person) {
     for (Map.Entry<Location, Double> entry : ratesMap.entrySet()) {
         if (entry.getValue() > randomValue || ++iterator==ratesMap.size()) result.add(entry.getKey());
     }
-/*  ratesMap.forEach((l,d)->{
-       if (d > randomValue || ratesMap.get(l).==ratesMap.size()) result.add(l);
 
-   });*/
    return result.get(0);
 }
 

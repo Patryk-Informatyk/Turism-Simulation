@@ -2,6 +2,7 @@ package model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import function.Functions;
 
 /**
  * Created by Linus on 18.11.2017.
@@ -12,11 +13,17 @@ public class Location {
     String name;
     @JsonProperty("place_id")
     String placeId;
-    //TODO ystwanie typu na podstawie typu z google
 
     LocationType types;
 
-  private int amountOfTourists =0;
+  private int amountOfTourists = 0;
+
+
+
+    private int maxSize;
+  private int queue;
+  private boolean isCovered;
+  private double placeOverflow;
 
     public String getName() {
         return name;
@@ -33,18 +40,36 @@ public class Location {
     public Location(String name, String placeId, LocationType types) {
         this.name = name;
         this.placeId = placeId;
+        setTypes(types);
+    }
+
+
+    public void setTypes(LocationType types) {
         this.types = types;
+       isCovered = getTypes().getLocationProperties().isCovered();
+    }
+
+    public double countPlaceOverflow(){
+        if(!isCovered) return Functions.queueToLocationFunctionMax();
+        return Functions.queueToLocationFunction(maxSize,queue);
+    }
+
+
+    private boolean isMaxTuristAmount(){
+        return maxSize>=amountOfTourists;
     }
 
     public Location() {
     }
 
     public void addTourist(){
-        ++amountOfTourists;
+        if(isMaxTuristAmount() && isCovered) queue++;
+        else amountOfTourists++;
     }
 
     public void endDay(){
         this.amountOfTourists = 0;
+        this.queue = 0;
     }
 
     public int getAmountOfTourists() {
@@ -61,19 +86,21 @@ public class Location {
     }
 
     @Override public boolean equals(Object o) {
+
         if (this == o)
             return true;
         if (o == null || getClass() != o.getClass())
             return false;
 
         Location location = (Location) o;
+        if (placeId != null ? !placeId.equals(location.placeId) : location.placeId != null)
+            return false;
 
         if (amountOfTourists != location.amountOfTourists)
             return false;
         if (name != null ? !name.equals(location.name) : location.name != null)
             return false;
-        if (placeId != null ? !placeId.equals(location.placeId) : location.placeId != null)
-            return false;
+
         return types == location.types;
     }
 
@@ -83,5 +110,12 @@ public class Location {
         result = 31 * result + (types != null ? types.hashCode() : 0);
         result = 31 * result + amountOfTourists;
         return result;
+    }
+    public int getMaxSize() {
+        return maxSize;
+    }
+
+    public void setMaxSize(int maxSize) {
+        this.maxSize = maxSize;
     }
 }
