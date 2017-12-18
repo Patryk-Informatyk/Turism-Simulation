@@ -20,10 +20,14 @@ public class Location {
 
 
 
-    private int maxSize;
+  private int maxSize;
   private int queue;
   private boolean isCovered;
   private double placeOverflow;
+
+    public int getQueue() {
+        return queue;
+    }
 
     public String getName() {
         return name;
@@ -56,7 +60,7 @@ public class Location {
 
 
     private boolean isMaxTuristAmount(){
-        return maxSize>=amountOfTourists;
+        return maxSize<=amountOfTourists;
     }
 
     public Location() {

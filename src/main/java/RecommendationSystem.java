@@ -60,7 +60,6 @@ private double getIndicatorForLocationOverflow(Location location){
 public double countAttractive(int month,int day,Location location,Person person){
       return Functions.attractiveFunction(
               countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location),getIndicatorForLocationOverflow(location));
-
 }
 
 //TODO turyst moze nie wybrac zadnej lokalizacji
@@ -68,22 +67,27 @@ public double countAttractive(int month,int day,Location location,Person person)
     // czyli <zamek,33>,<inny zamek, 66>
 public Map<Location,Double> rateLocations(int month, int day, Person person){
     Map<Location,Double> ratesMap = new LinkedHashMap<>();
+    Map<Location,Double> comulatedRatesMap = new LinkedHashMap<>();
     double lastRate=0;
     double cumulatedRate=0;
+   
     for (Location location:locationList
          ) {
-        lastRate+=countAttractive(month,day,location,person);
+        lastRate=countAttractive(month,day,location,person);
         cumulatedRate+=lastRate;
             ratesMap.put(location,lastRate);
     }
   //  System.out.println(ratesMap);
   final double finalCumulatedRate = cumulatedRate;
-    locationList.stream().forEach(loc->{
-        ratesMap.computeIfPresent(loc,(l,d)->
-           (d/finalCumulatedRate)*100
-        );
+  locationList.stream().forEach(loc -> {
+        ratesMap.computeIfPresent(loc, (l, d) -> (d / finalCumulatedRate) * 100);
     });
-    return  ratesMap;
+    double lastCumulatedRate=0;
+    for (Map.Entry<Location, Double> entry : ratesMap.entrySet()) {
+              lastCumulatedRate+=entry.getValue();
+      comulatedRatesMap.put(entry.getKey(),lastCumulatedRate);
+    }
+       return comulatedRatesMap;
 }
 
 

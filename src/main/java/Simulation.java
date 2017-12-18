@@ -9,7 +9,7 @@ import java.util.List;
 
 //TODO
 public class Simulation {
-    private static final int amountOfTourists=200;
+    private static final int amountOfTourists=2000;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -21,11 +21,11 @@ public class Simulation {
         Location l3 = new Location("Park","12",LocationType.amusement_park);
         Location l4 = new Location("Museum","12",LocationType.museum);
         l4.setMaxSize(30);
-        locations.add(l1);
-        locations.add(l2);
+       locations.add(l2);
         locations.add(l3);
+        locations.add(l1);
         locations.add(l4);
-       // locations = LocationCreator.getLocationList();
+        // locations = LocationCreator.getLocationList();
         this.recommendationSystem = new RecommendationSystem(locations);
         this.tourists = touristInit();
     }
@@ -55,7 +55,7 @@ public class Simulation {
 
 
     public void checkAmountofTouristsInLocations(){
-        locations.stream().forEach(l->System.out.println("  Location: " +l.getName() + ">>"+ l.getAmountOfTourists()));
+      locations.stream().forEach(l->System.out.println("  Location: " +l.getName() + ">>"+ (l.getAmountOfTourists() +  " + Queue:"+ l.getQueue())));
     }
 
     public void endDayInLocations(){
@@ -66,7 +66,7 @@ public class Simulation {
     public static void main(String[] args){
        Simulation simulation = new Simulation();
 
-        for(int i=1;i<20;i++){
+        for(int i=1;i<28;i++){
             System.out.println(">>DAY:"+i);
             simulation.simulateForDay(1,i);
             simulation.checkAmountofTouristsInLocations();

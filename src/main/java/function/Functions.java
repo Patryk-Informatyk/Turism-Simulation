@@ -5,7 +5,7 @@ public class Functions {
 
     public static double queueToLocationFunctionMax(){return 100.0;}
     public static double queueToLocationFunction(int maxLocationSize,int queue){
-        return Math.max(0,((1 - queue / maxLocationSize)*100));
+        return Math.max(0,((1 - (double)queue / maxLocationSize)*100));
     }
 
     public static double attractiveForPersonWithoutCostFunction(double activityPerson, double activityLocation, double artPerson, double artLocation,
@@ -18,7 +18,7 @@ public class Functions {
     }
 
     private static double attractiveLocationIndicatorForPerson(double personIndicator,double locationIndicator){
-        return personIndicator * locationIndicator * 100;
+        return personIndicator * locationIndicator / 100;
     }
 
     public static double expensiveIndicatorForPersonFunction(double locationCost, double touristRich) {
@@ -30,6 +30,6 @@ public class Functions {
     }
 
     public static double attractiveFunction(double forPerson, double weather, double overflow) {
-        return (forPerson + weather + overflow)/3;
+        return (forPerson + (weather) + (overflow*150))/7;
     }
 }
