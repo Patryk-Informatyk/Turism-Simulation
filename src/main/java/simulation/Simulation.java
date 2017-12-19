@@ -1,3 +1,5 @@
+package simulation;
+
 import model.Location;
 import model.LocationType;
 import model.Person;
@@ -15,9 +17,10 @@ public class Simulation {
     List<Location> locations;
 
     public Simulation() {
+        //jesli miejsce jest kryte trzeba mu ustawić setMaxSize(n);
        locations = new LinkedList<>();
-        Location l1 = new Location("Name","12", LocationType.old_town);
-        Location l2 = new Location("sqr","12",LocationType.square);
+        Location l1 = new Location("Old Town","12", LocationType.old_town);
+        Location l2 = new Location("Square","12",LocationType.square);
         Location l3 = new Location("Park","12",LocationType.amusement_park);
         Location l4 = new Location("Museum","12",LocationType.museum);
         l4.setMaxSize(30);
@@ -30,6 +33,9 @@ public class Simulation {
         this.tourists = touristInit();
     }
 
+    public List<Location> getLocations() {
+        return locations;
+    }
 
     private List<Person> touristInit(){
         List<Person> touristList = new LinkedList<>();
@@ -53,6 +59,13 @@ public class Simulation {
         }
     }
 
+    public String getDayInfoFromLocation(int i){
+           return   locations.get(i).getName() + ' '+ locations.get(i).getAmountOfTourists() +  " + "+ locations.get(i).getQueue();
+    }
+    public String getDayInfoFromLocationByName(String name){
+      Location location =  locations.parallelStream().filter(l->l.getName().equals(name)).findFirst().get();
+           return   location.getName() + " "+ location.getAmountOfTourists() +  " + "+ location.getQueue();
+    }
 
     public void checkAmountofTouristsInLocations(){
       locations.stream().forEach(l->System.out.println("  Location: " +l.getName() + ">>"+ (l.getAmountOfTourists() +  " + Queue:"+ l.getQueue())));

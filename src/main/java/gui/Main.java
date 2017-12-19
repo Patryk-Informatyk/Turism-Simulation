@@ -14,13 +14,13 @@ import javafx.util.Duration;
 public class Main extends Application {
     
     Timeline time;
-    int i=0;
+    int day=0;
+    int month=1;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
          FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample.fxml"));
          Parent root =  loader.load();
-      //  Parent root = FXMLLoader.load(getClass().getResource("/sample.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 600, 675));
         primaryStage.show();
@@ -28,7 +28,7 @@ public class Main extends Application {
         time = new Timeline();
          time.setCycleCount(Timeline.INDEFINITE);
          
-    time.getKeyFrames().add(createKeyFrameLangtonAnt(300,controller));
+    time.getKeyFrames().add(createKeyFrameLangtonAnt(900,controller));
     time.play();
   
     }
@@ -38,9 +38,9 @@ public class Main extends Application {
         return new KeyFrame(Duration.millis(delay), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.print("KEY");
-                i++;
-                controller.pray(i);            
+                day++;
+                if(day>28){month++;day=1;}
+                controller.simulation(day,month);            
             }
         });
     }

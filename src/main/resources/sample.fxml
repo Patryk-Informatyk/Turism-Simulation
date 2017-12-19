@@ -16,8 +16,10 @@
    <children>
       <AnchorPane prefHeight="742.0" prefWidth="708.0" style="-fx-background-image: url('file:/C:/Users/Comarch/Music/TEst23/src/main/java/gui/mapa.png');">
          <children>
-            <Label id="pl" fx:id="pl" layoutX="312.0" layoutY="288.0" onMouseClicked="#say"  mnemonicParsing="false" 
-                   prefHeight="18.0" prefWidth="108.0" style="-fx-background-color: black;" text="old" textFill="#fffdfd" />
+            <Label id="park" fx:id="park" layoutX="312.0" layoutY="288.0" mnemonicParsing="false" onMouseClicked="#say" prefHeight="18.0" prefWidth="108.0" style="-fx-background-color: black;" text="Park" textFill="#fffdfd" />
+            <Label fx:id="oldtown" layoutX="146.0" layoutY="141.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: black;" text="Stare Miasto" textFill="#fffdfd" />
+               <Label id="museum" fx:id="museum" layoutX="212.0" layoutY="388.0" mnemonicParsing="false" onMouseClicked="#say" prefHeight="18.0" prefWidth="108.0" style="-fx-background-color: black;" text="Museum" textFill="#fffdfd" />
+            <Label fx:id="date" prefHeight="53.0" prefWidth="134.0" style="-fx-background-color: black;" text="Date" textFill="#fffdfd" />
          </children></AnchorPane>
    </children>
 </GridPane>

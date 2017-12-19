@@ -2,8 +2,8 @@ import model.Location;
 import model.LocationType;
 import model.Person;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import simulation.RecommendationSystem;
 
 import java.util.LinkedList;
 import java.util.List;

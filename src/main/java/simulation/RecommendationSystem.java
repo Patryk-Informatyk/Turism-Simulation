@@ -1,3 +1,5 @@
+package simulation;
+
 import function.Functions;
 import model.Location;
 import model.LocationType;

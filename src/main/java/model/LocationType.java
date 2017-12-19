@@ -4,6 +4,7 @@ package model;
  * Created by Linus on 25.11.2017.
  */
 public enum LocationType {
+    //te nieuzupełnione typy trzeba podefiniowac i mozna dodac własne 
     amusement_park(new LocationProperties(false,15,90,50,1)),
     aquarium(new LocationProperties(true)),
     art_gallery(new LocationProperties(true)),
