@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:id="root_vbox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerView">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Zoom">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#zoomOut" text="-">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Slider fx:id="zoom_slider">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Slider>
+            <Button mnemonicParsing="false" onAction="#zoomIn" text="+">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Separator orientation="VERTICAL" prefHeight="200.0">
+               <effect>
+                  <BoxBlur />
+               </effect>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Separator>
+            <Label text="Data">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <DatePicker>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </DatePicker>
+            <Button mnemonicParsing="false" text="Update">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <SplitPane dividerPositions="0.35451505016722407" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <ListView fx:id="map_listview" onMouseClicked="#listClicked" prefHeight="200.0" prefWidth="200.0" />
+            <ScrollPane fx:id="map_scrollpane" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <Pane>
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@mapa_krakowa.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
