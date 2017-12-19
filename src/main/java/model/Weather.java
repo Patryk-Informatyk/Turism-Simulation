@@ -28,8 +28,6 @@ public class Weather {
        DayWeather dayWeather = getWeatherInDay(month,day);
        double rainy  = countRainIndicator(dayWeather.getPrecipation());
        double temp = countTemperatureIndicator(dayWeather.getTemperature());
-      // System.out.println(rainy +" " +temp);
-      // System.out.println((200-(1.2*rainy)+(0.8*temp))/2);
         return (200-((1.2*rainy)+(0.8*temp)))/2;
 
    }
