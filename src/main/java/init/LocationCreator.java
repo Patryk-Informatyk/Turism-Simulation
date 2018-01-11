@@ -2,6 +2,7 @@ package init;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jdk.nashorn.internal.parser.JSONParser;
 import model.Location;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,6 +21,7 @@ import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,40 +30,50 @@ public class LocationCreator {
 
 
     ///https://developers.google.com/places/web-service/details dokumentacje
+    public static List<String> getLocationsListFromFile() throws IOException, JSONException{
+        // ------ poniższy kod wczytuje do Stringa content plik ------------------
+        BufferedReader br = new BufferedReader(new FileReader("place.json"));
+        String content = "";
+        try {
+            String line = br.readLine();
+            while (line != null) {
+                content = content + line + "\n";
+                line = br.readLine();
+             }
+            // System.out.print(content);
+        } finally {
+            br.close();
+        }
+        // ---------------------------------------------------------------
+        JSONArray jsonPlaces = new JSONArray(content.toString());
+        List<String> locationList = new ArrayList();
+        //ObjectMapper mapper = new ObjectMapper();
+        for(int i=0;i<jsonPlaces.length();i++){
+            JSONObject jsonObject = jsonPlaces.getJSONObject(i);
+            locationList.add(jsonObject.toString());
+            //Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
+        }
+        return locationList;
+    }
 
 
-	/*
-	// Za pomoca wspolrzednych z attractionstst.txt zapisuje do locationsid.txt place_id
-	public static void getPlaceIdsFromCoords() throws IOException, JSONException{
-		BufferedReader br = new BufferedReader(new FileReader("attractionstst.txt"));
-		Writer writer = null;
-		List<String> locationsList = getGoogleLocationList();
-		JSONArray place = null;
-		String place_id;
-		try {
-		    StringBuilder sb = new StringBuilder();
-		    String line = br.readLine();
-		    writer = new BufferedWriter(new OutputStreamWriter(
-			          new FileOutputStream("locationsid.txt"), "utf-8"));
-		    while (line != null) {
-		        sb.append(line);
-		        sb.append(System.lineSeparator());
-		        line = br.readLine();
-		        if (line == null) break;
-		        System.out.println(line);
-	            String content =
-	                    makeGetRequest("https://maps.googleapis.com/maps/api/geocode/json?latlng="+line+"&key=AIzaSyBt_Ggj3MMf-j92HsvACN5wfHvciHOrYys");
-	            place = new JSONObject(content.toString()).getJSONArray("results");
-	            place_id = place.getJSONObject(0).getString("place_id");
-						writer.write(place_id + "\n");
-						System.out.println(place_id);
-		    }
-		} finally {
-		    br.close();
-		    writer.close();
-		}
+	public static List<Location> createLocationsFromFile() throws IOException, JSONException {
+
+		List<String> jsonLocationList = getLocationsListFromFile();
+		List<Location> locations = new LinkedList<>();
+        ObjectMapper mapper = new ObjectMapper();
+        String currentLocation = null;
+
+        for(int i = 0; i < jsonLocationList.size(); i++) {
+            currentLocation = jsonLocationList.get(i);
+            JSONObject jsonObject = new JSONObject(currentLocation);
+            //System.out.println(jsonObject.toString());
+            locations.add(
+                    mapper.readValue(jsonObject.get("result").toString(), Location.class)
+            );
+        }
+        return locations;
 	}
-	*/
 
     //zwraca placeId do miejsc poleconych w google
     public static List<String> getGoogleLocationList(){
@@ -120,17 +132,20 @@ public class LocationCreator {
             ObjectMapper mapper = new ObjectMapper();
             JSONObject jsonObject = new JSONObject(content.toString());
             Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
-          //  System.out.println(location);
-            return location;
-        }
+                return location;
+            }
+        catch (IOException e) {
+                e.printStackTrace();
+            }
         catch (JSONException e) {
             System.out.println(e);
             e.printStackTrace();
         }
         finally {
         	// wyjebalbym to stad, bo i tak zwraca null to po co to?
-        	return null;
+
         }
+        return null;
     }
     // tworzy lista lokacji na podstawie polecanych w gogle
     public static List<Location> getLocationList(){
@@ -142,39 +157,15 @@ public class LocationCreator {
 
 
 
-    public static List<String> getLocationListFromFile() throws IOException{
-
-    		BufferedReader br = new BufferedReader(new FileReader("locationsid.txt"));
-		    StringBuilder sb = new StringBuilder();
-		    List<String> locationsId = new ArrayList();
-		try{
-		    String placeId = br.readLine();
-		    while (placeId != null) {
-		        sb.append(placeId);
-		        sb.append(System.lineSeparator());
-		        placeId = br.readLine();
-		        if (placeId == null) break;
-				locationsId.add(placeId);
-		    }
-		    return locationsId;
-		}catch (IOException ex){
-            System.out.println(ex);
-            ex.printStackTrace();
-		} finally {
-		    br.close();
-		    for( int i=0; i< locationsId.size(); i++){
-       System.out.println(locationsId.get(i));
-		    }
-		}
-		return null;
-    }
-
-
     public static void main(String[] args) throws IOException, JSONException  {
+       /*
        LocationCreator lc =  new LocationCreator();
+
        lc.getGoogleLocationList().stream().forEach(
                id -> lc.createLocationUsingPlaceId(id)
        );
+       */
+       // createLocationsFromFile();
       // getPlaceIdsFromCoords();
     }
 }

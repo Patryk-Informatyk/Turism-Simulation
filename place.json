@@ -67,7 +67,7 @@
       "place_id" : "ChIJR9opghJbFkcRbovYbURjje8",
       "reference" : "CmRbAAAAL_DC0uFEmvwWQ2P3kHqF4O74Ik4lC1OIzF3YsInEvwtbUfBe4Ha5L8UW0IkCrGiBy7akLLYOOIJnWiP9pzou-OEdcyLxvpM-HYEXOHvfmQJJxa6XJU7CHdpP1O0zPiJvEhDUoTwVNalKR_5vy_36vqcJGhS1arKovVNkdlAdPIKpzxv8BvZ0PA",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Franciszka%C5%84ska+5,+31-004+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b128229da47:0xef8d63446dd88b6e",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -143,7 +143,7 @@
       "place_id" : "ChIJyyGRQxJbFkcR1JBqlJ2SCo8",
       "reference" : "CmRbAAAAxYFLIujuZaQnjuGquRDiwCp-GkDyMzonHMsyX9CbbT0o4H2RSN-TsKi0QsRHuvBJcbkVpbgXNIatQ6XzGXaIorVMlQLMYzqM6blZXsk0dL0GN31Imy-FsiCWbWCwicXPEhAdpAxqst-xO_eiYQNub8c7GhQ4i3-7zm64eba4y0WUJHmZjT-eDg",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Stolarska+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b12439121cb:0x8f0a929d946a90d4",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -219,7 +219,7 @@
       "place_id" : "ChIJ3Q97Bw5bFkcRuP7oNkD1tK0",
       "reference" : "CmRbAAAA_iLasXwKtb4oTHA11BFeI61TP2INvc2Ms1-RRI8H9L5QHqCtP9YUJUmEu90JT0wkrUa3Gsq_Ru5YOOltdVEGeHwO7BtlCtsLpIjv_jttNgO4j9Xk50IX-ghpwAJGNBpCEhCXUbSCMydLdsGPEDA3YLXEGhTvYjg2cPqpROItVRdnnLONOJ52Zw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Rynek+G%C5%82%C3%B3wny+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e077b0fdd:0xadb4f54036e8feb8",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -295,7 +295,7 @@
       "place_id" : "ChIJV-k7zEFbFkcRprctZb-J9LY",
       "reference" : "CmRbAAAAHjFk5zdc-PuwdqSUvMrtaWrw9D9Q1GZjBvIqZqroSWWz_wb1uBVa1PA-gb3Vka3B373GL8OCwDe2o6hlB-6DlRRKQc_eeYh66Vf7irTpiFY6EXvZPXEWPK85u8yZe-NKEhBA0WSvNmW2pAxaY_78jKg-GhQ4e3N4lm5UREn4IbaUWezTbnDSxg",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Bartosza+46,+31-053+Krak%C3%B3w,+Polska&ftid=0x47165b41cc3be957:0xb6f489bf652db7a6",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -371,7 +371,7 @@
       "place_id" : "EidwbGFjIE1hcmlhY2tpIDcsIDMwLTAwMSBLcmFrw7N3LCBQb2xza2E",
       "reference" : "CpQBhQAAAD4x7w0_EwHfCCVzwwDBwkhMWGibhZU5LDH_P1H65adOZtzUbGcp62yup-K97MSjbVkfWPQGqWxrVU-UGj0WmotKYjnk1VnU65kzvejCryFGru-GgCA5XuxwnBYEIjWBRFHs6sZ3vnPhM3BCu8O1TpbqRXsf3L_3IZXtSokoIj_jRU5x6Iorw1Kl-M2g5-mQbRIQqlSLLO8cVg5mlWAy4b7ipxoUBs6sijxKvw98fJInxkSxLGqbgLQ",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=plac+Mariacki+7,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b11f7a5029d:0xf2de670a9227eefa",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -447,7 +447,7 @@
       "place_id" : "ChIJD8I1yxZbFkcRb_-AYaxd9jw",
       "reference" : "CmRbAAAAULmbB5fodbawssScXwBM0LpaoXB-gAMftzXZ1avKqSDrEYdBeoPBWYmP_z918KfaydUjwdm-355BLg15Phz00Y1GkqxmwDUULrfStPpsjtXHktOqq0Xuoa9T3W0fapZzEhCFvNm2UtmJN_oO3zVZXRTpGhQ7j8lOAh9lfSYEg7uWTgxdIdIMLw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Miko%C5%82aja+Kopernika+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b16cb35c20f:0x3cf65dac6180ff6f",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -523,7 +523,7 @@
       "place_id" : "ChIJTVsEIhBbFkcR4jqibQNlxME",
       "reference" : "CmRbAAAAgYFGNfZ0JBoXC2I0ZGxUq2v-u2tQwjc30a4DU7_xRc1nHk2pBPtraOn7YhDmNPAKQV_DONEKpLt1zgeIOyMS_1mbOnzWAS6RSIUPlsFlf3PNCCFlhXn1HNajSrmVlHVrEhA9rFISfAURs3UBLpj5t4bCGhQG0DNJHJG5xdz8DsH7Mdh7O44Rfw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Pijarska+8,+31-015+Krak%C3%B3w,+Polska&ftid=0x47165b1022045b4d:0xc1c465036da23ae2",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -594,7 +594,7 @@
       "place_id" : "ChIJu3Igug5bFkcR3_DwTK4-n0s",
       "reference" : "CmRbAAAAwhykxawXEmQhfxBrtpXndEkrvpwDbeNMVoQ9HsEcE9lwhzDmAVXXK4gfyc19TsUFfvNak1JJt8MLXkhbmr-24pdJlfNrDa5WJYdFlnqRxNhL0xSBOnmbER1DihaodXG1EhBXsFO4aMGP90tGwFJTG5p9GhRwYWSUiqHQsO9Z-PdQSp_4jfL4Lg",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Krupnicza,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b0eba2072bb:0x4b9f3eae4cf0f0df",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -665,7 +665,7 @@
       "place_id" : "ChIJKVvWbxpbFkcRS6VRnZgz-F4",
       "reference" : "CmRbAAAAuZg_OhtVoimPvpXpt_QKvMa17aI34NS0H2Igx5MJIqMYLIO5ofVug5APNVa0rAEIq_QZ2e_HXK7XZDoqxNs_6PJKsUIXhgeqMqRrz47O4PB1Pdk9ORvHIbKEHeBlk3TPEhBx5rm9DWZa3o9_ArqnB8RoGhTvddtmwaQ315oQwCqlfKYwySCqSw",
       "scope" : "GOOGLE",
-      "types" : [ "city_hall" ],
+      "types" : "city_hall",
       "url" : "https://maps.google.com/?q=Stanis%C5%82awa+Worcella,+31-154+Krak%C3%B3w,+Polska&ftid=0x47165b1a6fd65b29:0x5ef833989d51a54b",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -741,7 +741,7 @@
       "place_id" : "EitwbGFjIFN6Y3plcGHFhHNraSA4LCAzMS0wMTEgS3Jha8OzdywgUG9sc2th",
       "reference" : "CpQBiQAAADj_ti_FxhPvCrElITOf7LXihbBocg9pyZW9hQzxuSKQYj5d3kp1r2eTbojf96NoM4OYHONbgTwm0c_6AX8PdD_kV2gsdA926DhMidPUB0QK3GUOYN0a8y8tRJe01FbCo6cCV5Iq1Y9EpSW1lXQvKL26aSJi47sLM9lDx0hqQYik_MvA3RVT0O9Ko-Dguh9pWRIQBounrlClMicRaUl0849sUBoUfHaANjsQTTxJzRJ1Z5VqGRamoXo",
       "scope" : "GOOGLE",
-      "types" : [ "square" ],
+      "types" : "square",
       "url" : "https://maps.google.com/?q=plac+Szczepa%C5%84ski+8,+31-011+Krak%C3%B3w,+Polska&ftid=0x47165b0e591fb559:0xbe36013f3769cd3",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -817,7 +817,7 @@
       "place_id" : "ChIJxziN8g5bFkcRaMwIhmkHnQ8",
       "reference" : "CmRbAAAAjSDUJnRgm-jqjlqcRpJgRjQoGeX4dve2Blxtj5X0YPB_Vj79q3ECe4ZuYFpC6nqqoNBKCFdT8U5Qq3lSygnGvYPDRETiAeR_7JeBbQg9w52k-EEymeZdTn1oR0MoiYQEEhD1rzBserot7mIkT0p2GYcTGhSfr5UqsS7_klrnAbJ4vwgXETISEQ",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=plac+Szczepa%C5%84ski+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0ef28d38c7:0xf9d07698608cc68",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -893,7 +893,7 @@
       "place_id" : "ChIJ8_Kgtg9bFkcRdFP3AKhpkog",
       "reference" : "CmRbAAAAfG093RBf2L7dhkzW1kvogfQ2Ek24IGY_iN22FgfNewv66rq3NeCOlRfLvHIbhSPB3zH7V63lZO_qWHy0aJe06rmuYEd6n1viuI4Fy5CHJzked0WfBWhcyL9b5R03qG97EhAjXiFUzkTIO9mukpBqwJcmGhSQOO31Ic2Z6PTPoxy23R_7tpx5-g",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=S%C5%82awkowska+24,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0fb6a0f2f3:0x889269a800f75374",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -969,7 +969,7 @@
       "place_id" : "ChIJH6fvAQ9bFkcR_XEofB93zPI",
       "reference" : "CmRbAAAA_slb182Mwjf0vdr8iEoY3YRGf4Ggrv-J4rk5Guld8VTRU0jg6jRz8M5gUatJyh1OjfU-MeBgftJykVAU6wi9IGDup_IpXRJNziSJGdr5ibX6B7EQHeJF2BcdYf-U_liIEhBNvagVOFdT1gecWR6mvCGVGhQD90SeH39YJTUDTLtS5vEmEGoumQ",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Reformacka+4,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0f01efa71f:0xf2cc771f7c2871fd",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1045,7 +1045,7 @@
       "place_id" : "ChIJx1O_3A5bFkcRdFmOGcs01-w",
       "reference" : "CmRbAAAAhHFu6EA8jWWx9rc_oUfUkdWYl_D5YaoX1J4upzDLb64f6WPtS2ftlYh7AwwyuZ-M40s0ae2BBEpS0jo2PuVWY5dXxwEdIr-mF4ikRZ45l8WnJO0TV40SAsZeVFCAPrXPEhBvKfvq3I0lq_PLkfclM1QCGhTGiEpCNAGYod37lyQaxdnag523Zw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Juliana+Dunajewskiego+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0edcbf53c7:0xecd734cb198e5974",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1121,7 +1121,7 @@
       "place_id" : "ChIJ9dwPKQxbFkcRZ6a6i7G1Kxw",
       "reference" : "CmRbAAAA7ZPR7WPyns_l7VM-2smSaRQgfa4Xp5K_jnTQumvju_ZbZmZxRRgcMlOqjDXkNSOvWE4AJ8Dc53YJMIxZ_v1vI3CXUVgXe6YrB8Kj0m1UPOFZWAtyaNQGua12lDRUaPPtEhBUjBFl39roH1NbYqPmGwQmGhT26LfwdUYEEeUE2OGxRMOCgA8dyw",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tej+Anny+11,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c290fdcf5:0x1c2bb5b18bbaa667",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1197,7 +1197,7 @@
       "place_id" : "ChIJA3GiMgxbFkcRsLqx0qgUrdE",
       "reference" : "CmRbAAAA2AdAgdNA7lFtiPIyi71i-F6rlRANytgz_Tt2t4p51z0oeJ3AGTvzfkSNfZV6QHsfLP3ZSP92vCMWw-FOIYF91B5S8PBFHhTcdq-yI1aGHihwDnpGSnEk5gqZeTlu43kuEhAQtL1rEGzMg6KF-RBVTGnqGhQ-K2W7y8IMVftSiN9NH6AfBN1kLQ",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Jagiello%C5%84ska+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c32a27103:0xd1ad14a8d2b1bab0",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1273,7 +1273,7 @@
       "place_id" : "ChIJH0dRNwxbFkcR1chsDKyR1K0",
       "reference" : "CmRbAAAAMEeV3IVZxTasIVDaMBnoP7csxZXhLOVlOyFD7n0k_oaeDA7Alh0NpzwgfA5eZP7lJFQIlrV8CFnJ1CNHkAV5_iab4fCUqhBwrDo0q0kn98GUGdsyYNxrACH9qH261PC0EhCdhnZiyAOcwebKISaS1ztPGhQ7jc7NNRwNcnUPgW1IujPs_27ybQ",
       "scope" : "GOOGLE",
-      "types" : [ "monument" ],
+      "types" : "monument",
       "url" : "https://maps.google.com/?q=Go%C5%82%C4%99bia+13,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c3751471f:0xadd491ac0c6cc8d5",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1349,7 +1349,7 @@
       "place_id" : "ChIJh4O-iAxbFkcRldpTnxht4a4",
       "reference" : "CmRbAAAA2g7HRBIiesvbTGjUCyZxm1-AkK9p259qAwxtapU22qu2-lRKtRv25W5QYcBKApZxj86_cCpjeWtO3NvQN6wFUeAjspeQLQEJuQFaHmXES-wtwK_dST8Cemi7QFgWAgoLEhBAEs8qORDcu-qHxWmIl07_GhQgEXPDu3wOlBLeoGvyL_o_zmr_og",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=J%C3%B3zefa+Pi%C5%82sudskiego+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c88be8387:0xaee16d189f53da95",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1425,7 +1425,7 @@
       "place_id" : "ChIJ30mcGw1bFkcRv5TFm1K72wY",
       "reference" : "CmRbAAAAcl1PH5yMdG6pmfxuTqcPpMr0d7RFYsbOGDzKjmDGHAh-Ly42isefGzgVXIJdisgv_Kob0UU-vLJpvnAFR4JHCeuhh9WSjI0u0Dso2NIv2suTRwf9kygn_E1YsJPkgpLIEhAKQniFH3eFQQ8hGhN-GNbgGhQ3PBixh6FPol2CdRssmYL_xKQvTw",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=Straszewskiego+18,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0d1b9c49df:0x6dbbb529bc594bf",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1501,7 +1501,7 @@
       "place_id" : "ChIJTcAXohJbFkcRdGgKOvY256M",
       "reference" : "CmRbAAAAAO-uCgFpK_f6pgn_wKxWr0mn9-l4oz_nyh54-f__pTgDzLZxGYiv17FemXV2t-WhZ0MXvwdoZPwvtZkEQ6nHAP9YIFtaFsCAw1BRMwmkmAM5KXSNw1fEQhWf0jxixvA1EhC9TXRsJz63ppRrBcFfh8nxGhRVqc9pvuhAU-nrwbFbW2xMqZ8amw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Poselska+3,+31-002+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b12a217c04d:0xa3e736f63a0a6874",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1577,7 +1577,7 @@
       "place_id" : "ChIJE9qT5xJbFkcRjY7_1BHYjtE",
       "reference" : "CmRbAAAAJgsQjb8qluzL1Aak-PyBUNT47JWdhgKpbpwjj-t6YzPB9mvUtrxaGuK-EQlsebbmrbs-RjxAk_YHZvFpOzrLKx2m6Sxx6J6v_8nmC-b1HaELlVmuB0pKgMO-4IuFei5lEhD-7EGAzTmVIQvL_H7fu2JoGhS1aLwnR-kHPBevm_ch_H-1fCeXvQ",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=Grodzka+48,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b12e793da13:0xd18ed811d4ff8e8d",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1653,7 +1653,7 @@
       "place_id" : "ChIJK7Gy3RJbFkcR0fAP6UHXnQs",
       "reference" : "CmRbAAAAhRcFprLTaK6hUXom-LgroipxkbbLdnXla_BvvQB8GNA2yq0F1STwgOpYktAOOQOeK40zm8IcnUfQuqFtdMhcI0egOTSL69v8Wit4CFVzBPq0XvcNvP5but_FQsaBeRxQEhBuYb5u3HL9AE2KA4dhP8N9GhSAVVvxr7XHZqMeirbdSyLAqyyZBg",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Grodzka+52A,+31-044+Krak%C3%B3w,+Polska&ftid=0x47165b12ddb2b12b:0xb9dd741e90ff0d1",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1729,7 +1729,7 @@
       "place_id" : "ChIJwzb01RJbFkcRuFE9kqP2dcI",
       "reference" : "CmRbAAAARjpqYSzV0Llw8clecCZY0quqh78yvXNn-Fq-GV1GXpRu3r-TN2UyN_190gupbebSUVYbR6tKdzSWsqKFQnqTxnV2CVETosEPVAFDorq2U6bXrTAzSrcHjZa68InHN0b8EhCBJfiylGhKhROKOLSkIpNfGhQnPpXnagAW1X7DNou_xDnCNZIiJw",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Grodzka+54,+31-044+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b12d5f436c3:0xc275f6a3923d51b8",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1805,7 +1805,7 @@
       "place_id" : "ChIJSwdjng1bFkcRfG2Nc2toXKk",
       "reference" : "CmRbAAAA4iLP1JNGg1tqfjKYigDGp2H0MQokx-u85ozkdbeGHMPJsqBNROA6UdFdPWmIOL_AflMMtk1qxCifAZ7UihNlpQoKNdD9WjwcjG2mAX8FBzlVmcDtlJtTAn3Z_jh6AelFEhDpaTsxcggm_mqXVj1AksWQGhRjTFtSNTJ07QWbYmndJtu6l9--7Q",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Pa%C5%82ac+Biskupi+w+Krakowie&ftid=0x47165b0d9e63074b:0xa95c686b738d6d7c",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1881,7 +1881,7 @@
       "place_id" : "ChIJZ9pVBBJbFkcRQKKDsh4Z4Xs",
       "reference" : "CmRbAAAAaWZPI7Ah1Jq4_B5rAJuEv5-9pFbToLVScVTxmjKqZ7uzEp0MvLfeA1Qdrry28NZA6TaWCIVWcBrsof9jgNJ22yXDmK2DNT7n0yUSxpGGkLrPaDFgXPC2tVhkH0-erwDkEhA95wxDB3p8xMu2N2D8oq7uGhTD8DPa3cpYQZqZxIZ5rkzQbL0bJw",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Rynek+G%C5%82%C3%B3wny+7,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b120455da67:0x7be1191eb283a240",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -1957,7 +1957,7 @@
       "place_id" : "ChIJlU5sexFbFkcRl4EO_A3meqE",
       "reference" : "CmRbAAAAsgmmJ_PMH-cDXIEz98u1aHWbQMilY_TVsYwtmBZ4N17BhwkHEHS07G-cAfFubc-yzLzj5FYbT0SceUVfFsXogb13Na7hlBxNYGzX_wA17P6_Pkjt31plRuo4Z0nRfSjlEhB1iggQQS7gWN1dmgR7dAsQGhSS-nbor_P60K1vNeg6-7bl4mDu3g",
       "scope" : "GOOGLE",
-      "types" : [ "place_of_worship" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Na+Gr%C3%B3dku+7,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b117b6c4e95:0xa17ae60dfc0e8197",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2033,7 +2033,7 @@
       "place_id" : "ChIJewoL7RFbFkcRBSoaT-G4kJo",
       "reference" : "CmRbAAAAKHtyntTZUlZTwnonZsXzp4Im1SV7P72hQWvNNWVHQmQQbaeY9BsJ7-7tSZbl-I1sp7rWLBWK6diq-lePt3rjW6eHdUBIc-HTWreZTw_exyZ3R5hGxv95vThTO5iUWNFMEhCOB5mQsWJnKWPqzgWY_gNHGhS6nzflO3eoe78Po-mSHK1Pc3eJfA",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=plac+Mariacki+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b11ed0b0a7b:0x9a90b8e14f1a2a05",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2109,7 +2109,7 @@
       "place_id" : "ChIJo-PHGQ5bFkcRXDamxFIG0O0",
       "reference" : "CmRbAAAAvM5j6pA_easyADcd-qZLbFywNFBQSh4cNU_gwfEAltBfax6TAp4F4jpUcN3OAKeUChkYNwAwUQSStHiKB9iA9khB7UeWfCTJMqQ7DjklbQs6sxmQHBdQSfa35cOF_b0ZEhAGJ2-_0M3cfKNUED9kmEF7GhQuzsj6cNTVSzMFHxbQLvKC-AAMgA",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Jana+2,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e19c7e3a3:0xedd00652c4a6365c",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2185,7 +2185,7 @@
       "place_id" : "ChIJ4SEG9RFbFkcR6AIv4d5tXlo",
       "reference" : "CmRbAAAA3T7hLvRm21hHokZYEsbZwC3mwHQ3zTq3IQRn1in9hpC00W3KjAuzj1JK9gV-5ll9NxcEQCQ41cSXrSL4ABzL_LlrUTcvjdQ3kpsor5YanESR5SO5S2JmkLvMTBVF7srwEhDNkZgZWATNbiZVamdhiCfhGhSsdaiqVY2taig2UXjbtKX4qSOdZw",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=plac+Mariacki+6,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b11f50621e1:0x5a5e6ddee12f02e8",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2261,7 +2261,7 @@
       "place_id" : "EidwbGFjIE1hcmlhY2tpIDgsIDMwLTAwMSBLcmFrw7N3LCBQb2xza2E",
       "reference" : "CpQBhQAAAEhEYKwvvttTfhK-H8HKJQHZQkCAA_t-8fDZyoY0tUGlmLwVrmu1M3Htwj1HO20fhJIiS5ZFPbt18wGTWLP4t3CTiCu6Qf2oP08sSAx4AnrNo3uIB88hYhkaktGIa88Mj0_C58-f4sv8O_I00pscLVOZ0xChqxHoMugUbNMf0CtiyLZlDuz7ts50u_z5Tk285hIQs8jNKyptq9xHgtJcljWgFRoUniVdllkDrYnYuQfZtkKI9hwbGe0",
       "scope" : "GOOGLE",
-      "types" : [ "square" ],
+      "types" : "square",
       "url" : "https://maps.google.com/?q=plac+Mariacki+8,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b11f7a5029d:0x1114a6a72aafe4ee",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2337,7 +2337,7 @@
       "place_id" : "ChIJcZ6SKg5bFkcRKxqqqldoRxA",
       "reference" : "CmRbAAAAx3X5F9jWjkmtZpfNKaGh0TUdABHfSvlpZ9uSO5Jq8AKHTWJnhvl_Vz7fp5fd7aVX1bVlzX5dUWU061YVERz2Xa4-vnxsZKbZuJI9eqUdali9e2g98t0idAoo5F4OmKUgEhBjGWOYXbPBZOX8l90Ax6B-GhQBvd-R20QGUYotINAkq9qa1Fj89A",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Marka+17,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e2a929e71:0x10476857aaaa1a2b",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2413,7 +2413,7 @@
       "place_id" : "ChIJo-q28hBbFkcRj8WUonpTAQI",
       "reference" : "CmRbAAAA3OD9d-cdTgEec7GvNAD7tnlGZo8uqrRWk9TZOZ0Ilka-coc3Z2FjWZ37ytnaRi2Sbs_adYUgBFn_45_UXgjtRDYaHA5RfMegJPuWNMN1vUkeGI4mAwf34KHkfwJDX-2PEhDR9sCFLBhopJCAnUPTDiESGhQr_GJZEpd0-OYYtbBh_tJDVl0Viw",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Westerplatte+1,+31-033+Krak%C3%B3w,+Polska&ftid=0x47165b10f2b6eaa3:0x201537aa294c58f",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2484,7 +2484,7 @@
       "place_id" : "ChIJD5vl_g9bFkcRL6Ed6BCBpdA",
       "reference" : "CmRbAAAA0lp04WpbneCLqogsZ7AZFd9lN1Vq5pX6X5L6akCA2rjYbU4vnO1wro5_sOGErKFTnwK6k2bDiNdenwtZLUMHflGMQ17sRcWcQO9X3pUb30vEpoMAKkhfn9qJ9dvgn7kqEhD_MGf3ydgS-a7IaP_ZgKPLGhSLJcS1KSmHsvIzvibC0_6WnZhjYQ",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=Basztowa+18,+Krak%C3%B3w,+Polska&ftid=0x47165b0ffee59b0f:0xd0a58110e81da12f",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2555,7 +2555,7 @@
       "place_id" : "ChIJdXHgTxBbFkcR-RrpqdZy-9A",
       "reference" : "CmRbAAAAyF3R92et-pMzTw7GSghw4i2RYg7gy6vZcqFBAdXYXHpHi55iC241joUOrDF-7Og0G_SZFl0mVtrhWIjbL2FAwxA8xp_1cewSfhguQ1u-658mADQSdE9Rx6aABjvTPo-FEhAF41IkG_qUPNHyAtD9DOirGhRq8RZ8A9UNP_bWZolBk36TWBqm-Q",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=plac+%C5%9Awi%C4%99tego+Ducha+1,+Krak%C3%B3w,+Polska&ftid=0x47165b104fe07175:0xd0fb72d6a9e91af9",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2631,7 +2631,7 @@
       "place_id" : "ChIJI0NIwmxbFkcRrcM5bqjBkHE",
       "reference" : "CmRbAAAANR8vqcGe-uXz4X9xRA12-VgctIIkatzYbdhM7_QMd-HEclQFZZK5acS6rGFW_wZS5DP-Ufd--2KJfe7C0Jawg6idPc3mnl8dGWjDDO0oV2kcwmmcPoPT-X--EqA3K7hjEhAavk6_txMCkjfEAMZmV-w4GhRO1mx0ALd8viO7x56cdW4iSSWtRQ",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Grodzka+64,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6cc2484323:0x7190c1a86e39c3ad",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2707,7 +2707,7 @@
       "place_id" : "ChIJsd5JBW1bFkcRcbgT1LwqHs4",
       "reference" : "CmRbAAAAlW5pJEU4j9QEIwU2a6dksamzofhNAKlgf0iE5quWOkOLXXzg6gnUP_vQaItOveaS37wAHmTO4mkKONAVk_O71vVHgwyqEup4XM6KvJh9u3o2l2pBRANdmipNYzAb_8vREhAANaOMOu6oqPeARHTYQUxsGhRMrXvEIXW3azpM1DftUBOhcbTTLA",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Zamek+Wawel+5,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d0549deb1:0xce1e2abcd413b871",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2783,7 +2783,7 @@
       "place_id" : "ChIJY7-qdG1bFkcRUWWvcALT8y4",
       "reference" : "CmRbAAAAmUMxPZLGBu5PEzrPVuiXxnbJA2BiHijNgRt74ShlSBgzvurrQH4w48rL0admko2tPAyIJuue7RuZJp_wgEs5jme1zxCPP9VsU9s4b2vyKaPfzxqwij5wbCGhmZ0jLZu0EhC4knirjaICOeJoap7j_2uFGhTzP6nERCmAUYme5IsYR1nuPRraIQ",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Zamek+Wawel+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d74aabf63:0x2ef3d30270af6551",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -2859,13 +2859,14 @@
       "place_id" : "ChIJ3Z6nnW1bFkcR6TMri4hriHE",
       "reference" : "CmRbAAAAVYdQSgzQW4AWxg7XAjIzJFHYjKJEheclFHNCAAtyT8BaK92s8OauGlFq6cekpu9G-982_PTL8RfIi2CjaqOJJxGX7xjxuPIF5iQe16Y65J6Ora6UzWNEu3_SMt8jMXShEhDBEtBlpKfHUIFg7YWsSm9FGhTdw0bsquEr2D6hP3_9RuVc5QnFxg",
       "scope" : "GOOGLE",
-      "types" : [ "old town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Zamek+Wawel+8,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d9da79edd:0x71886b888b2b33e9",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
    },
    "status" : "OK"
 },
+
 {
    "html_attributions" : [],
    "result" : {
@@ -2930,7 +2931,7 @@
       "place_id" : "ChIJqY1fsm1bFkcRIpeImwP_3Q8",
       "reference" : "CmRbAAAA21adZcpYTydML5RAcF7hGjl9uCGY6f-TRCDO8IH8YYSxgApJfi_WDChX50bJjCxcLbCaSYkDw-NUXrV-HuzwedRPeNbUhlUrGHyES79YUchUHphrQDfVP385JfoVrtA_EhDzDdoiD0uTzlJg1XlYVqb3GhRyWCM2AC8IUVLhN8EoTxVatpkPXg",
       "scope" : "GOOGLE",
-      "types" : [ "route" ],
+      "types" : "route",
       "url" : "https://maps.google.com/?q=droga+Do+Zamku,+31-001+Krak%C3%B3w,+Polska&ftid=0x47165b6db25f8da9:0xfddff039b889722",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -3006,7 +3007,7 @@
       "place_id" : "ChIJW9iKf2xbFkcRewSo0oCeO7Y",
       "reference" : "CmRbAAAAQAWCcmo-WDiD9UWjbGOKu2EfwguyTOiVa_ZnwFKIitlgdwekpHOg_1ZkiXge6_Tm6ATsIMARYF5i3aMhF33tFQ0eZBJLLoy5HoREuwyLiPnC3dmxJhlfQf3QJs621maEEhAyavqH7HNnAAVYIhsmEzcOGhTdAE2rl7dA3RGUXPtoW-gkNe67Yw",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Stradomska+13,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6c7f8ad85b:0xb63b9e80d2a8047b",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -3072,7 +3073,7 @@
       "place_id" : "ChIJCane3WxbFkcRxCDwJfMeAdk",
       "reference" : "CmRbAAAA4FkCqAH5VLifK5pKHthHnIYpgR9ph4tfSg78qGDUvvdjmV0v-ptI4AI7wTeL636FNeYrYOhcXVA_dsVl9OvMWKeQmk5FbKLFGNY0OfuGbIlRvmV4CpmH0Dgw-NVJD-rtEhBW7RKN71xx4HRb3DyJzcgRGhQNh5q8okFIxZMZp59xcvHUI-DGpQ",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Idziego,+Krak%C3%B3w,+Polska&ftid=0x47165b6cdddea909:0xd9011ef325f020c4",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -3148,7 +3149,7 @@
       "place_id" : "ChIJNeA0gWtbFkcR0O1SMrJ45_I",
       "reference" : "CmRbAAAAADQjMRw1CxHfgUZC3ZtvaKkxVmM5qC3x38-c2ldkmJ7YWTsenOi7qxXzuJ3v63MxJIZ9eBgw49_WoFaUcRP9_rNBSE1utbklWoCfRkxCkd5amH1kuElqlMW5GRvfdst2EhA5e3QGEWOSUJzUe0Af9HM3GhQMxAl-bQ54c8PJWRHkA3r8qEGr9Q",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Stradomska+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6b8134e035:0xf2e778b23252edd0",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -3224,7 +3225,7 @@
       "place_id" : "ChIJF4FqFm5bFkcRyw47vQaD5OI",
       "reference" : "CmRbAAAAieKs572RewsNu8cnwg1zw4y9R9FrtLtqq-UWbaDIvTALDTM1xNtcNiCLZ2WUYNXgKpTvdojfO5rNAhJSoY5Mh-deQ9teBsRBI2BuG0mMURSjZV9yetIl9kID6NaFY28rEhB2_DTXQriQbhQjPkcxxntcGhR3z4iIm-Ka1cIa7IN0Fl2tHtXh9g",
       "scope" : "GOOGLE",
-      "types" : [ "musuem" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Marii+Konopnickiej+26,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6e166a8117:0xe2e48306bd3b0ecb",
       "utc_offset" : 60,
       "vicinity" : "Dębniki"
@@ -3295,7 +3296,7 @@
       "place_id" : "ChIJ76M-SHBbFkcRbfYpvWqMh-8",
       "reference" : "CmRbAAAAOZShWJv_DOJSMTZt-WqNvd4ywptk6qbhoJSiLZfVrgKcp0SeYw3Sgewh8WJldZ9DMKSb4ZVjEYVNVzvdeXSJgJFzQ6JPRtd0lK89nQY1dAwyQq6I72__G1aNDPpjXxDjEhAVSidgWKUM4s0snXcDaFzlGhSPqlROKct8Q4FhmxIBpZ3DaYVQcQ",
       "scope" : "GOOGLE",
-      "types" : [ "church" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Konfederacka+6,+Krak%C3%B3w,+Polska&ftid=0x47165b70483ea3ef:0xef878c6abd29f66d",
       "utc_offset" : 60,
       "vicinity" : "Dębniki"
@@ -3371,7 +3372,519 @@
       "place_id" : "ChIJJeIS7ApbFkcRazL93_TTdUk",
       "reference" : "CmRbAAAAqqJYQ3AO41WLXGXwHb0CJ6BdWIhFmFgqWO4KOUNarlRfqS2PwYmxQxEtUFmpDpWMTTKWWedcb6m3hkTHOpFSUbbKhUxsGMzBdNudeyfx3JErouMMXVmoKseCSo_4mD72EhB8bbE9Bsyt0RTKs2Sw9KktGhTihK_Hv3P2MwBKh4PUO5o1YtUWYA",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Al.+Mickiewicza+1,+31-120+Krak%C3%B3w,+Polska&ftid=0x47165b0aec12e225:0x4975d3f4dffd326b",
+      "utc_offset" : 60,
+      "vicinity" : "Krowodrza"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "droga Do Zamku",
+            "short_name" : "droga Do Zamku",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-001",
+            "short_name" : "31-001",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003edroga Do Zamku\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-001\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "droga Do Zamku, 31-001 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05319249999999,
+            "lng" : 19.935681
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.05454148029148,
+               "lng" : 19.93702998029151
+            },
+            "southwest" : {
+               "lat" : 50.05184351970849,
+               "lng" : 19.9343320197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "04f64cd97ea1d9be561990b25bfc7881d4878b7e",
+      "name" : "droga Do Zamku",
+      "place_id" : "ChIJqY1fsm1bFkcRIpeImwP_3Q8",
+      "reference" : "CmRbAAAA21adZcpYTydML5RAcF7hGjl9uCGY6f-TRCDO8IH8YYSxgApJfi_WDChX50bJjCxcLbCaSYkDw-NUXrV-HuzwedRPeNbUhlUrGHyES79YUchUHphrQDfVP385JfoVrtA_EhDzDdoiD0uTzlJg1XlYVqb3GhRyWCM2AC8IUVLhN8EoTxVatpkPXg",
+      "scope" : "GOOGLE",
+      "types" : "route",
+      "url" : "https://maps.google.com/?q=droga+Do+Zamku,+31-001+Krak%C3%B3w,+Polska&ftid=0x47165b6db25f8da9:0xfddff039b889722",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "13",
+            "short_name" : "13",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Stradomska",
+            "short_name" : "Stradomska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStradomska 13\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Stradomska 13, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.052976,
+            "lng" : 19.939785
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0543993302915,
+               "lng" : 19.9413441302915
+            },
+            "southwest" : {
+               "lat" : 50.0517013697085,
+               "lng" : 19.9386461697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "469f838fd2cfefdee8c5609d6b437c03048e118c",
+      "name" : "Kraków Pinball Museum",
+      "place_id" : "ChIJW9iKf2xbFkcRewSo0oCeO7Y",
+      "reference" : "CmRbAAAAQAWCcmo-WDiD9UWjbGOKu2EfwguyTOiVa_ZnwFKIitlgdwekpHOg_1ZkiXge6_Tm6ATsIMARYF5i3aMhF33tFQ0eZBJLLoy5HoREuwyLiPnC3dmxJhlfQf3QJs621maEEhAyavqH7HNnAAVYIhsmEzcOGhTdAE2rl7dA3RGUXPtoW-gkNe67Yw",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Stradomska+13,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6c7f8ad85b:0xb63b9e80d2a8047b",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Świętego Idziego",
+            "short_name" : "Świętego Idziego",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eŚwiętego Idziego\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Świętego Idziego, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0549851,
+            "lng" : 19.9378114
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0563340802915,
+               "lng" : 19.9391603802915
+            },
+            "southwest" : {
+               "lat" : 50.0536361197085,
+               "lng" : 19.93646241970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "cd8722345dfa3f260d2b1a42b31104f949068623",
+      "name" : "Cruz De Katyń",
+      "place_id" : "ChIJCane3WxbFkcRxCDwJfMeAdk",
+      "reference" : "CmRbAAAA4FkCqAH5VLifK5pKHthHnIYpgR9ph4tfSg78qGDUvvdjmV0v-ptI4AI7wTeL636FNeYrYOhcXVA_dsVl9OvMWKeQmk5FbKLFGNY0OfuGbIlRvmV4CpmH0Dgw-NVJD-rtEhBW7RKN71xx4HRb3DyJzcgRGhQNh5q8okFIxZMZp59xcvHUI-DGpQ",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Idziego,+Krak%C3%B3w,+Polska&ftid=0x47165b6cdddea909:0xd9011ef325f020c4",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "15",
+            "short_name" : "15",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Stradomska",
+            "short_name" : "Stradomska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStradomska 15\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Stradomska 15, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.052726,
+            "lng" : 19.939947
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0540749802915,
+               "lng" : 19.9412959802915
+            },
+            "southwest" : {
+               "lat" : 50.0513770197085,
+               "lng" : 19.93859801970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "a0ff98267891de7dc112489153f9a715d60d1f75",
+      "name" : "Muzeum Flipperów",
+      "place_id" : "ChIJNeA0gWtbFkcR0O1SMrJ45_I",
+      "reference" : "CmRbAAAAADQjMRw1CxHfgUZC3ZtvaKkxVmM5qC3x38-c2ldkmJ7YWTsenOi7qxXzuJ3v63MxJIZ9eBgw49_WoFaUcRP9_rNBSE1utbklWoCfRkxCkd5amH1kuElqlMW5GRvfdst2EhA5e3QGEWOSUJzUe0Af9HM3GhQMxAl-bQ54c8PJWRHkA3r8qEGr9Q",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Stradomska+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6b8134e035:0xf2e778b23252edd0",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "26",
+            "short_name" : "26",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Marii Konopnickiej",
+            "short_name" : "Marii Konopnickiej",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Dębniki",
+            "short_name" : "Dębniki",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eMarii Konopnickiej 26\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Marii Konopnickiej 26, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05076099999999,
+            "lng" : 19.9315274
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0520386802915,
+               "lng" : 19.9327236802915
+            },
+            "southwest" : {
+               "lat" : 50.0493407197085,
+               "lng" : 19.9300257197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "c697ad1f72098c00d318668f0a8a04b518f70fcf",
+      "name" : "Muzeum Sztuki i Techniki Japońskiej",
+      "place_id" : "ChIJF4FqFm5bFkcRyw47vQaD5OI",
+      "reference" : "CmRbAAAAieKs572RewsNu8cnwg1zw4y9R9FrtLtqq-UWbaDIvTALDTM1xNtcNiCLZ2WUYNXgKpTvdojfO5rNAhJSoY5Mh-deQ9teBsRBI2BuG0mMURSjZV9yetIl9kID6NaFY28rEhB2_DTXQriQbhQjPkcxxntcGhR3z4iIm-Ka1cIa7IN0Fl2tHtXh9g",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Marii+Konopnickiej+26,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6e166a8117:0xe2e48306bd3b0ecb",
+      "utc_offset" : 60,
+      "vicinity" : "Dębniki"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6",
+            "short_name" : "6",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Konfederacka",
+            "short_name" : "Konfederacka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Dębniki",
+            "short_name" : "Dębniki",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eKonfederacka 6\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Konfederacka 6, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0495541,
+            "lng" : 19.9271208
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0508434802915,
+               "lng" : 19.9283756302915
+            },
+            "southwest" : {
+               "lat" : 50.0481455197085,
+               "lng" : 19.9256776697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "ef84d1590a1dbcf3ad5ffac0b1c33419529011f7",
+      "name" : "Kościół Rzymskokatolicki Pw. św. Stanisława Kostki",
+      "place_id" : "ChIJ76M-SHBbFkcRbfYpvWqMh-8",
+      "reference" : "CmRbAAAAOZShWJv_DOJSMTZt-WqNvd4ywptk6qbhoJSiLZfVrgKcp0SeYw3Sgewh8WJldZ9DMKSb4ZVjEYVNVzvdeXSJgJFzQ6JPRtd0lK89nQY1dAwyQq6I72__G1aNDPpjXxDjEhAVSidgWKUM4s0snXcDaFzlGhSPqlROKct8Q4FhmxIBpZ3DaYVQcQ",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Konfederacka+6,+Krak%C3%B3w,+Polska&ftid=0x47165b70483ea3ef:0xef878c6abd29f66d",
+      "utc_offset" : 60,
+      "vicinity" : "Dębniki"
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1",
+            "short_name" : "1",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Aleja Mickiewicza",
+            "short_name" : "Al. Mickiewicza",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Krowodrza",
+            "short_name" : "Krowodrza",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-120",
+            "short_name" : "31-120",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eAl. Mickiewicza 1\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-120\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Al. Mickiewicza 1, 31-120 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.060491,
+            "lng" : 19.9235729
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0618399802915,
+               "lng" : 19.9249218802915
+            },
+            "southwest" : {
+               "lat" : 50.0591420197085,
+               "lng" : 19.9222239197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "eb35cb6e9646bc78d08804773853b1d0955a7709",
+      "name" : "Muzeum Narodowe w Krakowie",
+      "place_id" : "ChIJJeIS7ApbFkcRazL93_TTdUk",
+      "reference" : "CmRbAAAAqqJYQ3AO41WLXGXwHb0CJ6BdWIhFmFgqWO4KOUNarlRfqS2PwYmxQxEtUFmpDpWMTTKWWedcb6m3hkTHOpFSUbbKhUxsGMzBdNudeyfx3JErouMMXVmoKseCSo_4mD72EhB8bbE9Bsyt0RTKs2Sw9KktGhTihK_Hv3P2MwBKh4PUO5o1YtUWYA",
+      "scope" : "GOOGLE",
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Al.+Mickiewicza+1,+31-120+Krak%C3%B3w,+Polska&ftid=0x47165b0aec12e225:0x4975d3f4dffd326b",
       "utc_offset" : 60,
       "vicinity" : "Krowodrza"
@@ -3442,7 +3955,7 @@
       "place_id" : "ChIJ7xkCSqJbFkcRtIKwLqjVdDY",
       "reference" : "CmRbAAAA7rxP0pgB9kOCgnyhtunuYacXNQcV-oJR1ctsZjPPtF1JDFxuFzBJmWRs90KXb7fsk0ySZ8Ol3xG1YmQfOdSOlda54LNAROynn12X4IEMUiRexc7RIvLfc8FlvdTBuxB4EhDQ1fnjzs8-__o13j0j_hagGhTuj7rKoqZ3wgq4CkVu7d9POMUnmQ",
       "scope" : "GOOGLE",
-      "types" : [ "amusement park" ],
+      "types" : "amusement_park",
       "url" : "https://maps.google.com/?q=Henryka+Reymana,+30-055+Krak%C3%B3w,+Polska&ftid=0x47165ba24a0219ef:0x3674d5a82eb082b4",
       "utc_offset" : 60,
       "vicinity" : "Krowodrza"
@@ -3514,11 +4027,11 @@
       },
       "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
       "id" : "c9aab4af2635a612d9d515f188700f8c02f66868",
-      "name" : "Muzeum Armii Krajowej im. Gen. Emila Fieldorfa "Nila"",
+      "name" : "Muzeum Armii Krajowej im. Gen. Emila Fieldorfa Nila",
       "place_id" : "ChIJtQ7l5RxbFkcRrMJei9b-_4U",
       "reference" : "CmRbAAAACmfRWwIpIJwdrZHFAG9b9J_r9-cMfHexPFgk6Y9-Mc9kdyuMzJQECD6KFa-QtJBzFiv5dybdD0KqeUhGdQQ2Wr5wZhNyAyegLMdrQi2j0nI2O1aauM6KYAqOiZQi0htpEhD2hzOINMokT_Xe0-haN_5yGhStiI86iGUwgK5MNRkmdnqWjd8FqQ",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Wita+Stwosza+12,+31-511+Krak%C3%B3w,+Polska&ftid=0x47165b1ce5e50eb5:0x85fffed68b5ec2ac",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -3589,7 +4102,7 @@
       "place_id" : "ChIJsWbuQj1bFkcRm8oO1tvVDCw",
       "reference" : "CmRbAAAA52gegiGQ8A-SBQNsTvNO7V3TNk-t-mEIRlYpA8amI3734Wlfaq1xgvjNq5OtGHbPqgts6sgPdKHGSxqwbPro_PGlE-ZVo8gKzJj6KmcHtT23oRKPzglkOV7tRQiCJA2qEhA5km5F71gZW3a0TOZHmPlHGhS9BHr2tZkNu1wWnj8gNYdka5rteA",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Jana+i+J%C4%99drzeja+%C5%9Aniadeckich+6,+Krak%C3%B3w,+Polska&ftid=0x47165b3d42ee66b1:0x2c0cd5dbd60eca9b",
       "utc_offset" : 60,
       "vicinity" : "Grzegórzki"
@@ -3660,7 +4173,7 @@
       "place_id" : "ChIJCwW9QhhbFkcRk7d3LvOgksc",
       "reference" : "CmRbAAAAZ8qfDDxxJE1-chcEjLiIATx7lxnVpE8bIlyzTFc0fe1YWCXMbIOAf9xR2hBwC5T26mm6TDayTMYDKBISHhmRg_VMRA6FGyMvjmaPUXIC1BcJF176NrejuGihYIthUf0WEhDHHw57FkPPZTIfE6ovIdNaGhSfoWTFYmxessY2Q6uhtGB2gK8VIg",
       "scope" : "GOOGLE",
-      "types" : [ "art_gallery" ],
+      "types" : "art_gallery",
       "url" : "https://maps.google.com/?q=Lubicz+46,+Krak%C3%B3w,+Polska&ftid=0x47165b1842bd050b:0xc792a0f32e77b793",
       "utc_offset" : 60,
       "vicinity" : "Grzegórzki"
@@ -3818,7 +4331,7 @@
       "place_id" : "ChIJWRrFuhhbFkcRhqySe_BDc4Y",
       "reference" : "CmRbAAAA6UxshXSkNytmXOyjwQvImmxGvGxBTV3IeDM7-oCHmm-MmOS3ChPtwCs-sHzNiNqxwLRsmVuuuSNHQ33niXh96tgGPBIQWCSWw2CApAErxOddMYstShS4Xt3OeAlh8U-fEhBe4RsCswm9Alvd1BhkxEbWGhQ8r9XPeVnM0XZsRzVCALXZgDvjvA",
       "scope" : "GOOGLE",
-      "types" : [ "premise" ],
+      "types" : "monument",
       "url" : "https://maps.google.com/?q=Szkieletor&ftid=0x47165b18bac51a59:0x867343f07b92ac86",
       "utc_offset" : 60,
       "vicinity" : "Grzegórzki"
@@ -3894,7 +4407,7 @@
       "place_id" : "ChIJN_g5XtJaFkcRtnDz7CvG-OM",
       "reference" : "CmRbAAAAFAbv56nTjpalV3bZ6383TBZHsquoZinnsRlxhA4h6xVo7NUu91RGoHAki5d8FgHGiGdHRFKQX84FBwjRwZTyEaCxneow_CxY6YQ6wO9tvgUvfs9wUMpH9dqcJky3RJWtEhB0vGeE3v-QfPJ9rk_RU3cRGhS7Jv5s7AufWehB0Am36qrbwTLgOg",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Muzeum+Lotnictwa+Polskiego+(sala+konferencyjna+na+I+pi%C4%99trze),+prof.+Micha%C5%82a+%C5%BByczkowskiego+39,+31-864+Krak%C3%B3w,+Polska&ftid=0x47165ad25e39f837:0xe3f8c62becf370b6",
       "utc_offset" : 60,
       "vicinity" : "Czyżyny"
@@ -3970,7 +4483,7 @@
       "place_id" : "ChIJ2U9mx0hbFkcRnLfUIvfQ1yQ",
       "reference" : "CmRbAAAAl42maVWjQMU4tGoBwzQKaX8d1VYTnu3Kkin9fNEz-sEPQrUXP5K1_vIeO6F_ZbbIXLEKFlLB-zc29RkFfZQI-RjcwAiQ0fVTMdaOOFDYqcoMXRPPM3VBVVgwmSRLZX_dEhAQpBXLIwZH3MN_AovZvrLEGhSHuv1MKPe6eBTWfNXfjf6u_z5eFg",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Lipowa+4F,+30-702+Krak%C3%B3w,+Polska&ftid=0x47165b48c7664fd9:0x24d7d0f722d4b79c",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -4046,7 +4559,7 @@
       "place_id" : "ChIJJ7-kYkVbFkcRLQvx8a6MmKA",
       "reference" : "CmRbAAAA3W5qfysklQ_IKk3d9p4-AohPdhcc9FDxNFpdwkrgce-oStHRz08PPyW8zCZpfa_S2g1MmffjtMAzzzV3r_6E6ghyLyUBwyNUkAsbYMxhDbN9yP4jYxsLGNGzbRh3s4WtEhAvT-7tu1uVlg3ncl7AfCfFGhThHJBkjCC2sgJM7OH6t_5-iDED6w",
       "scope" : "GOOGLE",
-      "types" : [ "church" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=R%C4%99kawka+55,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b4562a4bf27:0xa0988caef1f10b2d",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -4122,7 +4635,7 @@
       "place_id" : "ChIJifzLOERbFkcR3ukTavcC1no",
       "reference" : "CmRbAAAA548fbPMsyrdZExhT2zGgGCOtvPd06Kib0LOdchGNGz-DutOLo9oye5wp9DgfGHcK4oB-m462_KVewHpQRoI6gepBUDngHIa0hmPcvq5B1_9yE8kUmMcDhUaYljhutsjJEhAPkN2RpOJoNJkGW4JOCQyZGhT8rK29n67MxYi3m6VrreFeoEoeJQ",
       "scope" : "GOOGLE",
-      "types" : [ "square" ],
+      "types" : "square",
       "url" : "https://maps.google.com/?q=Solna+3,+30-527+Krak%C3%B3w,+Polska&ftid=0x47165b4438cbfc89:0x7ad602f76a13e9de",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -4188,7 +4701,7 @@
       "place_id" : "ChIJU8f2wUJbFkcR5pqAN1UGM1E",
       "reference" : "CmRbAAAAVu_xJrUX65hWjPEWgYz3kgLU-0OOUMz7h1qNmykjs6LpfeejFWLyY22YZiB_5sXjOL7-ecVvREGc_0ZNFd6JOZanV7V9FNEu_lEb4UkAT1zeSf8Me1Q1VqGS9FMFzb5AEhCFL6QY6sNaE8RfoSwqb4E4GhR6Xh6M_Ak7TpK5iO9ts9NjlpBFxg",
       "scope" : "GOOGLE",
-      "types" : [ "bridge" ],
+      "types" : "bridge",
       "url" : "https://maps.google.com/?q=most+Marsza%C5%82ka+J%C3%B3zefa+Pi%C5%82sudskiego,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b42c1f6c753:0x5133065537809ae6",
       "utc_offset" : 60,
       "vicinity" : "Kraków"
@@ -4254,7 +4767,7 @@
       "place_id" : "ChIJjcFAqkNbFkcRtpp_MPDbKQY",
       "reference" : "CmRbAAAAAOyCTyeMC9MT5OA2ALLLMKk1-9ml8cAmTMoOwD0jfzrb7yVGX7gVN3PYUCgIgDNZquh4XLM8hOuR3fmi93ssmcw9hnxl1uh0V1_drsT_h9kWLklLAjQA28Lb8ASUgA9OEhCtNLRz0DD_oUMey3f2fA9WGhRa_TMeEB_45oVw2qeG97YPO1lwUw",
       "scope" : "GOOGLE",
-      "types" : [ "bridge" ],
+      "types" : "bridge",
       "url" : "https://maps.google.com/?q=K%C5%82adka+Ojca+Bernatka,+31-061+Krak%C3%B3w,+Polska&ftid=0x47165b43aa40c18d:0x629dbf0307f9ab6",
       "utc_offset" : 60,
       "vicinity" : "Kraków"
@@ -4330,7 +4843,7 @@
       "place_id" : "ChIJsX5XJ2lbFkcRlDSYU5vQ53s",
       "reference" : "CmRbAAAAqUxCUDytbnJpqA_a2KdIbDyzeidmM5p3twgt4BVCvi8QewqQ3h4PnPms_KYGpoP9USGjeaiscHN1EFAlN9JsACEmZYevtp9Pv6fB8ktq2SfKsLw5ir4hVOeeUPvhqRyfEhD-apaifCSKUmzimyx2Y47xGhT631ocuGtOo4lPi-BBiuP0ohFCAA",
       "scope" : "GOOGLE",
-      "types" : [ "church" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Ska%C5%82eczna+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6927577eb1:0x7be7d09b53983494",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -4406,7 +4919,7 @@
       "place_id" : "ChIJj_2nAmpbFkcRbO2glP7zxHo",
       "reference" : "CmRbAAAAob14UbV1YVdOYs86dHu4MVUGvCprWvBP9nsG7xWO_2z90uhVKJgwG4z9R7lgY6UGsHr-NKFdKlmaACFO_04WSPx_MMlQFjGzrtN0SUGLtteMZm8yk4cKOm9T0ecw0iNgEhD1Ke99x7Zhnf54T7X0O3PlGhS0CYpIzRxBHFVBaiuV8gToJL3Wyg",
       "scope" : "GOOGLE",
-      "types" : [ "church" ],
+      "types" : "place_of_worship",
       "url" : "https://maps.google.com/?q=Bo%C5%BCego+Cia%C5%82a+26,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6a02a7fd8f:0x7ac4f3fe94a0ed6c",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -4482,7 +4995,7 @@
       "place_id" : "ChIJ92KUrkFbFkcRCp5QCA__xK4",
       "reference" : "CmRbAAAAhMwsdSiTLzAMRuiErS272N2EIJvJcS3TKS_cJKYISpxhw6BuRsP9JwSXW_rhI0KKtWuqxGfB23kSUjz7eLaw7ScgxV-3nPaq1MFID_2owPpYaLWA0FkKuF6iacAT1wLQEhANbK2huI2DOtZYlMmjkzEuGhRXJfWXlGB7uRxKTFx_5zuxgSnYLg",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Dajw%C3%B3r+16,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b41ae9462f7:0xaec4ff0f08509e0a",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -4558,7 +5071,7 @@
       "place_id" : "ChIJe4GGnWpbFkcR55laA_Og410",
       "reference" : "CmRbAAAAE5A7xavVtMg6Jx_zP2IsQTqOoz_RP3gnbnMrd9sEE2G16Ih8MCp51FZxqQnyrRm5GEd1zMdg46vxW4iGt23Dx_q-1w2kg12lb_pXajXHOauocmtKZqCxFh_UmdtlxnZlEhB2E49pp9pxNoXZN8-TKgD8GhQtqJBWSeU4ZbBN5U_yImBhtxs-Sw",
       "scope" : "GOOGLE",
-      "types" : [ "cementary" ],
+      "types" : "cemetery",
       "url" : "https://maps.google.com/?q=Szeroka+39,+31-053+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b6a9d86817b:0x5de3a0f3035a99e7",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -4634,7 +5147,7 @@
       "place_id" : "ChIJx3PfM0BbFkcRqG0M5KNw_sw",
       "reference" : "CmRbAAAA014DXzIUaUPAYlOkpgYBftKJjLiHJR1YMTa8ZhqIAdHA4wqgPh0VKKjMnSmKFnmpK6xc-Msd9MDO8iSw_7rERx8zVoQR7h3Q0ydT6i926PhjPf_G6OIGjgKavySLdkmnEhD19tj-Fu90pPyoPhho9tFLGhTShvy28UvAUS8ekZhpiJpCHt4qFw",
       "scope" : "GOOGLE",
-      "types" : [ "square" ],
+      "types" : "square",
       "url" : "https://maps.google.com/?q=Szeroka+20,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b4033df73c7:0xccfe70a3e40c6da8",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -4710,7 +5223,7 @@
       "place_id" : "ChIJK9tdTVtbFkcRwsX5l14b65A",
       "reference" : "CmRbAAAAevMu99bhfay5PfxvFTiL6QomDB2UgU03ox5A_wfEFtQKfg3FY7QGgtjrNAhZX5hHgN6iATdiHTtid43WeRfsiQ2HSu9o3T_DeeNZnewrWex18mg7HEoxMlTc3Oq-xsF2EhB2K6_tm6Q9VntbB91VXrp0GhToRD02dDlezV53yzhb2UXAt5WLlQ",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Jana+Zamoyskiego+2,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b5b4d5ddb2b:0x90eb1b5e97f9c5c2",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -4786,7 +5299,7 @@
       "place_id" : "ChIJ2RpqvVxbFkcRnxC4fB7YXc4",
       "reference" : "CmRbAAAAnJYIkSatd6LycEB7JtfyCXp8ux_jX79vxk6Tlklwdyp-JIKnanaH7kSCTBponXOrnUMb72bWAlMl84Y_1ZGuoMk_OZWptTvyZq6nXJuY2ZGV4yfMrpJVNoy65aSLowPTEhC3_gTz1axblXV8m5_v_zZoGhTg9tjWbLnCjXKgByXXOXiiZAxi6A",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Jana+Zamoyskiego+18,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b5cbd6a1ad9:0xce5dd81e7cb8109f",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -4857,7 +5370,7 @@
       "place_id" : "ChIJ15iqendbFkcRBwRL_YNtico",
       "reference" : "CmRbAAAAiW4LUz-QEXH0W1BhtL0qKAXdlKBj1OLwNchXAlmWTRdiKvZEimApIXuJdEto5qNyG10gPIBzR0jIvocCyl4v5XG9h0rEZqE2mHX-BJ-g0GT2iXxIEVDl2vH5NpuEVksZEhBBfN1e-ZwgKWGHEfb532ufGhT0nhuRYH03YX4n13cWa0QxzD5kYg",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Zagon%C3%B3w+17,+Krak%C3%B3w,+Polska&ftid=0x47165b777aaa98d7:0xca896d83fd4b0407",
       "utc_offset" : 60,
       "vicinity" : "Dębniki"
@@ -4928,7 +5441,7 @@
       "place_id" : "ChIJnYyClpFbFkcRpbQw_cANH4g",
       "reference" : "CmRbAAAAYnrQY8pGd2trJIOTAexCc21JEmXi7Xhj7uHTIK0xihWlQIjupmPQZdcqynZNJji-ve4lQUYI1mpPS8du7cW-o8HMJYGuKzsEKCTJ8WDI6mhn1isuJuAZZQknl4OsWuTLEhBUM4WMc4uxTQ9vGqMN5H65GhSsnkpEbWvkXnLrOYoDqmYWnI7iLg",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=aleja+Jerzego+Waszyngtona+1,+Krak%C3%B3w,+Polska&ftid=0x47165b9196828c9d:0x881f0dc0fd30b4a5",
       "utc_offset" : 60,
       "vicinity" : "Zwierzyniec"
@@ -4999,7 +5512,7 @@
       "place_id" : "ChIJV6a2oplbFkcRvzgyekt8LQg",
       "reference" : "CmRbAAAADlyIDWTe4p6KeND43KFD2TjafdvAsELslu9-fz53s5ybN5WWwvsr8FH_RNBgeGtPXkVRgyrkqA03LgdT50DZgUVKDgubhxBn030eRXzhJt13cXZqMk3wcY2U_fH5YWqsEhAfAkjkf4vH3kiVl0AyZ8i9GhQ8fcMWq-Czjm3yoCrDHZf2-cu79w",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Na+B%C5%82oniach+7,+Krak%C3%B3w,+Polska&ftid=0x47165b99a2b6a657:0x82d7c4b7a3238bf",
       "utc_offset" : 60,
       "vicinity" : "Zwierzyniec"
@@ -5075,7 +5588,7 @@
       "place_id" : "ChIJYXC1n6ZbFkcRYXdsXCCj69Y",
       "reference" : "CmRbAAAAnrVfFxjhBxPXElAV9CbG9g42wDAZRtKPsXkED9uilR0cR3L7YTdNqgiXF_gi8sTrq6ssjsfk9-b96succcTAQZv0Bf-k_w7pBwjl6FZxdK6CNyRzTjf3HXt_kyLe6SNgEhAle6g6XTO37tFhOwhUGLDsGhSaJlEuoaRRilLqY_62yBpxrRQG0Q",
       "scope" : "GOOGLE",
-      "types" : [ "museum" ],
+      "types" : "museum",
       "url" : "https://maps.google.com/?q=Czarnowiejska+30/4,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165ba69fb57061:0xd6eba3205c6c7761",
       "utc_offset" : 60,
       "vicinity" : "Krowodrza"
@@ -5146,7 +5659,7 @@
       "place_id" : "ChIJ31ZDxf9bFkcRMsfoabyqNvI",
       "reference" : "CmRbAAAAkYaRbW71mqXFxJTz8y_rfb9R8lzxbHC8SHoF17lJFu7_bd-QIDH2BMUdY9e6hzeXsL9yygV5XlmbYTTLnKvJgER6_ibEHUX3pS_oz2iEEG9-sc_md10t0APZ_zJarIIjEhCQmUGf5S92W7QDg2LAjlMxGhQX5UgkaFJnR_ENP3LKCXD0RU4E5g",
       "scope" : "GOOGLE",
-      "types" : [ "amusement_park" ],
+      "types" : "amusement_park",
       "url" : "https://maps.google.com/?q=aleja+%C5%BBubrowa+15,+Krak%C3%B3w,+Polska&ftid=0x47165bffc54356df:0xf236aabc69e8c732",
       "utc_offset" : 60,
       "vicinity" : "Zwierzyniec"
@@ -5222,7 +5735,7 @@
       "place_id" : "ChIJLb6lr1FbFkcRbqvq1Ec4SM0",
       "reference" : "CmRbAAAAc-fgo2CFSOAeG1RVY9jcW2XZk44_b8z06e2GA-6TADy7uUYdgColw2t8i1n3PyLAOjbmlzCk_y9PzhYwUyMnQxD6mDl3Cvz8OYfFaFfqtjqlFRjROldelm7CWat7DLunEhD5tQaskhXshZBoJoBhUsnLGhT6BEaTlje5vCzGBFS7T-AeRZkh7w",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Franciszka+Maryewskiego+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b51afa5be2d:0xcd483847d4eaab6e",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -5293,7 +5806,7 @@
       "place_id" : "ChIJM3MTlhxFFkcRm1ls4_hyHFM",
       "reference" : "CmRbAAAA1C876XFelSD0UkIh47IB9Dv_L4n1LBMjC7s1ZkXZyTj9hFuRF1Tzzfe-KtAVzScuS3O5lIZ-CiEI9uj-3zrudY5DxgLvHAWKMlb9cRXmu1RWVuY6IAtGIIiMQF54ldUNEhAdfZNZ4G4MXN9Pmgg5_8lmGhSgos1vN0pxLw-VtSDUuPEeFzQqBw",
       "scope" : "GOOGLE",
-      "types" : [ "natural_feature" ],
+      "types" : "natural_feature",
       "url" : "https://maps.google.com/?q=Nowohuckie+%22molo%22+na+%C5%81%C4%85kach+Nowohuckich,+30-001+Krak%C3%B3w,+Polska&ftid=0x4716451c96137333:0x531c72f8e36c599b",
       "utc_offset" : 60,
       "vicinity" : "Nowa Huta"
@@ -5369,7 +5882,7 @@
       "place_id" : "ChIJGd8ts1NbFkcRBa0CNtB8s7s",
       "reference" : "CmRbAAAAkYil51uHX5tZFd0o7LNKIx25lZmYTr_QIiY3qkTz1tnnK2Gb3RBKgRrKNL4GYb462FXMlov2WdSMIeGVt9TkPvl158NeCDz49gla7RMc8TA5ChuC6yqxXkUujps9QdwTEhB8WzG1gTrNJLE8qZ8eZBx6GhRtcpPInpQrTJiNeQEkNcelmtreLw",
       "scope" : "GOOGLE",
-      "types" : [ "cementary" ],
+      "types" : "cemetery",
       "url" : "https://maps.google.com/?q=Wapienna+2,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b53b32ddf19:0xbbb37cd03602ad05",
       "utc_offset" : 60,
       "vicinity" : "Podgórze"
@@ -5440,7 +5953,7 @@
       "place_id" : "ChIJ_2fNfitFFkcRVI2VnMVj0j4",
       "reference" : "CmRbAAAAOnI7DA6kEiUud2Ze4zWtNG2WeV3o2n3W8KadoAxDmKCdUfHKD35lshys_pECenTTgTDVg862G5NEob6BTS69_EM-zGcGl_I72QbJ5JAiLuu9tZgICGt2mpMwkubyH6DEEhA-nAZME38L-dSk4AepXomYGhQ6shkUbrYqZQN0E_7n1DZbejxHvg",
       "scope" : "GOOGLE",
-      "types" : [ "amusement_park" ],
+      "types" : "amusement_park",
       "url" : "https://maps.google.com/?q=al.+Jana+Paw%C5%82a+II+66A,+Krak%C3%B3w,+Polska&ftid=0x4716452b7ecd67ff:0x3ed263c59c958d54",
       "utc_offset" : 60,
       "vicinity" : "Czyżyny"
@@ -5511,7 +6024,7 @@
       "place_id" : "ChIJHwzCLcdaFkcRHHeeusKyrVE",
       "reference" : "CmRbAAAAZ_O51Rgw7q37MTIHlXf3s9SvoUm2zUj7GdaUEMZJYwN8PzapPcZpOJzvoHf_oN-5Ik_3M1f4eqYUm8VydZxMwYpCSL9BF8sJLzoqi5AENP1WlMg--KE7o4GsikRwc8ekEhByB8-x9vJOEMJbd2C6SW4lGhSzHaCiBT4co0pa1zrIQ23_eCyrgg",
       "scope" : "GOOGLE",
-      "types" : [ "amusement_park" ],
+      "types" : "amusement_park",
       "url" : "https://maps.google.com/?q=Dobrego+Pasterza+126,+Krak%C3%B3w,+Polska&ftid=0x47165ac72dc20c1f:0x51adb2c2ba9e771c",
       "utc_offset" : 60,
       "vicinity" : "Mistrzejowice"
@@ -5582,7 +6095,7 @@
       "place_id" : "ChIJtahuEqRFFkcR_FvSEgFXEu4",
       "reference" : "CmRbAAAAFZlZhq7ola5sNXueSmaxGyBWa_KHRlM_RNqks1VzAo5engbhaSl0I80CZcAfylnZ7Sf7jl0CfyyOY-elGV2mDb87gyloErWlxRBM3cniOn-JHpHvxdzwH9UonW7rijHVEhAFGaL-FJ7jO-lQrOnieiLGGhRfgOF1gYyjgOmRMPDQcmpfrz5aGg",
       "scope" : "GOOGLE",
-      "types" : [ "old_town" ],
+      "types" : "old_town",
       "url" : "https://maps.google.com/?q=Ujastek+Mogilski+7,+Krak%C3%B3w,+Polska&ftid=0x471645a4126ea8b5:0xee12570112d25bfc",
       "utc_offset" : 60,
       "vicinity" : "Nowa Huta"
@@ -5590,4 +6103,3 @@
    "status" : "OK"
 }
 ]
-

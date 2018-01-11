@@ -1,9 +1,12 @@
 package simulation;
 
+import init.LocationCreator;
 import model.Location;
 import model.LocationType;
 import model.Person;
+import org.json.JSONException;
 
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,9 +19,18 @@ public class Simulation {
     List<Person> tourists;
     List<Location> locations;
 
-    public Simulation() {
+    public Simulation() throws IOException, JSONException {
         //jesli miejsce jest kryte trzeba mu ustawić setMaxSize(n);
-       locations = new LinkedList<>();
+        try {
+            locations = LocationCreator.createLocationsFromFile();
+            this.locations = locations;
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+       /*
         Location l1 = new Location("Old Town","12", LocationType.old_town);
         Location l2 = new Location("Square","12",LocationType.square);
         Location l3 = new Location("Park","12",LocationType.amusement_park);
@@ -28,6 +40,7 @@ public class Simulation {
         locations.add(l3);
         locations.add(l1);
         locations.add(l4);
+        */
         // locations = LocationCreator.getLocationList();
         this.recommendationSystem = new RecommendationSystem(locations);
         this.tourists = touristInit();
@@ -76,7 +89,7 @@ public class Simulation {
     }
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException, JSONException {
        Simulation simulation = new Simulation();
 
         for(int i=1;i<28;i++){

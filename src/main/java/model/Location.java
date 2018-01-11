@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import function.Functions;
 
+import java.util.ArrayList;
+
 /**
  * Created by Linus on 18.11.2017.
  */
@@ -13,7 +15,7 @@ public class Location {
     String name;
     @JsonProperty("place_id")
     String placeId;
-
+    @JsonProperty("types")
     LocationType types;
 
   private int amountOfTourists = 0;

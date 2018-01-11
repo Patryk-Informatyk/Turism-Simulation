@@ -6,16 +6,19 @@ import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import model.Location;
+import org.json.JSONException;
 import simulation.Simulation;
 
+import java.io.IOException;
 import java.util.List;
 
 public class Controller {
     Simulation simulation = new Simulation();
     List<Location> locations;
 
-    public Controller() {
-              locations = simulation.getLocations();
+    public Controller() throws IOException, JSONException {
+
+        locations = simulation.getLocations();
     }
        //dodajemy w scence buliderze nowego labela nadajemy mu fx:id i tu zmienna musi miec taka sama nazwe jak to id
     @FXML private Label park;
