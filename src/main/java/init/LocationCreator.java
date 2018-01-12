@@ -4,10 +4,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jdk.nashorn.internal.parser.JSONParser;
 import model.Location;
+import model.Person;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -18,12 +20,17 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 public class LocationCreator {
@@ -75,6 +82,24 @@ public class LocationCreator {
         return locations;
 	}
 
+    private List<String> parseFile() throws IOException {
+        List<String> id = new ArrayList<>();
+        Path path = Paths.get("locationsid.txt");
+        StringBuilder data = new StringBuilder();
+        Stream<String> lines = Files.lines(path);
+        lines.forEach(line -> id.add(line));
+        lines.close();
+        System.out.print(id);
+            return id;
+
+
+    }
+
+
+
+
+
+
     //zwraca placeId do miejsc poleconych w google
     public static List<String> getGoogleLocationList(){
 
@@ -122,8 +147,36 @@ public class LocationCreator {
             e.printStackTrace();}
         return url;
     }
+    public static String makeGetRequestToFile(String url, BufferedWriter writer){
+        try {
+            URL urlToConnection = new URL(url);
+            HttpURLConnection con = null;
+            con = (HttpURLConnection) urlToConnection.openConnection();
+            con.setRequestMethod("GET");
+            con.setRequestProperty("Content-Type", "application/json");
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            StringBuffer content = new StringBuffer();
 
- // przy pomocy placeid POBIERA dane o jakiejś lokacji
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+                writer.append(inputLine);
+                writer.newLine();
+            }
+            con.disconnect();
+            in.close();
+
+            return content.toString();
+        }
+        catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();}
+        return url;
+    }
+
+// przy pomocy placeid POBIERA dane o jakiejś lokacji
     private static Location createLocationUsingPlaceId(String placeId){
         //TODO try with resource
         try {
@@ -156,16 +209,17 @@ public class LocationCreator {
 
 
 
+    public void createPLaceFile() throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter("place.json"));
+        parseFile().stream().forEach(
+                id -> makeGetRequestToFile( "https://maps.googleapis.com/maps/api/place/details/json?placeid="
+                        +id+"&key=AIzaSyBvmCmjFCsAPTzJ9AnEF7WIJ6dt4LFxrEY&language=pl",writer));
+        writer.close();
 
-    public static void main(String[] args) throws IOException, JSONException  {
-       /*
+    public static void main(String[] args)  {
        LocationCreator lc =  new LocationCreator();
-
        lc.getGoogleLocationList().stream().forEach(
                id -> lc.createLocationUsingPlaceId(id)
        );
-       */
-       // createLocationsFromFile();
-      // getPlaceIdsFromCoords();
     }
 }
