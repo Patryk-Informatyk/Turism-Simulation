@@ -27,6 +27,7 @@ public class Location {
   private boolean isCovered;
   private double placeOverflow;
 
+
     public int getQueue() {
         return queue;
     }
@@ -46,7 +47,7 @@ public class Location {
     public Location(String name, String placeId, LocationType types) {
         this.name = name;
         this.placeId = placeId;
-        setTypes(types);
+        this.setTypes(types);
     }
 
 
@@ -80,6 +81,10 @@ public class Location {
 
     public int getAmountOfTourists() {
         return amountOfTourists;
+    }
+
+    public boolean isCoveredf(){
+        return isCovered;
     }
 
     @Override

@@ -29,6 +29,10 @@ private Weather  weather;
         weather = new Weather();
     }
 
+    public Weather getWeather(){
+        return weather;
+    }
+
 
 
 public  double countAttractiveInCurrentWeather(int month, int day, Location location){

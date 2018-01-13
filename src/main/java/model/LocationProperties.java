@@ -40,13 +40,12 @@ public class LocationProperties {
         this.cost = cost;
     }
 
-    public LocationProperties(boolean covered, double history, double activity, double art, double cost, double avgTime, double maxC) {
+    public LocationProperties(boolean covered, double history, double activity, double art, double cost, double maxC) {
         this.covered = covered;
         this.history = history;
         this.activity = activity;
         this.art = art;
         this.cost = cost;
-        this.averageTime = avgTime;
         this.maxCapacity = maxC;
     }
 

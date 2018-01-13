@@ -14,7 +14,7 @@ import java.util.List;
 
 //TODO
 public class Simulation {
-    private static final int amountOfTourists=2000;
+    private static final int amountOfTourists=5000;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -46,6 +46,14 @@ public class Simulation {
         this.tourists = touristInit();
     }
 
+    public RecommendationSystem getRecommendationSystem(){
+        return recommendationSystem;
+    }
+
+    public List<Person> getTourists(){
+        return this.tourists;
+    }
+
     public List<Location> getLocations() {
         return locations;
     }
@@ -75,13 +83,22 @@ public class Simulation {
     public String getDayInfoFromLocation(int i){
            return   locations.get(i).getName() + ' '+ locations.get(i).getAmountOfTourists() +  " + "+ locations.get(i).getQueue();
     }
+
+    public String getLocationsName(int i){
+        return   locations.get(i).getName();
+    }
+
     public String getDayInfoFromLocationByName(String name){
       Location location =  locations.parallelStream().filter(l->l.getName().equals(name)).findFirst().get();
            return   location.getName() + " "+ location.getAmountOfTourists() +  " + "+ location.getQueue();
     }
 
+    public Location getLocationByName(String name){
+        return locations.parallelStream().filter(l->l.getName().equals(name)).findFirst().get();
+    }
+
     public void checkAmountofTouristsInLocations(){
-      locations.stream().forEach(l->System.out.println("  Location: " +l.getName() + ">>"+ (l.getAmountOfTourists() +  " + Queue:"+ l.getQueue())));
+      locations.stream().forEach(l-> System.out.println("  Location: " +l.getName() + ">>"+ (l.getAmountOfTourists() +  " + Queue:"+ l.getQueue())));
     }
 
     public void endDayInLocations(){

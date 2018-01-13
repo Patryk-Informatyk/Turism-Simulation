@@ -1,10 +1,14 @@
 package gui;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import model.DayWeather;
 import model.Location;
 import org.json.JSONException;
 import simulation.Simulation;
@@ -21,39 +25,107 @@ public class Controller {
         locations = simulation.getLocations();
     }
        //dodajemy w scence buliderze nowego labela nadajemy mu fx:id i tu zmienna musi miec taka sama nazwe jak to id
-    @FXML private Label park;
-    @FXML private Label oldtown;
-    @FXML private Label museum;
+
+    @FXML private Label currentDateAndHourLabel;
+    @FXML private Label numberOfTouristsLabel;
+    @FXML private Label numberOfTouristsText;
     @FXML private Label date;
+    @FXML private Button changeParamsBtn;
+    @FXML private Button stopBtn;
+    @FXML private Button deselectBtn;
+    @FXML private ListView locationsListView  = new ListView();
+    @FXML private ListView detailsListView = new ListView();
+    public ObservableList details = FXCollections.observableArrayList(
+            "Name: ",
+            "Type: ",
+            "Amount of Tourists: ",
+            "Queue: ",
+            "Maximal size: ",
+            "Covered: ",
+            "Google place_id: ",
+            "Temperature: ",
+            "Solar: ",
+            "Precipation: ",
+            "Wind: "
+    );
+    public ObservableList items = FXCollections.observableArrayList();
     
-    
-    
+
     
     public void simulation(int day,int month){
-            date.setText("Date: " + month+"-" + day);
+            currentDateAndHourLabel.setText(month + "-" + day);
             simulation.simulateForDay(month,day);
-            simulation.checkAmountofTouristsInLocations();
-            locations.stream().forEach(l-> setTextToLabel(l.getName(),simulation.getDayInfoFromLocationByName(l.getName())));
+            //simulation.checkAmountofTouristsInLocations();
+            //setTextToListView();
+            //locations.stream().forEach(l-> setTextToLabel(l.getName(),simulation.getDayInfoFromLocationByName(l.getName())));
             simulation.endDayInLocations();
-        
-    }
-    
-    //po dodoaniu labela jeli miejsce jest zdefiniowane w simulation.location przepisyjemy name stamtad i odpowiadajacaego mu labela 
-    // jak nie to definiujemy w simulation nowy location
-  private  void setTextToLabel(String location, String text){
-        switch (location) {
-            case "Park" :   park.setText(text);
-           case "Old Town" :   oldtown.setText(text);
-            case "Museum" :   museum.setText(text);
-            default: System.err.println("NAZWA NIEPRZYPISANA DO LABELA " + location);
-                
-        }   
-  }
-  
-       //testowy onclikck niepotrzebny
-    @FXML protected void say(MouseEvent event) {
-        park.setText("nowy");
+            refreshDetails(day,month);
     }
 
+    public void refreshDetails(int day, int month){
+        if(details!=null){
+            DayWeather weather = simulation.
+                    getRecommendationSystem().
+                    getWeather().
+                    getWeatherInDay(month,day);
+            details.set(7,"Temperature: " + weather.getTemperature());
+            details.set(8,"Solar: " + weather.getSolar());
+            details.set(9,"Precipation: " + weather.getPrecipation());
+            details.set(10,"Wind: " + weather.getWind());
+        }
+    }
+
+    // Póki co wszystkie sa bez znaczenia
+    protected void setEvents(){
+        stopBtn.setOnAction(e -> {
+            changeParamsBtn.setDisable(false);
+            stopBtn.setText("START");
+            deselectBtn.setDisable(false);
+        });
+        changeParamsBtn.setOnAction(e -> {
+            changeParamsBtn.setDisable(true);
+            stopBtn.setText("STOP");
+            deselectBtn.setDisable(true);
+        });
+        deselectBtn.setOnAction(e -> {
+            changeParamsBtn.setDisable(false);
+            stopBtn.setText("START");
+            deselectBtn.setDisable(false);
+        });
+        numberOfTouristsLabel.setText(String.valueOf(simulation.getTourists().size()));
+    }
+
+    @FXML public void locationClickedForDetails(){
+        String locationName = String.valueOf(
+                locationsListView.
+                getSelectionModel().
+                getSelectedItem()
+        );
+        //System.out.println(locationName);
+        setTextToDetailsList(locationName);
+        detailsListView.refresh();
+    }
+
+
+    protected void setTextToDetailsList(String locationName){
+        Location current = simulation.getLocationByName(locationName);
+        //System.out.println(current.toString());
+        details.set(0,"Name: " + current.getName());
+        details.set(1,"Type: " + current.getTypes());
+        details.set(2,"Amount of Tourists: " + current.getAmountOfTourists());
+        details.set(3,"Queue: " + current.getQueue());
+        details.set(4,"Maximal size: " + current.getMaxSize());
+        details.set(5,"Covered: " + current.isCoveredf());
+        details.set(6,"Google place_id: " + current.getPlaceId());
+        detailsListView.setItems(details);
+    }
+
+    protected void setTextToListView(){
+        for(int i = 0; i < simulation.getLocations().size() ; i++){
+            items.add(simulation.getLocationsName(i));
+        }
+        locationsListView.setItems(items);
+  }
+  
 
 }
