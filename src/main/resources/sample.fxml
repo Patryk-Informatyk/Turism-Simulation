@@ -21,7 +21,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="590.0" prefWidth="708.0" style="-fx-background-image: url('file:/C:/Users/Comarch/Music/TEst23/src/main/java/gui/mapa.png');">
+      <AnchorPane prefHeight="590.0" prefWidth="708.0">
          <children>
             <SplitPane dividerPositions="0.2847025495750708" prefHeight="590.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <items>
@@ -29,22 +29,22 @@
                      <children>
                         <Label fx:id="date" layoutX="10.0" layoutY="10.0" text="Date">
                            <font>
-                              <Font size="20.0" />
+                              <Font name="System Italic" size="20.0" />
                            </font>
                         </Label>
                         <Label fx:id="currentDateAndHourLabel" layoutX="10.0" layoutY="40.0" text="-">
                            <font>
-                              <Font size="20.0" />
+                              <Font size="16.0" />
                            </font>
                         </Label>
                         <Label fx:id="numberOfTouristsText" layoutX="10.0" layoutY="70.0" text="Number of tourists">
                            <font>
-                              <Font size="20.0" />
+                              <Font name="System Italic" size="20.0" />
                            </font>
                         </Label>
                         <Label fx:id="numberOfTouristsLabel" layoutX="10.0" layoutY="100.0" text="-">
                            <font>
-                              <Font size="20.0" />
+                              <Font size="16.0" />
                            </font>
                         </Label>
                         <Button fx:id="stopBtn" layoutY="400.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="STOP" />
@@ -52,7 +52,7 @@
                         <Separator layoutX="-12.0" layoutY="70.0" prefHeight="2.0" prefWidth="219.0" />
                         <Separator layoutX="-2.0" layoutY="123.0" prefWidth="200.0" />
                         <ListView fx:id="locationsListView" layoutX="-1.0" layoutY="126.0" onMouseClicked="#locationClickedForDetails" prefHeight="278.0" prefWidth="208.0" />
-                        <Button fx:id="deselectBtn" layoutY="485.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="DESELECT" />
+                        <Button fx:id="deselectBtn" disable="true" layoutY="485.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="DESELECT" />
                      </children></Pane>
                   <ScrollPane prefHeight="200.0" prefWidth="200.0">
                      <content>

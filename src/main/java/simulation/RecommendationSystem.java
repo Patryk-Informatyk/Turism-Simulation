@@ -33,8 +33,6 @@ private Weather  weather;
         return weather;
     }
 
-
-
 public  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);

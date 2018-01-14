@@ -18,7 +18,7 @@
                   <Font name="System Bold" size="13.0" />
                </font>
         </Label>
-            <DatePicker fx:id="datePicker" />
+            <DatePicker fx:id="datePicker" promptText="default is 1.01, 0.00" />
       </children>
     </VBox>
     <HBox maxHeight="-Infinity" maxWidth="+Infinity" minHeight="-Infinity" minWidth="-Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1">

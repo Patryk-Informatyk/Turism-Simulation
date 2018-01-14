@@ -29,12 +29,13 @@ public class Controller {
     Timeline time;
     int day   = 1;
     int month = 1;
+    int hour = 0;
 
     public Controller() throws IOException, JSONException {
         locations = simulation.getLocations();
         time = new Timeline();
         time.setCycleCount(Timeline.INDEFINITE);
-        time.getKeyFrames().add(createKeyFrameLangtonAnt(1000));
+        time.getKeyFrames().add(createKeyFrameLangtonAnt(400));
         time.play();
     }
 
@@ -82,20 +83,36 @@ public class Controller {
             "Wind: "
     );
     public ObservableList items = FXCollections.observableArrayList();
+    public ObservableList defaultLocationsView = defaultLocationsViewInit();
+
+    public ObservableList defaultLocationsViewInit(){
+        ObservableList list = FXCollections.observableArrayList();
+        for(int i = 0; i < simulation.getLocations().size(); i++){
+            list.add(simulation.getDayInfoFromLocation(i));
+        }
+        return list;
+    }
     
 
     
-    public void simulation(int day,int month){
-            currentDateAndHourLabel.setText(month + "-" + day);
+    public void simulation(int day,int month, int hour){
+            currentDateAndHourLabel.setText(day + "." + month + ", "+ hour + ":00 - " + (hour+1) + ":00");
             simulation.simulateForDay(month,day);
             //simulation.checkAmountofTouristsInLocations();
             //setTextToListView();
             //locations.stream().forEach(l-> setTextToLabel(l.getName(),simulation.getDayInfoFromLocationByName(l.getName())));
             simulation.endDayInLocations();
-            refreshDetails(day,month);
+            // sztuczka z buttonem. Jak jest odblokowany, to wyswietla szczegoly lokacji
+            if(deselectBtn.isDisabled()){
+                setDefaultTextToListView();
+            }
+            else{
+                refreshDetails(day,month,hour);
+            }
+
     }
 
-    public void refreshDetails(int day, int month){
+    public void refreshDetails(int day, int month, int hour){
         if(details!=null){
             DayWeather weather = simulation.
                     getRecommendationSystem().
@@ -113,7 +130,6 @@ public class Controller {
     // Póki co wszystkie sa bez znaczenia
     protected void setEvents(){
         stopBtn.setOnAction(e -> {
-            deselectBtn.setDisable(false);
             stopBtn.setDisable(true);
             stopBtn.setVisible(false);
             resumeBtn.setDisable(false);
@@ -128,27 +144,19 @@ public class Controller {
             time.play();
         });
         deselectBtn.setOnAction(e -> {
-            deselectBtn.setDisable(false);
-            // zmienie go na pokazanie statystyk
+            deselectBtn.setDisable(true);
+            setDefaultTextToListView();
+        });
+        detailsListView.setOnContextMenuRequested(e -> {
+            if(deselectBtn.isDisabled()){
+                locationClickedForDetailsFromDetailsListView();
+            }
         });
         numberOfTouristsLabel.setText(String.valueOf(simulation.getTourists().size()));
     }
 
-    @FXML public void locationClickedForDetails(){
-        String locationName = String.valueOf(
-                locationsListView.
-                getSelectionModel().
-                getSelectedItem()
-        );
-        //System.out.println(locationName);
-        setTextToDetailsList(locationName);
-        detailsListView.refresh();
-    }
-
-
     protected void setTextToDetailsList(String locationName){
         currentLocationDetails = simulation.getLocationByName(locationName);
-        //System.out.println(current.toString());
         details.set(0,"Name: " + currentLocationDetails.getName());
         details.set(1,"Type: " + currentLocationDetails.getTypes());
         details.set(2,"Amount of Tourists: " + currentLocationDetails.getAmountOfTourists());
@@ -158,6 +166,35 @@ public class Controller {
         details.set(6,"Google place_id: " + currentLocationDetails.getPlaceId());
         detailsListView.setItems(details);
     }
+    protected void setDefaultTextToListView(){
+        for(int i = 0; i < simulation.getLocations().size() ; i++){
+            defaultLocationsView.set(i, simulation.getDayInfoFromLocation(i));
+        }
+        detailsListView.setItems(defaultLocationsView);
+    }
+
+    @FXML public void locationClickedForDetails(){
+        String locationName = String.valueOf(
+                locationsListView.
+                        getSelectionModel().
+                        getSelectedItem()
+        );
+        setTextToDetailsList(locationName);
+        deselectBtn.setDisable(false);
+        detailsListView.refresh();
+    }
+    @FXML public void locationClickedForDetailsFromDetailsListView(){
+        String locationName = String.valueOf(
+                locations.get(
+                        detailsListView.
+                        getSelectionModel().
+                        getSelectedIndex()
+                ).getName().toString()
+        );
+        setTextToDetailsList(locationName);
+        deselectBtn.setDisable(false);
+        detailsListView.refresh();
+    }
 
     protected void setTextToListView(){
         for(int i = 0; i < simulation.getLocations().size() ; i++){
@@ -165,12 +202,19 @@ public class Controller {
         }
         locationsListView.setItems(items);
   }
-    private KeyFrame createKeyFrameLangtonAnt(int delay)
-    {
+    private KeyFrame createKeyFrameLangtonAnt(int delay){
         return new KeyFrame(Duration.millis(delay), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                day++;
+                //day++;
+                if(hour < 23){
+                    hour++;
+                }
+                else{
+                    hour = 0;
+                    day++;
+                }
+
                 if((day > 31) && (month == 12))
                 {
                     month = 1;
@@ -195,7 +239,7 @@ public class Controller {
                     month++;
                     day = 1;
                 }
-                simulation(day,month);
+                simulation(day,month,hour);
             }
         });
     }

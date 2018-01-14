@@ -19,9 +19,6 @@ public class Location {
     LocationType types;
 
   private int amountOfTourists = 0;
-
-
-
   private int maxSize;
   private int queue;
   private boolean isCovered;

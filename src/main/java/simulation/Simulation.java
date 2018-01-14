@@ -81,7 +81,7 @@ public class Simulation {
     }
 
     public String getDayInfoFromLocation(int i){
-           return   locations.get(i).getName() + ' '+ locations.get(i).getAmountOfTourists() +  " + "+ locations.get(i).getQueue();
+           return   locations.get(i).getName() + ", "+ locations.get(i).getAmountOfTourists() +  " + "+ locations.get(i).getQueue();
     }
 
     public String getLocationsName(int i){
@@ -107,18 +107,6 @@ public class Simulation {
 
 
     public static void main(String[] args) throws IOException, JSONException {
-       Simulation simulation = new Simulation();
-
-        for(int i=1;i<28;i++){
-            System.out.println(">>DAY:"+i);
-            simulation.simulateForDay(1,i);
-            simulation.checkAmountofTouristsInLocations();
-            simulation.endDayInLocations();
-        }
-
-
-
-
 
     }
 

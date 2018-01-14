@@ -23,8 +23,9 @@ import java.time.LocalDate;
 public class Main extends Application {
 
     Timeline time;
-    int day=1;
-    int month=1;
+    int day   = 1;
+    int month = 1;
+    int hour  = 0;
 
     @FXML public DatePicker datePicker;
     @FXML public Button okButton;
@@ -77,16 +78,18 @@ public class Main extends Application {
         }
     }
 
-    /*
-    Tutaj cos nie działa, to setEvents. Do poprawy
-    */
-
     private KeyFrame createKeyFrameLangtonAnt(int delay,Controller controller)
     {
         return new KeyFrame(Duration.millis(delay), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                day++;
+                if(hour < 23){
+                    hour++;
+                }
+                else{
+                    hour = 0;
+                    day++;
+                }
                 if((day > 31) && (month == 12))
                 {
                     month = 1;
@@ -111,7 +114,7 @@ public class Main extends Application {
                     month++;
                     day = 1;
                 }
-                controller.simulation(day,month);
+                controller.simulation(day,month,hour);
             }
         });
     }
