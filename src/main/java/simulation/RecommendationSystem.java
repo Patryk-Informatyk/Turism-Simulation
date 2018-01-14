@@ -9,12 +9,23 @@ import model.Weather;
 import java.util.*;
 
 /**
- * Created by Linus on 25.11.2017.
+ * TODO
+ *
+ * @author      Patryk Zygmunt
+ * @author      Grzegorz Puczkowski
+ * @author      Hubert Rędzia
  */
 public class RecommendationSystem {
 
 private Weather  weather;
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param locationList locations list to set
+     */
     public void setLocationList(List<Location> locationList) {
         this.locationList = locationList;
     }
@@ -28,16 +39,44 @@ private Weather  weather;
         this.locationList = locationList;
         weather = new Weather();
     }
-
-
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @return      Weather
+     */
+    public Weather getWeather(){
+        return weather;
+    }
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month month number
+     * @param day day number
+     * @param location location to count attractivness
+     * @return indicator of weather
+     */
 public  double countAttractiveInCurrentWeather(int month, int day, Location location){
     double indicator = weather.countWeatherIndicator(month,day);
    // System.out.println(indicator);
     boolean covered =  location.getTypes().getLocationProperties().isCovered();
         return covered ? 100 : indicator;
 }
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param person person
+     * @param location location
+     * @return Attractivness without cost
+     */
 public double countAttractiveForPersonWithoutCost(Person person,Location location){
     return Functions.attractiveForPersonWithoutCostFunction(
             person.getActivity(),location.getTypes().getLocationProperties().getActivity(),
@@ -45,20 +84,58 @@ public double countAttractiveForPersonWithoutCost(Person person,Location locatio
             person.getHistory(),location.getTypes().getLocationProperties().getHistory());
 }
 //bug
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param person person
+     * @param location location
+     * @return Cost indicator
+     */
 private double getCostIndicator( Person person,Location location){
     return Functions.expensiveIndicatorForPersonFunction
             (location.getTypes().getLocationProperties().getCost(),person.getRich());
 }
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param location Location
+     * @return place overflow
+     */
 private double getIndicatorForLocationOverflow(Location location){
     return location.countPlaceOverflow();
 }
 
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param person
+     * @param location
+     * @return Attractivness with cost
+     */
   private double countAttractiveForPerson(Person person,Location location){
     return Functions.attractiveForPersonWithCostFunction(countAttractiveForPersonWithoutCost(person,location),getCostIndicator(person,location));
   }
-
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month month
+     * @param day day
+     * @param location location
+     * @param person person
+     * @return Attractivness
+     */
 public double countAttractive(int month,int day,Location location,Person person){
       return Functions.attractiveFunction(
               countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location),getIndicatorForLocationOverflow(location));
@@ -67,6 +144,17 @@ public double countAttractive(int month,int day,Location location,Person person)
 //TODO turyst moze nie wybrac zadnej lokalizacji
 //liczy mape skumulowaną i ocena wszystkich okacji sumuje sie do 100
     // czyli <zamek,33>,<inny zamek, 66>
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month month
+     * @param day day
+     * @param person person
+     * @return map of rated locations
+     */
 public Map<Location,Double> rateLocations(int month, int day, Person person){
     Map<Location,Double> ratesMap = new LinkedHashMap<>();
     Map<Location,Double> comulatedRatesMap = new LinkedHashMap<>();
@@ -94,6 +182,17 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
 
 
 //rand wybiuera 0-100 i sprawdza pierwsza lokacje która   ma ta skumulowana wartość wieksa niż liczba wylosowana
+    /**
+     * TODO
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month month
+     * @param day day
+     * @param person person
+     * @return Recommend location
+     */
 public Location recommendLocation(int month, int day, Person person) {
     //lokacje dodane  testowe
     int iterator=0;

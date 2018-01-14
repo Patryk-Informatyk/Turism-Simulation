@@ -20,7 +20,13 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * Created by Linus on 19.11.2017.
+ * Klasa obsługująca pogodę
+ *
+ * @author      Patryk Zygmunt
+ * @author      Grzegorz Puczkowski
+ * @author      Hubert Rędzia
+ * @version     1.0
+ * @since       1.0
  */
 public class WeatherChecker {
 
@@ -33,7 +39,16 @@ public class WeatherChecker {
     //token ważny godzine
 
 
-
+    /**
+     * Co to wlasciwie robi?
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws IOException
+     * @throws ProtocolException
+     * @return Authorization response
+     */
     private static String getAuthorizationResponse(){
         try {
             URL urlToConnection = new URL("https://api.awhere.com/oauth/token");
@@ -72,7 +87,15 @@ public class WeatherChecker {
     }
 
 
-
+    /**
+     * Funkcja pobierająca token autoryzujący. Token jest ważny godzinę
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws JSONException
+     * @return Authorization token
+     */
     private static String getAuthorizationToken(){
         try {
             JSONObject jsonAuth = new JSONObject(getAuthorizationResponse());
@@ -83,7 +106,18 @@ public class WeatherChecker {
         return null;
     }
 
-    public static String getWeatherResponse(String url){
+    /**
+     * Funkcja zwraca odpowiedź serwera Google przy zapytaniu o pogodę. Odpowiedź zapisuje do pliku
+     * weather.json w formie json.
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param url adres strony
+     * @throws IOException on connection faiure
+     * @return Actual weather
+     */
+    public static String getWeatherResponse(String url) throws IOException{
         try {
             URL urlToConnection = new URL(url);
             HttpURLConnection con = null;
@@ -117,8 +151,17 @@ public class WeatherChecker {
 
 
 
-
- public static MonthWeather getWeatherInMonth(int month){
+    /**
+     * costam
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month pożądany miesiąc
+     * @throws IOException on getWeatherResponse failure
+     * @return sth
+     */
+ public static MonthWeather getWeatherInMonth(int month) throws IOException {
         try {
             String monthUrl = month < 9 ? "0" + month: Integer.toString(month);
            JSONObject jsonMonth = new JSONObject(
@@ -139,7 +182,14 @@ public class WeatherChecker {
     }
 
 
-//now read from file
+    /**
+     * Wczytuje informacje na temat pogody z pliku weather.json dla całego roku
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @return list of MonthWeather elements
+     */
     public static List<MonthWeather> getWeatherForYear(){
         try {
           //  JSONObject jsonYear = new JSONObject(
@@ -179,7 +229,19 @@ public class WeatherChecker {
 
 
 
-
+    /**
+     * Parsuje JSONa weather.json i przypisuje poszczególnym dniom prognozy pogody
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     *
+     * @param i index
+     * @param jsonObject object to parse
+     * @throws IOException
+     * @throws ProtocolException
+     * @return new element of DayWeather
+     */
     private static DayWeather parseJsonToDay(int i,JSONObject jsonObject) {
         final String[] propertiesArr ={"meanTemp","precipitation","solar","averageWind"};
         try {
