@@ -23,7 +23,7 @@ import java.time.LocalDate;
 public class Main extends Application {
 
     Timeline time;
-    int day=0;
+    int day=1;
     int month=1;
 
     @FXML public DatePicker datePicker;
@@ -31,22 +31,30 @@ public class Main extends Application {
     @FXML public Button cancelButton;
 
     @FXML public void okButtonOnAction() throws IOException {
+        okButton.setDisable(true);
+        datePicker.setDisable(true);
         LocalDate date = datePicker.getValue();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/sample.fxml"));
         Parent troot = loader.load();
         Stage stage = new Stage();
         stage.setTitle("Tourismulation");
         stage.setScene(new Scene(troot));
-        stage.show();
+
         Controller controller = (Controller) loader.getController();
         if (date != null) {
             month = date.getMonthValue();
-            day = date.getDayOfMonth();
+            day = date.getDayOfMonth()-1;
+            controller.setMonth(month);
+            controller.setDay(day);
         }
+        controller.setStage(stage);
+        controller.getStage().show();
+        /*
         time = new Timeline();
         time.setCycleCount(Timeline.INDEFINITE);
         time.getKeyFrames().add(createKeyFrameLangtonAnt(1000, controller));
         time.play();
+        */
         controller.setTextToListView();
         controller.setEvents();
     }
@@ -91,7 +99,7 @@ public class Main extends Application {
                 }
                 else if((day > 31) && (
                         (month == 1)||(month == 3)||(month == 5)||(month == 7)||(month == 8)||(month == 10)
-                        ))
+                ))
                 {
                     month++;
                     day = 1;
@@ -103,7 +111,7 @@ public class Main extends Application {
                     month++;
                     day = 1;
                 }
-                controller.simulation(day,month);            
+                controller.simulation(day,month);
             }
         });
     }

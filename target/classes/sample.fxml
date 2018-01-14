@@ -21,9 +21,9 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="742.0" prefWidth="708.0" style="-fx-background-image: url('file:/C:/Users/Comarch/Music/TEst23/src/main/java/gui/mapa.png');">
+      <AnchorPane prefHeight="590.0" prefWidth="708.0" style="-fx-background-image: url('file:/C:/Users/Comarch/Music/TEst23/src/main/java/gui/mapa.png');">
          <children>
-            <SplitPane dividerPositions="0.2847025495750708" prefHeight="742.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <SplitPane dividerPositions="0.2847025495750708" prefHeight="590.0" prefWidth="708.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <items>
                   <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
                      <children>
@@ -47,12 +47,12 @@
                               <Font size="20.0" />
                            </font>
                         </Label>
-                        <Button fx:id="stopBtn" layoutY="480.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="202.0" text="STOP" />
-                        <Button fx:id="changeParamsBtn" disable="true" layoutY="400.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="202.0" text="Change parameters" />
+                        <Button fx:id="stopBtn" layoutY="400.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="STOP" />
+                        <Button fx:id="resumeBtn" disable="true" layoutY="400.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="RESUME" visible="false" />
                         <Separator layoutX="-12.0" layoutY="70.0" prefHeight="2.0" prefWidth="219.0" />
                         <Separator layoutX="-2.0" layoutY="123.0" prefWidth="200.0" />
                         <ListView fx:id="locationsListView" layoutX="-1.0" layoutY="126.0" onMouseClicked="#locationClickedForDetails" prefHeight="278.0" prefWidth="208.0" />
-                        <Button fx:id="deselectBtn" layoutX="-3.0" layoutY="565.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="202.0" text="DESELECT" />
+                        <Button fx:id="deselectBtn" layoutY="485.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="85.0" prefWidth="208.0" text="DESELECT" />
                      </children></Pane>
                   <ScrollPane prefHeight="200.0" prefWidth="200.0">
                      <content>
