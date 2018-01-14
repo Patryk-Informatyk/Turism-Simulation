@@ -25,10 +25,46 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-
+/**
+ * Tutaj bedzie kozacki opis klasy
+ *
+ * @author      Patryk Zygmunt
+ * @author      Grzegorz Puczkowski
+ * @author      Hubert Rędzia
+ * @version     1.0
+ * @since       1.0
+ */
 public class LocationCreator {
 
-
+    /**
+     * Wczytuje dane z pliku place.json z głównego katalogu i zwraca je w liście, której elementy
+     * odpowiadają poszczególnym lokacjom. Mają one formę JSONa, przykładowy element wygląda tak:
+     * <p>
+     * {
+     * "html_attributions" : [],
+     * "result" : {
+     * "address_components" : [],
+     * "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+     * "id" : "3cb926b117a6c10f4d0766f6a08d5653398db5e9",
+     * "name" : "Ruiny hotelu",
+     * "place_id" : "ChIJtahuEqRFFkcR_FvSEgFXEu4",
+     * "reference" : "CmRbAAAAFZlZhq7ola5sNXueSmaxGyBWa_KHRlM_RNqks1VzAo5engbhaSl0I80CZcAfylnZ7Sf7jl0CfyyOY-elGV2mDb87gyloErWlxRBM3cniOn-JHpHvxdzwH9UonW7rijHVEhAFGaL-FJ7jO-lQrOnieiLGGhRfgOF1gYyjgOmRMPDQcmpfrz5aGg",
+     * "scope" : "GOOGLE",
+     * "types" : "old_town",
+     * },
+     * "status" : "OK"
+     * }
+     * <p>
+     * Zwracana lista ma tyle elementów, ile wczytywany json zawiera lokacji
+     *
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws IOException when cannot load place.json
+     * @throws JSONException when json fail
+     * @return list od locations in json style wrapped in String
+     */
     ///https://developers.google.com/places/web-service/details dokumentacje
     public static List<String> getLocationsListFromFile() throws IOException, JSONException{
         // ------ poniższy kod wczytuje do Stringa content plik ------------------
@@ -40,23 +76,29 @@ public class LocationCreator {
                 content = content + line + "\n";
                 line = br.readLine();
              }
-            // System.out.print(content);
         } finally {
             br.close();
         }
-        // ---------------------------------------------------------------
+
         JSONArray jsonPlaces = new JSONArray(content.toString());
         List<String> locationList = new ArrayList();
-        //ObjectMapper mapper = new ObjectMapper();
         for(int i=0;i<jsonPlaces.length();i++){
             JSONObject jsonObject = jsonPlaces.getJSONObject(i);
             locationList.add(jsonObject.toString());
-            //Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
         }
         return locationList;
     }
 
-
+    /**
+     * Mapuje wczytane z pliku json lokacje i mapuje je z przyjętymi typami {@link model.LocationType}
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws IOException when cannot load place.json
+     * @throws JSONException when json fail
+     * @return list of created locations
+     */
 	public static List<Location> createLocationsFromFile() throws IOException, JSONException {
 
 		List<String> jsonLocationList = getLocationsListFromFile();
@@ -75,8 +117,17 @@ public class LocationCreator {
         return locations;
 	}
 
-    //zwraca placeId do miejsc poleconych w google
-    public static List<String> getGoogleLocationList(){
+    /**
+     * Wysyła zapytanie do Google Places o placeID lokacji w pobliżu Krakowa
+     *
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws IOException on failure
+     * @return list of placeIDs from Google Places Api
+     */
+    public static List<String> getGoogleLocationList() throws IOException {
 
             String content =
                     makeGetRequest("https://maps.googleapis.com/maps/api/place/textsearch/json" +
@@ -98,7 +149,17 @@ public class LocationCreator {
         return null;
         }
 
-    public static String makeGetRequest(String url){
+    /**
+     * Funkcja wysyłająca zapytanie na wskazany adres
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param url adres strony
+     * @throws IOException when ?
+     * @return response from site in String format
+     */
+    public static String makeGetRequest(String url) throws IOException{
         try {
             URL urlToConnection = new URL(url);
             HttpURLConnection con = null;
@@ -123,7 +184,18 @@ public class LocationCreator {
         return url;
     }
 
- // przy pomocy placeid POBIERA dane o jakiejś lokacji
+    /**
+     * Funkcja pobiera dane z serwera, przy pomocy placeID
+     * i tworzy lokacje na podstawie odpowiedzi i zwróconego typu
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param placeId ID lokacji
+     * @throws IOException when cannot load place.json
+     * @throws JSONException when json fail
+     * @return created location
+     */
     private static Location createLocationUsingPlaceId(String placeId){
         //TODO try with resource
         try {
@@ -147,8 +219,16 @@ public class LocationCreator {
         }
         return null;
     }
-    // tworzy lista lokacji na podstawie polecanych w gogle
-    public static List<Location> getLocationList(){
+    /**
+     * Funkcja tworzy listę lokacji, na podstawie odpowiedzi od serwera Google
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @throws IOException on failure
+     * @return Created list of locations
+     */
+    public static List<Location> getLocationList() throws IOException {
       return   getGoogleLocationList().stream().map(
                 id -> createLocationUsingPlaceId(id))
                 .collect(Collectors.toList());

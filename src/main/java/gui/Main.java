@@ -20,6 +20,15 @@ import javafx.util.Duration;
 import java.io.IOException;
 import java.time.LocalDate;
 
+/**
+ * Tutaj bedzie kozacki opis klasy
+ *
+ * @author      Patryk Zygmunt
+ * @author      Grzegorz Puczkowski
+ * @author      Hubert Rędzia
+ * @version     1.0
+ * @since       1.0
+ */
 public class Main extends Application {
 
     Timeline time;
@@ -31,6 +40,14 @@ public class Main extends Application {
     @FXML public Button okButton;
     @FXML public Button cancelButton;
 
+    /**
+     * Uruchamia symulację, blokując możliwość zmiany początkowej daty oraz uruchomienia drugiej symulacji,
+     * otwiera ją w nowym oknie.
+     * <p>
+     * Pobiera dane wprowadzone przez użytkownika i przekazuje je do symulacji
+     *
+     * @throws IOException throws IOException if cannot load sample.fxml
+     */
     @FXML public void okButtonOnAction() throws IOException {
         okButton.setDisable(true);
         datePicker.setDisable(true);
@@ -60,11 +77,19 @@ public class Main extends Application {
         controller.setEvents();
     }
 
+    /**
+     * Kończy pracę aplikacji
+     *@since 1.0
+     */
     @FXML public void cancelButtonOnAction(){
         Platform.exit();
     }
 
 
+    /**
+     * Uruchamiana automatycznie, służy do wyświetlenia okna dialogowego, pytającego użytkownika preferencje symulacji
+     * @since       1.0
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader start = new FXMLLoader(getClass().getResource("/start.fxml"));

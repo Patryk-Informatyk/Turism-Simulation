@@ -1,7 +1,11 @@
 package model;
 
 /**
- * Created by Linus on 25.11.2017.
+ * Enum to create locations mapping them with described locations' types.
+ *
+ * @author      Patryk Zygmunt
+ * @author      Grzegorz Puczkowski
+ * @author      Hubert Rędzia
  */
 public enum LocationType {
     //te nieuzupełnione typy trzeba podefiniowac i mozna dodac własne
@@ -38,7 +42,13 @@ public enum LocationType {
     LocationType(LocationProperties locationProperties) {
         this.locationProperties = locationProperties;
     }
-
+    /**
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @return      Location's properties
+     */
     public LocationProperties getLocationProperties() {
         return locationProperties;
     }
