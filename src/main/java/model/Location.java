@@ -134,6 +134,12 @@ public class Location {
         if(isMaxTouristAmount() && isCovered) queue++;
         else amountOfTourists++;
     }
+
+    public void removeTourist(){
+        if(isMaxTouristAmount() && isCovered) queue--;
+        else amountOfTourists--;
+    }
+
     /**
      * "Close" day in locations, sets amountOfTourists and queue to number 0
      *

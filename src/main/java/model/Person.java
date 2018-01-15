@@ -13,9 +13,11 @@ private double art;
 private double history;
 private double rich;
 private boolean busy=false;
+public boolean onWay=false;
 private double energy;
 public double restTimeInLocation;
 public Location actualLocation;
+public Location prevLocation;
 public List<Location>  alreadyVisitedLocation= new ArrayList<>();
 
     public double getRestTimeInLocation() {

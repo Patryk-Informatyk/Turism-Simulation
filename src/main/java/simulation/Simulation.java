@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=5;
+    private static final int amountOfTourists=1;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -112,15 +112,20 @@ public class Simulation {
      * @param day   Day number in month
      */
     public void simulate(int month, int day, int hour){
-        if(hour==0)
-            endDayInLocations();
+
         for(int j=0;j<4;j++) {
             for (Person tourist : tourists) {
                 if (tourist.isBusy()) {
                     tourist.restTimeInLocation -= 0.15;
                     if (tourist.restTimeInLocation < 0)
                         tourist.setBusy(false);
-                } else {
+                }
+                else if(tourist.onWay){
+                    tourist.restTimeInLocation -= 0.15;
+                    if (tourist.restTimeInLocation < 0)
+                        endWayToLocation(tourist);
+                }
+                else {
                     recommendNewLocation(month, day, tourist);
                 }
             }
@@ -130,12 +135,28 @@ public class Simulation {
    private void  recommendNewLocation(int month, int day, Person person){
        Location pLocation;
        pLocation = recommendationSystem.recommendLocation(month, day, person);
-       locations.get(locations.indexOf(pLocation)).addTourist();
-       person.setRestTimeInLocation(timeToSpendInLocation(pLocation));
-       person.setBusy(true);
+       person.prevLocation = person.actualLocation;
        person.actualLocation = pLocation;
-       person.alreadyVisitedLocation.add(pLocation);
+       person.onWay = true;
+       if(person.prevLocation !=null){
+           locations.get(locations.indexOf(person.prevLocation)).removeTourist();
+       person.setRestTimeInLocation(DIstanceCounter.countWay(
+               person.prevLocation.latitude,person.actualLocation.latitude,
+               person.prevLocation.longitude,person.actualLocation.longitude
+       ));}
+       else{
+           endWayToLocation(person);
+       }
 
+
+   }
+
+   private void endWayToLocation(Person person){
+       locations.get(locations.indexOf(person.actualLocation)).addTourist();
+       person.setBusy(true);
+       person.onWay=false;
+       person.setRestTimeInLocation(timeToSpendInLocation(person.actualLocation));
+       person.alreadyVisitedLocation.add(person.actualLocation);
    }
 
     private double timeToSpendInLocation(Location pLocation) {
@@ -209,7 +230,9 @@ public class Simulation {
         locations.stream().forEach(l->l.endDay());
         tourists.parallelStream().forEach(p->{
             p.actualLocation = null;
+            p.prevLocation = null;
             p.setBusy(false);
+            p.onWay =false;
             p.alreadyVisitedLocation = new ArrayList<>();
         });
     }
