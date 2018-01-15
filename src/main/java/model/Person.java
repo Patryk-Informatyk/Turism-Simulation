@@ -14,6 +14,7 @@ private double history;
 private double rich;
 private boolean busy=false;
 public boolean onWay=false;
+public boolean inQueue;
 private double energy;
 public double restTimeInLocation;
 public Location actualLocation;

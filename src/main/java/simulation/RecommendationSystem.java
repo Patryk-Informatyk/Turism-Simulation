@@ -18,25 +18,12 @@ import java.util.*;
 public class RecommendationSystem {
 
 private Weather  weather;
-    /**
-     * TODO
-     *
-     * @author      Patryk Zygmunt
-     * @author      Grzegorz Puczkowski
-     * @author      Hubert Rędzia
-     * @param locationList locations list to set
-     */
-    public void setLocationList(List<Location> locationList) {
-        this.locationList = locationList;
-    }
 
     public RecommendationSystem() {
     }
 
-    private List<Location> locationList;
 
     public RecommendationSystem( List<Location> locationList) {
-        this.locationList = locationList;
         weather = new Weather();
     }
     /**
@@ -109,6 +96,7 @@ private double getCostIndicator( Person person,Location location){
      */
 private double getIndicatorForLocationOverflow(Location location){
     return location.countPlaceOverflow();
+
 }
 
     /**
@@ -164,7 +152,7 @@ public double countAttractive(int month,int day,Location location,Person person)
      * @param person person
      * @return map of rated locations
      */
-public Map<Location,Double> rateLocations(int month, int day, Person person){
+public Map<Location,Double> rateLocations(int month, int day, Person person,List<Location> locationList){
     Map<Location,Double> ratesMap = new LinkedHashMap<>();
     Map<Location,Double> comulatedRatesMap = new LinkedHashMap<>();
     double lastRate=0;
@@ -172,8 +160,9 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
    
     for (Location location:locationList
          ) {
-        if(person.alreadyVisitedLocation.contains(location)) lastRate+= 0;
-        else lastRate=countAttractive(month,day,location,person);
+        //if(person.alreadyVisitedLocation.contains(location)) lastRate+= 0;
+       // else
+            lastRate=countAttractive(month,day,location,person);
 
         cumulatedRate+=lastRate;
             ratesMap.put(location,lastRate);
@@ -204,10 +193,10 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
      * @param person person
      * @return Recommend location
      */
-public Location recommendLocation(int month, int day, Person person) {
+public Location recommendLocation(int month, int day, Person person,List<Location> locationList) {
     //lokacje dodane  testowe
     int iterator=0;
-    Map<Location,Double> ratesMap = rateLocations(month,day,person);
+    Map<Location,Double> ratesMap = rateLocations(month,day,person,locationList);
     List<Location>  result = new ArrayList<>();
    double randomValue = Math.random()*100;
 
@@ -228,7 +217,7 @@ public Location recommendLocation(int month, int day, Person person) {
         System .out.println(rc.weather.getWeatherInDay(1,26));
         System .out.println(rc.countAttractiveInCurrentWeather(1,26,l));
         System .out.println(rc.countAttractiveForPerson(person,l));
-        System.out.print(rc.recommendLocation(1,26,person));
+      //  System.out.print(rc.recommendLocation(1,26,person));
     }
 
 

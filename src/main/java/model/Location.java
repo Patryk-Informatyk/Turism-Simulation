@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import function.Functions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Tutaj bedzie kozacki opis klasy
  *
@@ -27,6 +30,7 @@ public class Location {
     private double averageSpendTime;
     public double latitude;
     public double longitude;
+    public List<Person> touristInQueue=new ArrayList<>();
 
     public double getAverageSpendTime() {
         return averageSpendTime;
@@ -130,14 +134,23 @@ public class Location {
      * @author      Grzegorz Puczkowski
      * @author      Hubert Rędzia
      */
-    public void addTourist(){
-        if(isMaxTouristAmount() && isCovered) queue++;
-        else amountOfTourists++;
+    public void addTourist(Person person){
+        if(isMaxTouristAmount() && isCovered){
+            queue++;
+            person.inQueue =true;
+            touristInQueue.add(person);
+        }
+        else  amountOfTourists++;
     }
 
     public void removeTourist(){
-        if(isMaxTouristAmount() && isCovered) queue--;
-        else amountOfTourists--;
+        if(isMaxTouristAmount() && isCovered){
+             if(touristInQueue.size()>0){
+                 queue--;
+                 touristInQueue.get(0).inQueue = false;
+                 touristInQueue.remove(0);
+            }   }
+        else if (amountOfTourists>0) amountOfTourists--;
     }
 
     /**
@@ -150,6 +163,7 @@ public class Location {
     public void endDay(){
         this.amountOfTourists = 0;
         this.queue = 0;
+        touristInQueue = new ArrayList<>();
        
     }
 

@@ -30,7 +30,9 @@ public class Functions {
      * @return  new queue to location
      */
     public static double queueToLocationFunction(int maxLocationSize,int queue){
-        return Math.max(0,((1 - (double)queue / maxLocationSize)*100));
+        if(queue==0)return 100.0;
+        else
+        return Math.max(0,(Math.pow((1 - (double)queue / maxLocationSize),7)*100));
     }
     /**
      * Counts attractive for person without cost
@@ -105,6 +107,6 @@ public class Functions {
      * @return Attractivness of location for tourist
      */
     public static double attractiveFunction(double forPerson, double weather, double overflow,double distance) {
-        return (forPerson + (weather) + (overflow*150)+distance)/7;
+        return (forPerson + (weather) + (overflow*4)+distance)/7;
     }
 }

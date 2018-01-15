@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=1;
+    private static final int amountOfTourists=30;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -115,7 +115,9 @@ public class Simulation {
 
         for(int j=0;j<4;j++) {
             for (Person tourist : tourists) {
-                if (tourist.isBusy()) {
+                if(tourist.inQueue){
+                }
+               else  if (tourist.isBusy()) {
                     tourist.restTimeInLocation -= 0.15;
                     if (tourist.restTimeInLocation < 0)
                         tourist.setBusy(false);
@@ -134,7 +136,7 @@ public class Simulation {
 
    private void  recommendNewLocation(int month, int day, Person person){
        Location pLocation;
-       pLocation = recommendationSystem.recommendLocation(month, day, person);
+       pLocation = recommendationSystem.recommendLocation(month, day, person,locations);
        person.prevLocation = person.actualLocation;
        person.actualLocation = pLocation;
        person.onWay = true;
@@ -152,7 +154,7 @@ public class Simulation {
    }
 
    private void endWayToLocation(Person person){
-       locations.get(locations.indexOf(person.actualLocation)).addTourist();
+       locations.get(locations.indexOf(person.actualLocation)).addTourist(person);
        person.setBusy(true);
        person.onWay=false;
        person.setRestTimeInLocation(timeToSpendInLocation(person.actualLocation));
