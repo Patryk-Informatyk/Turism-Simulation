@@ -31,7 +31,7 @@ import java.util.stream.Stream;
 public class WeatherChecker {
 
 
-  private static  String token =  getAuthorizationToken();
+ private static  String token = null;// getAuthorizationToken();
 
 
    /// http://developer.awhere.com/api/reference/weather/norms

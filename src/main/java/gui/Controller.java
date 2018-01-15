@@ -7,13 +7,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import model.DayWeather;
@@ -147,11 +141,12 @@ public class Controller {
      */
     public void simulation(int day,int month, int hour){
             currentDateAndHourLabel.setText(day + "." + month + ", "+ hour + ":00 - " + (hour+1) + ":00");
-            simulation.simulateForDay(month,day);
-            //simulation.checkAmountofTouristsInLocations();
+            simulation.simulate(month,day,hour);
+            simulation.checkAmountofTouristsInLocations();
             //setTextToListView();
-            //locations.stream().forEach(l-> setTextToLabel(l.getName(),simulation.getDayInfoFromLocationByName(l.getName())));
-            simulation.endDayInLocations();
+          //  locations.stream().forEach(l-> System.out.println(simulation.getDayInfoFromLocationByName(l.getName())));
+            //locations = simulation.getLocations();
+            //simulation.endDayInLocations();
             // sztuczka z buttonem. Jak jest odblokowany, to wyswietla szczegoly lokacji
             if(deselectBtn.isDisabled()){
                 setDefaultTextToListView();
@@ -320,6 +315,7 @@ public class Controller {
                     hour++;
                 }
                 else{
+                    simulation.endDayInLocations();
                     hour = 0;
                     day++;
                 }

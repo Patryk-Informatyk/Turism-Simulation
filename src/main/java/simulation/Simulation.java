@@ -2,11 +2,11 @@ package simulation;
 
 import init.LocationCreator;
 import model.Location;
-import model.LocationType;
 import model.Person;
 import org.json.JSONException;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=5000;
+    private static final int amountOfTourists=5;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -111,13 +111,39 @@ public class Simulation {
      * @param month Month number in year
      * @param day   Day number in month
      */
-    public void simulateForDay(int month,int day){
-        Location pLocation;
-        for(int i=0;i<amountOfTourists;i++){
-            pLocation = recommendationSystem.recommendLocation(month,day,tourists.get(i));
-            locations.get(locations.indexOf(pLocation)).addTourist();
+    public void simulate(int month, int day, int hour){
+        if(hour==0)
+            endDayInLocations();
+        for(int j=0;j<4;j++) {
+            for (Person tourist : tourists) {
+                if (tourist.isBusy()) {
+                    tourist.restTimeInLocation -= 0.15;
+                    if (tourist.restTimeInLocation < 0)
+                        tourist.setBusy(false);
+                } else {
+                    recommendNewLocation(month, day, tourist);
+                }
+            }
         }
     }
+
+   private void  recommendNewLocation(int month, int day, Person person){
+       Location pLocation;
+       pLocation = recommendationSystem.recommendLocation(month, day, person);
+       locations.get(locations.indexOf(pLocation)).addTourist();
+       person.setRestTimeInLocation(timeToSpendInLocation(pLocation));
+       person.setBusy(true);
+       person.actualLocation = pLocation;
+       person.alreadyVisitedLocation.add(pLocation);
+
+   }
+
+    private double timeToSpendInLocation(Location pLocation) {
+           double averagTime =  pLocation.getAverageSpendTime();
+           return (0.5*averagTime)+averagTime * Math.random();
+    }
+
+
     /**
      *
      * @author      Patryk Zygmunt
@@ -181,11 +207,21 @@ public class Simulation {
      */
     public void endDayInLocations(){
         locations.stream().forEach(l->l.endDay());
+        tourists.parallelStream().forEach(p->{
+            p.actualLocation = null;
+            p.setBusy(false);
+            p.alreadyVisitedLocation = new ArrayList<>();
+        });
     }
 
 
     public static void main(String[] args) throws IOException, JSONException {
 
+        Simulation simulation =  new Simulation();
+        for(int i =1;i<24;i++) {
+            simulation.simulate(3, 12, i);
+            simulation.checkAmountofTouristsInLocations();
+        }
     }
 
 

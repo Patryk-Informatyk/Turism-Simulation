@@ -124,6 +124,14 @@ private double getIndicatorForLocationOverflow(Location location){
   private double countAttractiveForPerson(Person person,Location location){
     return Functions.attractiveForPersonWithCostFunction(countAttractiveForPersonWithoutCost(person,location),getCostIndicator(person,location));
   }
+
+  private double countDistanceIndicator(Person person,Location location){
+      if(person.actualLocation ==null) return 100;
+      double distance  = DIstanceCounter.distance(person.actualLocation.latitude,location.latitude,
+                                            person.actualLocation.longitude,location.longitude);
+      return ((3000-distance)/3000)*100;
+
+  }
     /**
      * TODO
      *
@@ -138,7 +146,8 @@ private double getIndicatorForLocationOverflow(Location location){
      */
 public double countAttractive(int month,int day,Location location,Person person){
       return Functions.attractiveFunction(
-              countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location),getIndicatorForLocationOverflow(location));
+              countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location)
+              ,getIndicatorForLocationOverflow(location),countDistanceIndicator(person,location));
 }
 
 //TODO turyst moze nie wybrac zadnej lokalizacji
@@ -163,7 +172,9 @@ public Map<Location,Double> rateLocations(int month, int day, Person person){
    
     for (Location location:locationList
          ) {
-        lastRate=countAttractive(month,day,location,person);
+        if(person.alreadyVisitedLocation.contains(location)) lastRate+= 0;
+        else lastRate=countAttractive(month,day,location,person);
+
         cumulatedRate+=lastRate;
             ratesMap.put(location,lastRate);
     }

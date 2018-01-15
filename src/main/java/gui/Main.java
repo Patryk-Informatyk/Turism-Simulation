@@ -103,46 +103,7 @@ public class Main extends Application {
         }
     }
 
-    private KeyFrame createKeyFrameLangtonAnt(int delay,Controller controller)
-    {
-        return new KeyFrame(Duration.millis(delay), new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                if(hour < 23){
-                    hour++;
-                }
-                else{
-                    hour = 0;
-                    day++;
-                }
-                if((day > 31) && (month == 12))
-                {
-                    month = 1;
-                    day = 1;
-                }
-                else if((day > 27) && (month == 2))
-                {
-                    month++;
-                    day = 1;
-                }
-                else if((day > 31) && (
-                        (month == 1)||(month == 3)||(month == 5)||(month == 7)||(month == 8)||(month == 10)
-                ))
-                {
-                    month++;
-                    day = 1;
-                }
-                else if((day > 30) && (
-                        (month == 4)||(month == 6)||(month == 9)||(month == 11)
-                ))
-                {
-                    month++;
-                    day = 1;
-                }
-                controller.simulation(day,month,hour);
-            }
-        });
-    }
+
 
     public static void main(String[] args) {launch(args);
     }

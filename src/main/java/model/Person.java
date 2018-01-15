@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Linus on 18.11.2017.
  */
@@ -9,6 +12,35 @@ private double activity;
 private double art;
 private double history;
 private double rich;
+private boolean busy=false;
+private double energy;
+public double restTimeInLocation;
+public Location actualLocation;
+public List<Location>  alreadyVisitedLocation= new ArrayList<>();
+
+    public double getRestTimeInLocation() {
+        return restTimeInLocation;
+    }
+
+    public void setRestTimeInLocation(double restTimeInLocation) {
+        this.restTimeInLocation = restTimeInLocation;
+    }
+
+    public boolean isBusy() {
+        return busy;
+    }
+
+    public void setBusy(boolean busy) {
+        this.busy = busy;
+    }
+
+    public double getEnergy() {
+        return energy;
+    }
+
+    public void setEnergy(double energy) {
+        this.energy = energy;
+    }
 
     public Person(int age, double sport, double art, double rich) {
         this.age = age;

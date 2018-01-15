@@ -1,10 +1,7 @@
 package init;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jdk.nashorn.internal.parser.JSONParser;
 import model.Location;
-import model.Person;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -12,20 +9,12 @@ import org.json.JSONObject;
 import java.io.*;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -33,7 +22,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import java.util.stream.Stream;
 
 /**
@@ -48,7 +36,7 @@ import java.util.stream.Stream;
 public class LocationCreator {
 
     /**
-     * Wczytuje dane z pliku place.json z głównego katalogu i zwraca je w liście, której elementy
+     * Wczytuje dane z pliku place2.json z głównego katalogu i zwraca je w liście, której elementy
      * odpowiadają poszczególnym lokacjom. Mają one formę JSONa, przykładowy element wygląda tak:
      * <p>
      * {
@@ -72,7 +60,7 @@ public class LocationCreator {
      * @author      Patryk Zygmunt
      * @author      Grzegorz Puczkowski
      * @author      Hubert Rędzia
-     * @throws IOException when cannot load place.json
+     * @throws IOException when cannot load place2.json
      * @throws JSONException when json fail
      * @return list od locations in json style wrapped in String
      */
@@ -106,7 +94,7 @@ public class LocationCreator {
      * @author      Patryk Zygmunt
      * @author      Grzegorz Puczkowski
      * @author      Hubert Rędzia
-     * @throws IOException when cannot load place.json
+     * @throws IOException when cannot load place2.json
      * @throws JSONException when json fail
      * @return list of created locations
      */
@@ -117,13 +105,14 @@ public class LocationCreator {
         ObjectMapper mapper = new ObjectMapper();
         String currentLocation = null;
 
-        for(int i = 0; i < jsonLocationList.size(); i++) {
+        for(int i = 0; i < 6; i++) {
             currentLocation = jsonLocationList.get(i);
             JSONObject jsonObject = new JSONObject(currentLocation);
             //System.out.println(jsonObject.toString());
-            locations.add(
-                    mapper.readValue(jsonObject.get("result").toString(), Location.class)
-            );
+            Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
+            location.latitude = jsonObject.getJSONObject("result").getJSONObject("geometry").getJSONObject("location").getDouble("lat");
+            location.longitude = jsonObject.getJSONObject("result").getJSONObject("geometry").getJSONObject("location").getDouble("lng");
+            locations.add(location);
         }
         return locations;
 	}
@@ -243,7 +232,7 @@ public class LocationCreator {
      * @author      Grzegorz Puczkowski
      * @author      Hubert Rędzia
      * @param placeId ID lokacji
-     * @throws IOException when cannot load place.json
+     * @throws IOException when cannot load place2.json
      * @throws JSONException when json fail
      * @return created location
      */
@@ -288,17 +277,15 @@ public class LocationCreator {
 
 
     public void createPLaceFile() throws IOException {
-        BufferedWriter writer = new BufferedWriter(new FileWriter("place.json"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("place2.json"));
         parseFile().stream().forEach(
-                id -> makeGetRequestToFile( "https://maps.googleapis.com/maps/api/place/details/json?placeid="
-                        +id+"&key=AIzaSyBvmCmjFCsAPTzJ9AnEF7WIJ6dt4LFxrEY&language=pl",writer));
+                id -> makeGetRequestToFile("https://maps.googleapis.com/maps/api/place/details/json?placeid="
+                        + id + "&key=AIzaSyBvmCmjFCsAPTzJ9AnEF7WIJ6dt4LFxrEY&language=pl", writer));
         writer.close();
+    }
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws IOException, JSONException {
        LocationCreator lc =  new LocationCreator();
-
-       lc.getGoogleLocationList().stream().forEach(
-               id -> lc.createLocationUsingPlaceId(id)
-       );
+       System.out.print(LocationCreator.createLocationsFromFile());
     }
 }

@@ -4,8 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import function.Functions;
 
-import java.util.ArrayList;
-
 /**
  * Tutaj bedzie kozacki opis klasy
  *
@@ -23,10 +21,19 @@ public class Location {
     String placeId;
     @JsonProperty("types")
     LocationType types;
+    @JsonProperty("capacity")
+    private int maxSize;
+    @JsonProperty("spend_time")
+    private double averageSpendTime;
+    public double latitude;
+    public double longitude;
 
-  private int amountOfTourists = 0;
+    public double getAverageSpendTime() {
+        return averageSpendTime;
+    }
+
+    private int amountOfTourists = 0;
   // private int amountOfTouristsMultiplicator;
-  private int maxSize;
   private int queue;
   private boolean isCovered;
   private double placeOverflow;
@@ -137,6 +144,7 @@ public class Location {
     public void endDay(){
         this.amountOfTourists = 0;
         this.queue = 0;
+       
     }
 
     public int getAmountOfTourists() {
@@ -154,40 +162,22 @@ public class Location {
     }
 
     @Override
-
     public String toString() {
         return "Location{" +
                 "name='" + name + '\'' +
                 ", placeId='" + placeId + '\'' +
+                ", types=" + types +
+                ", maxSize=" + maxSize +
+                ", averageSpendTime=" + averageSpendTime +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", amountOfTourists=" + amountOfTourists +
+                ", queue=" + queue +
+                ", isCovered=" + isCovered +
+                ", placeOverflow=" + placeOverflow +
                 '}';
     }
 
-    @Override public boolean equals(Object o) {
-
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-
-        Location location = (Location) o;
-        if (placeId != null ? !placeId.equals(location.placeId) : location.placeId != null)
-            return false;
-
-        if (amountOfTourists != location.amountOfTourists)
-            return false;
-        if (name != null ? !name.equals(location.name) : location.name != null)
-            return false;
-
-        return types == location.types;
-    }
-
-    @Override public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (placeId != null ? placeId.hashCode() : 0);
-        result = 31 * result + (types != null ? types.hashCode() : 0);
-        result = 31 * result + amountOfTourists;
-        return result;
-    }
     /**
      *
      * @author      Patryk Zygmunt
@@ -207,5 +197,20 @@ public class Location {
      */
     public void setMaxSize(int maxSize) {
         this.maxSize = maxSize;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Location location = (Location) o;
+
+        return placeId != null ? placeId.equals(location.placeId) : location.placeId == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return placeId != null ? placeId.hashCode() : 0;
     }
 }

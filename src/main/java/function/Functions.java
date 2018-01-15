@@ -104,7 +104,7 @@ public class Functions {
      * @param overflow ?
      * @return Attractivness of location for tourist
      */
-    public static double attractiveFunction(double forPerson, double weather, double overflow) {
-        return (forPerson + (weather) + (overflow*150))/7;
+    public static double attractiveFunction(double forPerson, double weather, double overflow,double distance) {
+        return (forPerson + (weather) + (overflow*150)+distance)/7;
     }
 }
