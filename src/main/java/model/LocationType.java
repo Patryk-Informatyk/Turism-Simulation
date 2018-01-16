@@ -23,7 +23,7 @@ public enum LocationType {
     amusement_park(new LocationProperties(false,15,90,40,20)),
     aquarium(new LocationProperties(true, 0, 100, 5, 20)),
     art_gallery(new LocationProperties(true, 40, 5, 100, 20)),
-    bar(new LocationProperties(true, 10, 20, 20, 30)),
+    bar(new LocationProperties(true, 10, 50, 20, 30)),
     cafe(new LocationProperties(true,10, 10, 25, 25)),
     cemetery(new LocationProperties(true, 80, 10, 15, 1)),
     church(new LocationProperties(true, 70, 1, 60, 1)),

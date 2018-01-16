@@ -132,10 +132,15 @@ private double getIndicatorForLocationOverflow(Location location){
      * @param person person
      * @return Attractivness
      */
-public double countAttractive(int month,int day,Location location,Person person){
+public double countAttractive(int month,int day,int hour,Location location,Person person){
+    if (location.getOpeningHours().contains(Integer.toString(hour)))
       return Functions.attractiveFunction(
               countAttractiveForPerson(person,location),countAttractiveInCurrentWeather(month,day,location)
               ,getIndicatorForLocationOverflow(location),countDistanceIndicator(person,location));
+    else {
+        location.endDay();
+    }
+    return 0;
 }
 
 //TODO turyst moze nie wybrac zadnej lokalizacji
@@ -152,7 +157,7 @@ public double countAttractive(int month,int day,Location location,Person person)
      * @param person person
      * @return map of rated locations
      */
-public Map<Location,Double> rateLocations(int month, int day, Person person,List<Location> locationList){
+public Map<Location,Double> rateLocations(int month, int day, int hour, Person person,List<Location> locationList){
     Map<Location,Double> ratesMap = new LinkedHashMap<>();
     Map<Location,Double> comulatedRatesMap = new LinkedHashMap<>();
     double lastRate=0;
@@ -162,7 +167,7 @@ public Map<Location,Double> rateLocations(int month, int day, Person person,List
          ) {
         //if(person.alreadyVisitedLocation.contains(location)) lastRate+= 0;
        // else
-            lastRate=countAttractive(month,day,location,person);
+            lastRate=countAttractive(month,day,hour,location,person);
 
         cumulatedRate+=lastRate;
             ratesMap.put(location,lastRate);
@@ -193,10 +198,10 @@ public Map<Location,Double> rateLocations(int month, int day, Person person,List
      * @param person person
      * @return Recommend location
      */
-public Location recommendLocation(int month, int day, Person person,List<Location> locationList) {
+public Location recommendLocation(int month, int day, int hour, Person person,List<Location> locationList) {
     //lokacje dodane  testowe
     int iterator=0;
-    Map<Location,Double> ratesMap = rateLocations(month,day,person,locationList);
+    Map<Location,Double> ratesMap = rateLocations(month,day, hour,person,locationList);
     List<Location>  result = new ArrayList<>();
    double randomValue = Math.random()*100;
 

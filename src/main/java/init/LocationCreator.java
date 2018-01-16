@@ -1,6 +1,11 @@
 package init;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.reflect.TypeToken;
 import model.Location;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,6 +17,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
@@ -19,6 +26,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -88,6 +96,15 @@ public class LocationCreator {
         return locationList;
     }
 
+    public static List<String> getStringListFromJsonArray(JSONArray jArray) throws JSONException {
+        List<String> returnList = new ArrayList<String>();
+        for (int i = 0; i < jArray.length(); i++) {
+            String val = jArray.getString(i);
+            returnList.add(val);
+        }
+        return returnList;
+    }
+
     /**
      * Mapuje wczytane z pliku json lokacje i mapuje je z przyjętymi typami {@link model.LocationType}
      *
@@ -105,13 +122,19 @@ public class LocationCreator {
         ObjectMapper mapper = new ObjectMapper();
         String currentLocation = null;
 
-        for(int i = 0; i < 6; i++) {
+        for(int i = 0; i < jsonLocationList.size(); i++) {
             currentLocation = jsonLocationList.get(i);
             JSONObject jsonObject = new JSONObject(currentLocation);
-            //System.out.println(jsonObject.toString());
+            JSONArray jsonArray = jsonObject.getJSONObject("result").getJSONArray("open_hours");
+            List<String> hours = getStringListFromJsonArray(jsonArray);
+
+            System.out.println(hours.get(0) + " " + hours.get(1));
+
             Location location = mapper.readValue(jsonObject.get("result").toString(), Location.class);
             location.latitude = jsonObject.getJSONObject("result").getJSONObject("geometry").getJSONObject("location").getDouble("lat");
             location.longitude = jsonObject.getJSONObject("result").getJSONObject("geometry").getJSONObject("location").getDouble("lng");
+            location.setOpeningHours(hours);
+
             locations.add(location);
         }
         return locations;
