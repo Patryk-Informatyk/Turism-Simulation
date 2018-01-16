@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=30;
+    private static final int amountOfTourists=2000;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -128,15 +128,15 @@ public class Simulation {
                         endWayToLocation(tourist);
                 }
                 else {
-                    recommendNewLocation(month, day, tourist);
+                    recommendNewLocation(month, day, hour, tourist);
                 }
             }
         }
     }
 
-   private void  recommendNewLocation(int month, int day, Person person){
+   private void  recommendNewLocation(int month, int day, int hour, Person person){
        Location pLocation;
-       pLocation = recommendationSystem.recommendLocation(month, day, person,locations);
+       pLocation = recommendationSystem.recommendLocation(month, day, hour, person,locations);
        person.prevLocation = person.actualLocation;
        person.actualLocation = pLocation;
        person.onWay = true;

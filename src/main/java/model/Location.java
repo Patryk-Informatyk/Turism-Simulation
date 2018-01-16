@@ -30,6 +30,7 @@ public class Location {
     private double averageSpendTime;
     public double latitude;
     public double longitude;
+    private List<String> openingHours;
     public List<Person> touristInQueue=new ArrayList<>();
 
     public double getAverageSpendTime() {
@@ -232,5 +233,13 @@ public class Location {
     @Override
     public int hashCode() {
         return placeId != null ? placeId.hashCode() : 0;
+    }
+
+    public List<String> getOpeningHours() {
+        return openingHours;
+    }
+
+    public void setOpeningHours(List<String> openingHours) {
+        this.openingHours = openingHours;
     }
 }
