@@ -65,11 +65,12 @@
     "id" : "0f162dc3c98aea72db27e0ddab6d06968474dba5",
     "name" : "Bazylika św. Franciszka z Asyżu w Krakowie",
     "place_id" : "ChIJR9opghJbFkcRbovYbURjje8",
-    "capacity":1,
+    "capacity":600,
+    "open_hours" : ["6", "7", "8", "9", "10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
     "spend_time":1.2,
     "reference" : "CmRbAAAAL_DC0uFEmvwWQ2P3kHqF4O74Ik4lC1OIzF3YsInEvwtbUfBe4Ha5L8UW0IkCrGiBy7akLLYOOIJnWiP9pzou-OEdcyLxvpM-HYEXOHvfmQJJxa6XJU7CHdpP1O0zPiJvEhDUoTwVNalKR_5vy_36vqcJGhS1arKovVNkdlAdPIKpzxv8BvZ0PA",
     "scope" : "GOOGLE",
-    "types" : "place_of_worship",
+    "types" : "church",
     "url" : "https://maps.google.com/?q=Franciszka%C5%84ska+5,+31-004+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b128229da47:0xef8d63446dd88b6e",
     "utc_offset" : 60,
     "vicinity" : "Stare Miasto"
@@ -144,10 +145,11 @@
       "name" : "Kościół Rzymskokatolicki pw. Świętej Trójcy",
       "place_id" : "ChIJyyGRQxJbFkcR1JBqlJ2SCo8",
       "reference" : "CmRbAAAAxYFLIujuZaQnjuGquRDiwCp-GkDyMzonHMsyX9CbbT0o4H2RSN-TsKi0QsRHuvBJcbkVpbgXNIatQ6XzGXaIorVMlQLMYzqM6blZXsk0dL0GN31Imy-FsiCWbWCwicXPEhAdpAxqst-xO_eiYQNub8c7GhQ4i3-7zm64eba4y0WUJHmZjT-eDg",
+    "open_hours" : ["6", "7", "8", "9", "10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
       "spend_time":1.3,
       "scope" : "GOOGLE",
-      "capacity":10,
-      "types" : "place_of_worship",
+      "capacity":1400,
+      "types" : "church",
       "url" : "https://maps.google.com/?q=Stolarska+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b12439121cb:0x8f0a929d946a90d4",
       "utc_offset" : 60,
       "vicinity" : "Stare Miasto"
@@ -226,8 +228,9 @@
       "types" : "museum",
       "url" : "https://maps.google.com/?q=Rynek+G%C5%82%C3%B3wny+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e077b0fdd:0xadb4f54036e8feb8",
       "utc_offset" : 60,
+    "open_hours" : ["9", "10", "11", "12","13","14","15","16","17","18","19","20"],
       "spend_time":1.1,
-      "capacity":7,
+      "capacity":250,
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
@@ -301,11 +304,12 @@
       "place_id" : "ChIJV-k7zEFbFkcRprctZb-J9LY",
       "reference" : "CmRbAAAAHjFk5zdc-PuwdqSUvMrtaWrw9D9Q1GZjBvIqZqroSWWz_wb1uBVa1PA-gb3Vka3B373GL8OCwDe2o6hlB-6DlRRKQc_eeYh66Vf7irTpiFY6EXvZPXEWPK85u8yZe-NKEhBA0WSvNmW2pAxaY_78jKg-GhQ4e3N4lm5UREn4IbaUWezTbnDSxg",
       "scope" : "GOOGLE",
-      "types" : "place_of_worship",
+      "types" : "church",
       "url" : "https://maps.google.com/?q=Bartosza+46,+31-053+Krak%C3%B3w,+Polska&ftid=0x47165b41cc3be957:0xb6f489bf652db7a6",
       "utc_offset" : 60,
+    "open_hours" : ["6", "7", "8", "9", "10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
       "spend_time":1.2,
-      "capacity":2,
+      "capacity":150,
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
@@ -379,11 +383,91 @@
       "place_id" : "EidwbGFjIE1hcmlhY2tpIDcsIDMwLTAwMSBLcmFrw7N3LCBQb2xza2E",
       "reference" : "CpQBhQAAAD4x7w0_EwHfCCVzwwDBwkhMWGibhZU5LDH_P1H65adOZtzUbGcp62yup-K97MSjbVkfWPQGqWxrVU-UGj0WmotKYjnk1VnU65kzvejCryFGru-GgCA5XuxwnBYEIjWBRFHs6sZ3vnPhM3BCu8O1TpbqRXsf3L_3IZXtSokoIj_jRU5x6Iorw1Kl-M2g5-mQbRIQqlSLLO8cVg5mlWAy4b7ipxoUBs6sijxKvw98fJInxkSxLGqbgLQ",
       "scope" : "GOOGLE",
+    "open_hours" : ["6", "7", "8", "9", "10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
       "spend_time":1.9,
-      "types" : "place_of_worship",
+      "types" : "church",
       "url" : "https://maps.google.com/?q=plac+Mariacki+7,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b11f7a5029d:0xf2de670a9227eefa",
       "utc_offset" : 60,
-      "capacity":2,
+      "capacity":500,
+      "vicinity" : "Stare Miasto"
+    },
+    "status" : "OK"
+  },
+ {
+    "html_attributions" : [],
+    "result" : {
+      "address_components" : [
+        {
+          "long_name" : "12",
+          "short_name" : "12",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "Mikołaja Kopernika",
+          "short_name" : "Mikołaja Kopernika",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Stare Miasto",
+          "short_name" : "Stare Miasto",
+          "types" : [ "sublocality_level_1", "sublocality", "political" ]
+        },
+        {
+          "long_name" : "Kraków",
+          "short_name" : "Kraków",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Kraków",
+          "short_name" : "Kraków",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "małopolskie",
+          "short_name" : "małopolskie",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "Polska",
+          "short_name" : "PL",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "33-332",
+          "short_name" : "33-332",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eMikołaja Kopernika 12\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Mikołaja Kopernika 12, 33-332 Kraków, Polska",
+      "geometry" : {
+        "location" : {
+          "lat" : 50.06171500000001,
+          "lng" : 19.946164
+        },
+        "viewport" : {
+          "northeast" : {
+            "lat" : 50.0627502802915,
+            "lng" : 19.9475294802915
+          },
+          "southwest" : {
+            "lat" : 50.0600523197085,
+            "lng" : 19.9448315197085
+          }
+        }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "agertr34567890987",
+      "name" : "Super klub nocny",
+      "place_id" : "ChIJD8I1yxZbFkcRb_-AYaxd9jw",
+      "reference" : "CmRbAAAAULmbB5fodbawssScXwBM0LpaoXB-gAMftzXZ1avKqSDrEYdBeoPBWYmP_z918KfaydUjwdm-355BLg15Phz00Y1GkqxmwDUULrfStPpsjtXHktOqq0Xuoa9T3W0fapZzEhCFvNm2UtmJN_oO3zVZXRTpGhQ7j8lOAh9lfSYEg7uWTgxdIdIMLw",
+      "scope" : "GOOGLE",
+    "open_hours" : ["19","20","21","22","23","0","1","2","3","4","5","6", "7", "8", "9"],
+      "types" : "church",
+      "spend_time":1,
+      "url" : "https://maps.google.com/?q=Miko%C5%82aja+Kopernika+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b16cb35c20f:0x3cf65dac6180ff6f",
+      "utc_offset" : 60,
+      "capacity":1000,
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
@@ -457,12 +541,14 @@
       "place_id" : "ChIJD8I1yxZbFkcRb_-AYaxd9jw",
       "reference" : "CmRbAAAAULmbB5fodbawssScXwBM0LpaoXB-gAMftzXZ1avKqSDrEYdBeoPBWYmP_z918KfaydUjwdm-355BLg15Phz00Y1GkqxmwDUULrfStPpsjtXHktOqq0Xuoa9T3W0fapZzEhCFvNm2UtmJN_oO3zVZXRTpGhQ7j8lOAh9lfSYEg7uWTgxdIdIMLw",
       "scope" : "GOOGLE",
+    "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
       "types" : "museum",
       "spend_time":0.9,
       "url" : "https://maps.google.com/?q=Miko%C5%82aja+Kopernika+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b16cb35c20f:0x3cf65dac6180ff6f",
       "utc_offset" : 60,
-      "capacity":10,
+      "capacity":100,
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
-  }]
+  }
+]
