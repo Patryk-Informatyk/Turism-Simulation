@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=2000;
+    private static final int amountOfTourists=10000;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -53,6 +53,7 @@ public class Simulation {
         this.recommendationSystem = new RecommendationSystem(locations);
         this.tourists = touristInit();
     }
+
     /**
      *
      * @author      Patryk Zygmunt
