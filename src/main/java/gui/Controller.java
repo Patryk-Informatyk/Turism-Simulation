@@ -1,5 +1,6 @@
 package gui;
 
+import function.Functions;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
@@ -107,6 +108,7 @@ public class Controller {
     public ObservableList details = FXCollections.observableArrayList(
             "Name: ",
             "Type: ",
+            "Address",
             "Amount of Tourists: ",
             "Queue: ",
             "Maximal size: ",
@@ -172,12 +174,16 @@ public class Controller {
                     getRecommendationSystem().
                     getWeather().
                     getWeatherInDay(month,day);
-            details.set(2,"Amount of Tourists: " + currentLocationDetails.getAmountOfTourists());
-            details.set(3,"Queue: " + currentLocationDetails.getQueue());
-            details.set(7,"Temperature: " + weather.getTemperature());
-            details.set(8,"Solar: " + weather.getSolar());
-            details.set(9,"Precipation: " + weather.getPrecipation());
-            details.set(10,"Wind: " + weather.getWind());
+            details.set(3,"Amount of Tourists: " +
+                    (int)(currentLocationDetails.getAmountOfTourists()
+                            *
+                            Functions.touristsPerMonthIndicator(month, hour, simulation.getTourists().size()))
+            );
+            details.set(4,"Queue: " + currentLocationDetails.getQueue());
+            details.set(8,"Temperature: " + weather.getTemperature());
+            details.set(9,"Solar: " + weather.getSolar());
+            details.set(10,"Precipation: " + weather.getPrecipation());
+            details.set(11,"Wind: " + weather.getWind());
         }
     }
     /**
@@ -226,11 +232,16 @@ public class Controller {
         currentLocationDetails = simulation.getLocationByName(locationName);
         details.set(0,"Name: " + currentLocationDetails.getName());
         details.set(1,"Type: " + currentLocationDetails.getTypes());
-        details.set(2,"Amount of Tourists: " + currentLocationDetails.getAmountOfTourists());
-        details.set(3,"Queue: " + currentLocationDetails.getQueue());
-        details.set(4,"Maximal size: " + currentLocationDetails.getMaxSize());
-        details.set(5,"Covered: " + currentLocationDetails.isCoveredf());
-        details.set(6,"Google place_id: " + currentLocationDetails.getPlaceId());
+        details.set(2,"Address: " + currentLocationDetails.getAddress());
+        details.set(3,"Amount of Tourists: " +
+                (int)(currentLocationDetails.getAmountOfTourists()
+                        *
+                        Functions.touristsPerMonthIndicator(month, hour, simulation.getTourists().size()))
+        );
+        details.set(4,"Queue: " + currentLocationDetails.getQueue());
+        details.set(5,"Maximal size ~ " + (int)(currentLocationDetails.getMaxSize()*7.15));
+        details.set(6,"Covered: " + currentLocationDetails.isCoveredf());
+        details.set(7,"Google place_id: " + currentLocationDetails.getPlaceId());
         detailsListView.setItems(details);
     }
     /**
@@ -243,7 +254,19 @@ public class Controller {
      */
     protected void setDefaultTextToListView(){
         for(int i = 0; i < simulation.getLocations().size() ; i++){
-            defaultLocationsView.set(i, simulation.getDayInfoFromLocation(i));
+            defaultLocationsView.set(i,
+                    simulation.getLocationsName(i)
+                            +
+                            ", "
+                            +
+                            (int)(simulation.getLocations().get(i).getAmountOfTourists()
+                                    *
+                                    Functions.touristsPerMonthIndicator(month,hour,simulation.getTourists().size()))
+                            +
+                            " + "
+                            +
+                            simulation.getLocations().get(i).getQueue()
+            );
         }
         detailsListView.setItems(defaultLocationsView);
     }
