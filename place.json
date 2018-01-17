@@ -467,7 +467,7 @@
       "spend_time":1,
       "url" : "https://maps.google.com/?q=Miko%C5%82aja+Kopernika+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b16cb35c20f:0x3cf65dac6180ff6f",
       "utc_offset" : 60,
-      "capacity":1000,
+      "capacity":1,
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
@@ -550,5 +550,2969 @@
       "vicinity" : "Stare Miasto"
     },
     "status" : "OK"
-  }
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8",
+            "short_name" : "8",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Pijarska",
+            "short_name" : "Pijarska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-015",
+            "short_name" : "31-015",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003ePijarska 8\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-015\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Pijarska 8, 31-015 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0649585,
+            "lng" : 19.9411467
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.06623003029149,
+               "lng" : 19.9426268802915
+            },
+            "southwest" : {
+               "lat" : 50.06353206970849,
+               "lng" : 19.93992891970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "faeba03a94cfbde1f2477b63b4c2480cbf661389",
+      "name" : "Czartoryski Museum - Gallery Of Ancient Art",
+      "place_id" : "ChIJTVsEIhBbFkcR4jqibQNlxME",
+      "reference" : "CmRbAAAAgYFGNfZ0JBoXC2I0ZGxUq2v-u2tQwjc30a4DU7_xRc1nHk2pBPtraOn7YhDmNPAKQV_DONEKpLt1zgeIOyMS_1mbOnzWAS6RSIUPlsFlf3PNCCFlhXn1HNajSrmVlHVrEhA9rFISfAURs3UBLpj5t4bCGhQG0DNJHJG5xdz8DsH7Mdh7O44Rfw",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Pijarska+8,+31-015+Krak%C3%B3w,+Polska&ftid=0x47165b1022045b4d:0xc1c465036da23ae2",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15"],
+      "capacity":43,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Krupnicza",
+            "short_name" : "Krupnicza",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "30-001",
+            "short_name" : "30-001",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eKrupnicza\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e30-001\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Krupnicza, 30-001 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.06350219999999,
+            "lng" : 19.9324299
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0648511802915,
+               "lng" : 19.9337788802915
+            },
+            "southwest" : {
+               "lat" : 50.0621532197085,
+               "lng" : 19.9310809197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "5c1de8b3437a9350f3f7326eafd1e7e2c68bfb4b",
+      "name" : "Dom Józefa Mehoffera",
+      "place_id" : "ChIJu3Igug5bFkcR3_DwTK4-n0s",
+      "reference" : "CmRbAAAAwhykxawXEmQhfxBrtpXndEkrvpwDbeNMVoQ9HsEcE9lwhzDmAVXXK4gfyc19TsUFfvNak1JJt8MLXkhbmr-24pdJlfNrDa5WJYdFlnqRxNhL0xSBOnmbER1DihaodXG1EhBXsFO4aMGP90tGwFJTG5p9GhRwYWSUiqHQsO9Z-PdQSp_4jfL4Lg",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Krupnicza,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b0eba2072bb:0x4b9f3eae4cf0f0df",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16"],
+      "capacity":14,
+      "spend_time":0.5
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Stanisława Worcella",
+            "short_name" : "Stanisława Worcella",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-154",
+            "short_name" : "31-154",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStanisława Worcella\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-154\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Stanisława Worcella, 31-154 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0660193,
+            "lng" : 19.94663839999999
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0673682802915,
+               "lng" : 19.9479873802915
+            },
+            "southwest" : {
+               "lat" : 50.0646703197085,
+               "lng" : 19.94528941970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "e139e5941968b7234afba764a7a42578cf2adcb5",
+      "name" : "Dworzec Kolejowy Kraków Główny",
+      "place_id" : "ChIJKVvWbxpbFkcRS6VRnZgz-F4",
+      "reference" : "CmRbAAAAuZg_OhtVoimPvpXpt_QKvMa17aI34NS0H2Igx5MJIqMYLIO5ofVug5APNVa0rAEIq_QZ2e_HXK7XZDoqxNs_6PJKsUIXhgeqMqRrz47O4PB1Pdk9ORvHIbKEHeBlk3TPEhBx5rm9DWZa3o9_ArqnB8RoGhTvddtmwaQ315oQwCqlfKYwySCqSw",
+      "scope" : "GOOGLE",
+      "types" : "city_hall",
+      "url" : "https://maps.google.com/?q=Stanis%C5%82awa+Worcella,+31-154+Krak%C3%B3w,+Polska&ftid=0x47165b1a6fd65b29:0x5ef833989d51a54b",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":710,
+      "spend_time":0.1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8",
+            "short_name" : "8",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Szczepański",
+            "short_name" : "plac Szczepański",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-011",
+            "short_name" : "31-011",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Szczepański 8\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-011\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Szczepański 8, 31-011 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0637139,
+            "lng" : 19.9359545
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.06506588029149,
+               "lng" : 19.9372953302915
+            },
+            "southwest" : {
+               "lat" : 50.0623679197085,
+               "lng" : 19.9345973697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "965c298d17f12047358f4fd94ab1692005ba0b95",
+      "name" : "plac Szczepański",
+      "place_id" : "EitwbGFjIFN6Y3plcGHFhHNraSA4LCAzMS0wMTEgS3Jha8OzdywgUG9sc2th",
+      "reference" : "CpQBiQAAADj_ti_FxhPvCrElITOf7LXihbBocg9pyZW9hQzxuSKQYj5d3kp1r2eTbojf96NoM4OYHONbgTwm0c_6AX8PdD_kV2gsdA926DhMidPUB0QK3GUOYN0a8y8tRJe01FbCo6cCV5Iq1Y9EpSW1lXQvKL26aSJi47sLM9lDx0hqQYik_MvA3RVT0O9Ko-Dguh9pWRIQBounrlClMicRaUl0849sUBoUfHaANjsQTTxJzRJ1Z5VqGRamoXo",
+      "scope" : "GOOGLE",
+      "types" : "square",
+      "url" : "https://maps.google.com/?q=plac+Szczepa%C5%84ski+8,+31-011+Krak%C3%B3w,+Polska&ftid=0x47165b0e591fb559:0xbe36013f3769cd3",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":160,
+      "spend_time":0.2
+   },
+   "status" : "OK"
+
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3",
+            "short_name" : "3",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Szczepański",
+            "short_name" : "plac Szczepański",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Szczepański 3\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Szczepański 3, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.06360050000001,
+            "lng" : 19.934675
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0649692302915,
+               "lng" : 19.9360423802915
+            },
+            "southwest" : {
+               "lat" : 50.0622712697085,
+               "lng" : 19.9333444197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "0c27b2a9ce7e29c3d15c3f7e49523bd2975ecaa7",
+      "name" : "Główny Pałac Sztuki",
+      "place_id" : "ChIJxziN8g5bFkcRaMwIhmkHnQ8",
+      "reference" : "CmRbAAAAjSDUJnRgm-jqjlqcRpJgRjQoGeX4dve2Blxtj5X0YPB_Vj79q3ECe4ZuYFpC6nqqoNBKCFdT8U5Qq3lSygnGvYPDRETiAeR_7JeBbQg9w52k-EEymeZdTn1oR0MoiYQEEhD1rzBserot7mIkT0p2GYcTGhSfr5UqsS7_klrnAbJ4vwgXETISEQ",
+      "scope" : "GOOGLE",
+      "types" : "art_gallery",
+      "url" : "https://maps.google.com/?q=plac+Szczepa%C5%84ski+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0ef28d38c7:0xf9d07698608cc68",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["8","9","10", "11", "12","13","14","15","16","17","18"],
+      "capacity":100,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "24",
+            "short_name" : "24",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Sławkowska",
+            "short_name" : "Sławkowska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eSławkowska 24\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Sławkowska 24, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0646069,
+            "lng" : 19.9379019
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0659184302915,
+               "lng" : 19.9393842802915
+            },
+            "southwest" : {
+               "lat" : 50.0632204697085,
+               "lng" : 19.9366863197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "7c3f0b0e18ca63d90a0ff1bd16130e52dc103e91",
+      "name" : "Kościół Rzymskokatolicki Pw. Św. Marka Ewangelisty",
+      "place_id" : "ChIJ8_Kgtg9bFkcRdFP3AKhpkog",
+      "reference" : "CmRbAAAAfG093RBf2L7dhkzW1kvogfQ2Ek24IGY_iN22FgfNewv66rq3NeCOlRfLvHIbhSPB3zH7V63lZO_qWHy0aJe06rmuYEd6n1viuI4Fy5CHJzked0WfBWhcyL9b5R03qG97EhAjXiFUzkTIO9mukpBqwJcmGhSQOO31Ic2Z6PTPoxy23R_7tpx5-g",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=S%C5%82awkowska+24,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0fb6a0f2f3:0x889269a800f75374",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1300,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "4",
+            "short_name" : "4",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Reformacka",
+            "short_name" : "Reformacka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eReformacka 4\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Reformacka 4, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.06463919999999,
+            "lng" : 19.9358306
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0659236802915,
+               "lng" : 19.9372313802915
+            },
+            "southwest" : {
+               "lat" : 50.06322571970851,
+               "lng" : 19.9345334197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "1e51da7a4a577f50a66b422745cb4a1a8e3be938",
+      "name" : "Kościół Rzymskokatolicki Pw. Św. Kazimierza (Franciszkanów)",
+      "place_id" : "ChIJH6fvAQ9bFkcR_XEofB93zPI",
+      "reference" : "CmRbAAAA_slb182Mwjf0vdr8iEoY3YRGf4Ggrv-J4rk5Guld8VTRU0jg6jRz8M5gUatJyh1OjfU-MeBgftJykVAU6wi9IGDup_IpXRJNziSJGdr5ibX6B7EQHeJF2BcdYf-U_liIEhBNvagVOFdT1gecWR6mvCGVGhQD90SeH39YJTUDTLtS5vEmEGoumQ",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Reformacka+4,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0f01efa71f:0xf2cc771f7c2871fd",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":800,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3",
+            "short_name" : "3",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Juliana Dunajewskiego",
+            "short_name" : "Juliana Dunajewskiego",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eJuliana Dunajewskiego 3\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Juliana Dunajewskiego 3, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.06437,
+            "lng" : 19.9337315
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.06566643029149,
+               "lng" : 19.9351869302915
+            },
+            "southwest" : {
+               "lat" : 50.06296846970849,
+               "lng" : 19.9324889697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "667c4885081dd5c32d04f4897c95d760f0cd567d",
+      "name" : "Muzeum Ubezpieczeń",
+      "place_id" : "ChIJx1O_3A5bFkcRdFmOGcs01-w",
+      "reference" : "CmRbAAAAhHFu6EA8jWWx9rc_oUfUkdWYl_D5YaoX1J4upzDLb64f6WPtS2ftlYh7AwwyuZ-M40s0ae2BBEpS0jo2PuVWY5dXxwEdIr-mF4ikRZ45l8WnJO0TV40SAsZeVFCAPrXPEhBvKfvq3I0lq_PLkfclM1QCGhTGiEpCNAGYod37lyQaxdnag523Zw",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Juliana+Dunajewskiego+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0edcbf53c7:0xecd734cb198e5974",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["9","10", "11"],
+      "capacity":50,
+      "spend_time":0.2
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "11",
+            "short_name" : "11",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Świętej Anny",
+            "short_name" : "Świętej Anny",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eŚwiętej Anny 11\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Świętej Anny 11, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0620887,
+            "lng" : 19.9337652
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0633882802915,
+               "lng" : 19.9350659802915
+            },
+            "southwest" : {
+               "lat" : 50.0606903197085,
+               "lng" : 19.9323680197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "6a21592c7df76ca54d3065181ffdf90da0ffb954",
+      "name" : "Uniwersytet Jagielloński Collegium Medicum",
+      "place_id" : "ChIJ9dwPKQxbFkcRZ6a6i7G1Kxw",
+      "reference" : "CmRbAAAA7ZPR7WPyns_l7VM-2smSaRQgfa4Xp5K_jnTQumvju_ZbZmZxRRgcMlOqjDXkNSOvWE4AJ8Dc53YJMIxZ_v1vI3CXUVgXe6YrB8Kj0m1UPOFZWAtyaNQGua12lDRUaPPtEhBUjBFl39roH1NbYqPmGwQmGhT26LfwdUYEEeUE2OGxRMOCgA8dyw",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tej+Anny+11,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c290fdcf5:0x1c2bb5b18bbaa667",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15"],
+      "capacity":10,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "15",
+            "short_name" : "15",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Jagiellońska",
+            "short_name" : "Jagiellońska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eJagiellońska 15\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Jagiellońska 15, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0614888,
+            "lng" : 19.9338434
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.06280843029149,
+               "lng" : 19.9352834802915
+            },
+            "southwest" : {
+               "lat" : 50.06011046970849,
+               "lng" : 19.9325855197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "1ceb46d895ac80f0407d97bbcdc66d4ceb83ea02",
+      "name" : "Muzeum Uniwersytetu Jagiellońskiego Collegium Maius",
+      "place_id" : "ChIJA3GiMgxbFkcRsLqx0qgUrdE",
+      "reference" : "CmRbAAAA2AdAgdNA7lFtiPIyi71i-F6rlRANytgz_Tt2t4p51z0oeJ3AGTvzfkSNfZV6QHsfLP3ZSP92vCMWw-FOIYF91B5S8PBFHhTcdq-yI1aGHihwDnpGSnEk5gqZeTlu43kuEhAQtL1rEGzMg6KF-RBVTGnqGhQ-K2W7y8IMVftSiN9NH6AfBN1kLQ",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Jagiello%C5%84ska+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c32a27103:0xd1ad14a8d2b1bab0",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15"],
+      "capacity":100,
+      "spend_time":0.8
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "13",
+            "short_name" : "13",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Gołębia",
+            "short_name" : "Gołębia",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eGołębia 13\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Gołębia 13, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.061434,
+            "lng" : 19.932876
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0626659802915,
+               "lng" : 19.9342520302915
+            },
+            "southwest" : {
+               "lat" : 50.0599680197085,
+               "lng" : 19.9315540697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "b4243571c159f455a1cc6de81ce0ecb7d7f4c360",
+      "name" : "Posąg Mikołaja Kopernika",
+      "place_id" : "ChIJH0dRNwxbFkcR1chsDKyR1K0",
+      "reference" : "CmRbAAAAMEeV3IVZxTasIVDaMBnoP7csxZXhLOVlOyFD7n0k_oaeDA7Alh0NpzwgfA5eZP7lJFQIlrV8CFnJ1CNHkAV5_iab4fCUqhBwrDo0q0kn98GUGdsyYNxrACH9qH261PC0EhCdhnZiyAOcwebKISaS1ztPGhQ7jc7NNRwNcnUPgW1IujPs_27ybQ",
+      "scope" : "GOOGLE",
+      "types" : "monument",
+      "url" : "https://maps.google.com/?q=Go%C5%82%C4%99bia+13,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c3751471f:0xadd491ac0c6cc8d5",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1000,
+      "spend_time":0.1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "12",
+            "short_name" : "12",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Józefa Piłsudskiego",
+            "short_name" : "Józefa Piłsudskiego",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eJózefa Piłsudskiego 12\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Józefa Piłsudskiego 12, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0599979,
+            "lng" : 19.9298512
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0614073302915,
+               "lng" : 19.9311801302915
+            },
+            "southwest" : {
+               "lat" : 50.0587093697085,
+               "lng" : 19.9284821697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "fb61661c9fe3e7ae2711a5c3365d030f9554cccd",
+      "name" : "Muzeum Emeryka Hutten-Czapskiego",
+      "place_id" : "ChIJh4O-iAxbFkcRldpTnxht4a4",
+      "reference" : "CmRbAAAA2g7HRBIiesvbTGjUCyZxm1-AkK9p259qAwxtapU22qu2-lRKtRv25W5QYcBKApZxj86_cCpjeWtO3NvQN6wFUeAjspeQLQEJuQFaHmXES-wtwK_dST8Cemi7QFgWAgoLEhBAEs8qORDcu-qHxWmIl07_GhQgEXPDu3wOlBLeoGvyL_o_zmr_og",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=J%C3%B3zefa+Pi%C5%82sudskiego+12,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0c88be8387:0xaee16d189f53da95",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":70,
+      "spend_time":0.7
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "18",
+            "short_name" : "18",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Straszewskiego",
+            "short_name" : "Straszewskiego",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStraszewskiego 18\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Straszewskiego 18, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0588849,
+            "lng" : 19.932804
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0602666302915,
+               "lng" : 19.9343395302915
+            },
+            "southwest" : {
+               "lat" : 50.0575686697085,
+               "lng" : 19.9316415697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "813d081a1f47a5f8d2e80d0b4b87152419fc43fc",
+      "name" : "Filharmonia Krakowska",
+      "place_id" : "ChIJ30mcGw1bFkcRv5TFm1K72wY",
+      "reference" : "CmRbAAAAcl1PH5yMdG6pmfxuTqcPpMr0d7RFYsbOGDzKjmDGHAh-Ly42isefGzgVXIJdisgv_Kob0UU-vLJpvnAFR4JHCeuhh9WSjI0u0Dso2NIv2suTRwf9kygn_E1YsJPkgpLIEhAKQniFH3eFQQ8hGhN-GNbgGhQ3PBixh6FPol2CdRssmYL_xKQvTw",
+      "scope" : "GOOGLE",
+      "types" : "art_gallery",
+      "url" : "https://maps.google.com/?q=Straszewskiego+18,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0d1b9c49df:0x6dbbb529bc594bf",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["18","19","20","21","22"],
+      "capacity":100,
+      "spend_time":2
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3",
+            "short_name" : "3",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Poselska",
+            "short_name" : "Poselska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków-Śródmieście",
+            "short_name" : "Kraków-Śródmieście",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-002",
+            "short_name" : "31-002",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003ePoselska 3\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-002\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków-Śródmieście\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Poselska 3, 31-002 Kraków-Śródmieście, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.057823,
+            "lng" : 19.9359179
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0592287802915,
+               "lng" : 19.9372569302915
+            },
+            "southwest" : {
+               "lat" : 50.05653081970851,
+               "lng" : 19.9345589697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "86eb1bcf212813c05d4e062c49dc1e9998014c99",
+      "name" : "Muzeum Archeologiczne",
+      "place_id" : "ChIJTcAXohJbFkcRdGgKOvY256M",
+      "reference" : "CmRbAAAAAO-uCgFpK_f6pgn_wKxWr0mn9-l4oz_nyh54-f__pTgDzLZxGYiv17FemXV2t-WhZ0MXvwdoZPwvtZkEQ6nHAP9YIFtaFsCAw1BRMwmkmAM5KXSNw1fEQhWf0jxixvA1EhC9TXRsJz63ppRrBcFfh8nxGhRVqc9pvuhAU-nrwbFbW2xMqZ8amw",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Poselska+3,+31-002+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b12a217c04d:0xa3e736f63a0a6874",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15"],
+      "capacity":200,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "48",
+            "short_name" : "48",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Grodzka",
+            "short_name" : "Grodzka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eGrodzka 48\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Grodzka 48, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0575373,
+            "lng" : 19.9382457
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0588834802915,
+               "lng" : 19.9395310302915
+            },
+            "southwest" : {
+               "lat" : 50.0561855197085,
+               "lng" : 19.9368330697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "6f27bf1cd8aa8c66486e55cec17d38b6538e0f57",
+      "name" : "Muzeum Żywych Motyli",
+      "place_id" : "ChIJE9qT5xJbFkcRjY7_1BHYjtE",
+      "reference" : "CmRbAAAAJgsQjb8qluzL1Aak-PyBUNT47JWdhgKpbpwjj-t6YzPB9mvUtrxaGuK-EQlsebbmrbs-RjxAk_YHZvFpOzrLKx2m6Sxx6J6v_8nmC-b1HaELlVmuB0pKgMO-4IuFei5lEhD-7EGAzTmVIQvL_H7fu2JoGhS1aLwnR-kHPBevm_ch_H-1fCeXvQ",
+      "scope" : "GOOGLE",
+      "types" : "art_gallery",
+      "url" : "https://maps.google.com/?q=Grodzka+48,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b12e793da13:0xd18ed811d4ff8e8d",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":100,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "52A",
+            "short_name" : "52A",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Grodzka",
+            "short_name" : "Grodzka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-044",
+            "short_name" : "31-044",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eGrodzka 52A\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-044\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Grodzka 52A, 31-044 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05691789999999,
+            "lng" : 19.9387589
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.05825603029149,
+               "lng" : 19.9398218802915
+            },
+            "southwest" : {
+               "lat" : 50.0555580697085,
+               "lng" : 19.9371239197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "696b0a4947eb9a0690b4e4972d1fd756a93e62cf",
+      "name" : "Kościół Rzymskokatolicki pw. Świętych Apostołów Piotra i Pawła",
+      "place_id" : "ChIJK7Gy3RJbFkcR0fAP6UHXnQs",
+      "reference" : "CmRbAAAAhRcFprLTaK6hUXom-LgroipxkbbLdnXla_BvvQB8GNA2yq0F1STwgOpYktAOOQOeK40zm8IcnUfQuqFtdMhcI0egOTSL69v8Wit4CFVzBPq0XvcNvP5but_FQsaBeRxQEhBuYb5u3HL9AE2KA4dhP8N9GhSAVVvxr7XHZqMeirbdSyLAqyyZBg",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Grodzka+52A,+31-044+Krak%C3%B3w,+Polska&ftid=0x47165b12ddb2b12b:0xb9dd741e90ff0d1",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1600,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "54",
+            "short_name" : "54",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Grodzka",
+            "short_name" : "Grodzka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków-Śródmieście",
+            "short_name" : "Kraków-Śródmieście",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-044",
+            "short_name" : "31-044",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eGrodzka 54\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-044\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków-Śródmieście\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Grodzka 54, 31-044 Kraków-Śródmieście, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0564027,
+            "lng" : 19.93828229999999
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0577517802915,
+               "lng" : 19.9396339302915
+            },
+            "southwest" : {
+               "lat" : 50.0550538197085,
+               "lng" : 19.9369359697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "9bb2ecfc135bfe3ec73f6407163b1de1001bb14e",
+      "name" : "Kościół pw. św. Andrzeja",
+      "place_id" : "ChIJwzb01RJbFkcRuFE9kqP2dcI",
+      "reference" : "CmRbAAAARjpqYSzV0Llw8clecCZY0quqh78yvXNn-Fq-GV1GXpRu3r-TN2UyN_190gupbebSUVYbR6tKdzSWsqKFQnqTxnV2CVETosEPVAFDorq2U6bXrTAzSrcHjZa68InHN0b8EhCBJfiylGhKhROKOLSkIpNfGhQnPpXnagAW1X7DNou_xDnCNZIiJw",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Grodzka+54,+31-044+Krak%C3%B3w-%C5%9Ar%C3%B3dmie%C5%9Bcie,+Polska&ftid=0x47165b12d5f436c3:0xc275f6a3923d51b8",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1400,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Pałac Biskupi w Krakowie",
+            "short_name" : "Pałac Biskupi w Krakowie",
+            "types" : [ "premise" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "Pałac Biskupi w Krakowie, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Pałac Biskupi w Krakowie, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.059553,
+            "lng" : 19.935025
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0609019802915,
+               "lng" : 19.9363739802915
+            },
+            "southwest" : {
+               "lat" : 50.0582040197085,
+               "lng" : 19.9336760197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "f168d16f8ffe906a95356375ab79579310f90c08",
+      "name" : "Pałac Biskupi w Krakowie",
+      "photos" : [
+         {
+            "height" : 3264,
+            "html_attributions" : [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/110665449017910160937/photos\"\u003ePaweł Paradowski\u003c/a\u003e"
+            ],
+            "photo_reference" : "CmRaAAAAIQkfd7WlkBDui1GSRJCrD4wCbmM8RYqBJfCMfdHcKKr5BsoKD5QN_K3Uui9jZmIMnS4htDkfCl2fqrJuysPv2naPYMyv_hRW5lhkn1cOX_cyg3LHyRs94eBqn7Nx8OzWEhDj-C58Qdauu9VQSMUQ6twvGhTOJz8rkVqH0jGabLiJ7Glg86BGNg",
+            "width" : 2448
+         }
+      ],
+      "place_id" : "ChIJSwdjng1bFkcRfG2Nc2toXKk",
+      "reference" : "CmRbAAAA4iLP1JNGg1tqfjKYigDGp2H0MQokx-u85ozkdbeGHMPJsqBNROA6UdFdPWmIOL_AflMMtk1qxCifAZ7UihNlpQoKNdD9WjwcjG2mAX8FBzlVmcDtlJtTAn3Z_jh6AelFEhDpaTsxcggm_mqXVj1AksWQGhRjTFtSNTJ07QWbYmndJtu6l9--7Q",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Pa%C5%82ac+Biskupi+w+Krakowie&ftid=0x47165b0d9e63074b:0xa95c686b738d6d7c",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15"],
+      "capacity":109,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7",
+            "short_name" : "7",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Rynek Główny",
+            "short_name" : "Rynek Główny",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eRynek Główny 7\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Rynek Główny 7, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.060916,
+            "lng" : 19.938304
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0623054802915,
+               "lng" : 19.93953013029151
+            },
+            "southwest" : {
+               "lat" : 50.0596075197085,
+               "lng" : 19.9368321697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "ee6ebfc54eb7004a5290cdea7f46c10e1a43a2bd",
+      "name" : "Kamienica Montelupich",
+      "place_id" : "ChIJZ9pVBBJbFkcRQKKDsh4Z4Xs",
+      "reference" : "CmRbAAAAaWZPI7Ah1Jq4_B5rAJuEv5-9pFbToLVScVTxmjKqZ7uzEp0MvLfeA1Qdrry28NZA6TaWCIVWcBrsof9jgNJ22yXDmK2DNT7n0yUSxpGGkLrPaDFgXPC2tVhkH0-erwDkEhA95wxDB3p8xMu2N2D8oq7uGhTD8DPa3cpYQZqZxIZ5rkzQbL0bJw",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Rynek+G%C5%82%C3%B3wny+7,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b120455da67:0x7be1191eb283a240",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":100,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "7",
+            "short_name" : "7",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Na Gródku",
+            "short_name" : "Na Gródku",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eNa Gródku 7\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Na Gródku 7, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.061105,
+            "lng" : 19.9425369
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.06241808029149,
+               "lng" : 19.9439653302915
+            },
+            "southwest" : {
+               "lat" : 50.0597201197085,
+               "lng" : 19.9412673697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "fc789db94c05b0b72314e8ecd9979564463b9c2f",
+      "name" : "Klasztor Sióstr Dominikanek",
+      "place_id" : "ChIJlU5sexFbFkcRl4EO_A3meqE",
+      "reference" : "CmRbAAAAsgmmJ_PMH-cDXIEz98u1aHWbQMilY_TVsYwtmBZ4N17BhwkHEHS07G-cAfFubc-yzLzj5FYbT0SceUVfFsXogb13Na7hlBxNYGzX_wA17P6_Pkjt31plRuo4Z0nRfSjlEhB1iggQQS7gWN1dmgR7dAsQGhSS-nbor_P60K1vNeg6-7bl4mDu3g",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Na+Gr%C3%B3dku+7,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b117b6c4e95:0xa17ae60dfc0e8197",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21"],
+      "capacity":1100,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3",
+            "short_name" : "3",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Mariacki",
+            "short_name" : "plac Mariacki",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Mariacki 3\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Mariacki 3, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.06185,
+            "lng" : 19.940122
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0631643302915,
+               "lng" : 19.9414473302915
+            },
+            "southwest" : {
+               "lat" : 50.06046636970851,
+               "lng" : 19.9387493697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "6a9f83ada501bd892e11e6bd599479e6c74519d5",
+      "name" : "Kamienica Hipolitów",
+      "place_id" : "ChIJewoL7RFbFkcRBSoaT-G4kJo",
+      "reference" : "CmRbAAAAKHtyntTZUlZTwnonZsXzp4Im1SV7P72hQWvNNWVHQmQQbaeY9BsJ7-7tSZbl-I1sp7rWLBWK6diq-lePt3rjW6eHdUBIc-HTWreZTw_exyZ3R5hGxv95vThTO5iUWNFMEhCOB5mQsWJnKWPqzgWY_gNHGhS6nzflO3eoe78Po-mSHK1Pc3eJfA",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=plac+Mariacki+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b11ed0b0a7b:0x9a90b8e14f1a2a05",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1000,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "2",
+            "short_name" : "2",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Świętego Jana",
+            "short_name" : "Świętego Jana",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eŚwiętego Jana 2\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Świętego Jana 2, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0626502,
+            "lng" : 19.9379489
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0639655302915,
+               "lng" : 19.9394091302915
+            },
+            "southwest" : {
+               "lat" : 50.0612675697085,
+               "lng" : 19.9367111697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "690a351d861105c0e726daca6c5fc9eb8c996895",
+      "name" : "Muzeum Bursztynu",
+      "place_id" : "ChIJo-PHGQ5bFkcRXDamxFIG0O0",
+      "reference" : "CmRbAAAAvM5j6pA_easyADcd-qZLbFywNFBQSh4cNU_gwfEAltBfax6TAp4F4jpUcN3OAKeUChkYNwAwUQSStHiKB9iA9khB7UeWfCTJMqQ7DjklbQs6sxmQHBdQSfa35cOF_b0ZEhAGJ2-_0M3cfKNUED9kmEF7GhQuzsj6cNTVSzMFHxbQLvKC-AAMgA",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Jana+2,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e19c7e3a3:0xedd00652c4a6365c",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18","19"],
+      "capacity":200,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6",
+            "short_name" : "6",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Mariacki",
+            "short_name" : "plac Mariacki",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Mariacki 6\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Mariacki 6, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.061344,
+            "lng" : 19.9399689
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0627413802915,
+               "lng" : 19.9412977302915
+            },
+            "southwest" : {
+               "lat" : 50.0600434197085,
+               "lng" : 19.9385997697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "e1b279377d3573d9ea22b4d1d5989f8a296e526d",
+      "name" : "Wieża Kościoła Mariackiego",
+      "place_id" : "ChIJ4SEG9RFbFkcR6AIv4d5tXlo",
+      "reference" : "CmRbAAAA3T7hLvRm21hHokZYEsbZwC3mwHQ3zTq3IQRn1in9hpC00W3KjAuzj1JK9gV-5ll9NxcEQCQ41cSXrSL4ABzL_LlrUTcvjdQ3kpsor5YanESR5SO5S2JmkLvMTBVF7srwEhDNkZgZWATNbiZVamdhiCfhGhSsdaiqVY2taig2UXjbtKX4qSOdZw",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=plac+Mariacki+6,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b11f50621e1:0x5a5e6ddee12f02e8",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":10,
+      "spend_time":0.2
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8",
+            "short_name" : "8",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Mariacki",
+            "short_name" : "plac Mariacki",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "30-001",
+            "short_name" : "30-001",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Mariacki 8\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e30-001\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Mariacki 8, 30-001 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0613621,
+            "lng" : 19.9392113
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0627170802915,
+               "lng" : 19.9405611802915
+            },
+            "southwest" : {
+               "lat" : 50.0600191197085,
+               "lng" : 19.9378632197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "2a150176c50a95aac18d01af798ffeabfffda0f9",
+      "name" : "plac Mariacki",
+      "place_id" : "EidwbGFjIE1hcmlhY2tpIDgsIDMwLTAwMSBLcmFrw7N3LCBQb2xza2E",
+      "reference" : "CpQBhQAAAEhEYKwvvttTfhK-H8HKJQHZQkCAA_t-8fDZyoY0tUGlmLwVrmu1M3Htwj1HO20fhJIiS5ZFPbt18wGTWLP4t3CTiCu6Qf2oP08sSAx4AnrNo3uIB88hYhkaktGIa88Mj0_C58-f4sv8O_I00pscLVOZ0xChqxHoMugUbNMf0CtiyLZlDuz7ts50u_z5Tk285hIQs8jNKyptq9xHgtJcljWgFRoUniVdllkDrYnYuQfZtkKI9hwbGe0",
+      "scope" : "GOOGLE",
+      "types" : "square",
+      "url" : "https://maps.google.com/?q=plac+Mariacki+8,+30-001+Krak%C3%B3w,+Polska&ftid=0x47165b11f7a5029d:0x1114a6a72aafe4ee",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":10000,
+      "spend_time":0.5
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "17",
+            "short_name" : "17",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Świętego Marka",
+            "short_name" : "Świętego Marka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eŚwiętego Marka 17\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Świętego Marka 17, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.063797,
+            "lng" : 19.9396279
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0651573302915,
+               "lng" : 19.9409843802915
+            },
+            "southwest" : {
+               "lat" : 50.0624593697085,
+               "lng" : 19.9382864197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "9735adf27e5a2f707d3da94b41e3414f1bb08346",
+      "name" : "Muzeum Narodowe",
+      "place_id" : "ChIJcZ6SKg5bFkcRKxqqqldoRxA",
+      "reference" : "CmRbAAAAx3X5F9jWjkmtZpfNKaGh0TUdABHfSvlpZ9uSO5Jq8AKHTWJnhvl_Vz7fp5fd7aVX1bVlzX5dUWU061YVERz2Xa4-vnxsZKbZuJI9eqUdali9e2g98t0idAoo5F4OmKUgEhBjGWOYXbPBZOX8l90Ax6B-GhQBvd-R20QGUYotINAkq9qa1Fj89A",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Marka+17,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b0e2a929e71:0x10476857aaaa1a2b",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":1000,
+      "spend_time":1.4
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1",
+            "short_name" : "1",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Westerplatte",
+            "short_name" : "Westerplatte",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-033",
+            "short_name" : "31-033",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eWesterplatte 1\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-033\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Westerplatte 1, 31-033 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0642667,
+            "lng" : 19.9450336
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0656157302915,
+               "lng" : 19.9464131802915
+            },
+            "southwest" : {
+               "lat" : 50.0629177697085,
+               "lng" : 19.94371521970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "c28d90a052403fa69741b9c80cda80a6fb33d762",
+      "name" : "Bastion V Lubicz",
+      "place_id" : "ChIJo-q28hBbFkcRj8WUonpTAQI",
+      "reference" : "CmRbAAAA3OD9d-cdTgEec7GvNAD7tnlGZo8uqrRWk9TZOZ0Ilka-coc3Z2FjWZ37ytnaRi2Sbs_adYUgBFn_45_UXgjtRDYaHA5RfMegJPuWNMN1vUkeGI4mAwf34KHkfwJDX-2PEhDR9sCFLBhopJCAnUPTDiESGhQr_GJZEpd0-OYYtbBh_tJDVl0Viw",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Westerplatte+1,+31-033+Krak%C3%B3w,+Polska&ftid=0x47165b10f2b6eaa3:0x201537aa294c58f",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1000,
+      "spend_time":0.2
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "18",
+            "short_name" : "18",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Basztowa",
+            "short_name" : "Basztowa",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eBasztowa 18\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Basztowa 18, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0661569,
+            "lng" : 19.9409889
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0674392802915,
+               "lng" : 19.9422786802915
+            },
+            "southwest" : {
+               "lat" : 50.0647413197085,
+               "lng" : 19.9395807197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "74617594edfa095940da2ddfcfda7208609e3625",
+      "name" : "Galeria ASP w Krakowie",
+      "place_id" : "ChIJD5vl_g9bFkcRL6Ed6BCBpdA",
+      "reference" : "CmRbAAAA0lp04WpbneCLqogsZ7AZFd9lN1Vq5pX6X5L6akCA2rjYbU4vnO1wro5_sOGErKFTnwK6k2bDiNdenwtZLUMHflGMQ17sRcWcQO9X3pUb30vEpoMAKkhfn9qJ9dvgn7kqEhD_MGf3ydgS-a7IaP_ZgKPLGhSLJcS1KSmHsvIzvibC0_6WnZhjYQ",
+      "scope" : "GOOGLE",
+      "types" : "art_gallery",
+      "url" : "https://maps.google.com/?q=Basztowa+18,+Krak%C3%B3w,+Polska&ftid=0x47165b0ffee59b0f:0xd0a58110e81da12f",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":190,
+      "spend_time":1.4
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "1",
+            "short_name" : "1",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "plac Świętego Ducha",
+            "short_name" : "plac Świętego Ducha",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eplac Świętego Ducha 1\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "plac Świętego Ducha 1, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0639313,
+            "lng" : 19.9428604
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0652193302915,
+               "lng" : 19.9441569302915
+            },
+            "southwest" : {
+               "lat" : 50.0625213697085,
+               "lng" : 19.9414589697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "4bb6b5afeea542801217873ed218114351a0befd",
+      "name" : "Teatr im. Juliusza Słowackiego",
+      "place_id" : "ChIJdXHgTxBbFkcR-RrpqdZy-9A",
+      "reference" : "CmRbAAAAyF3R92et-pMzTw7GSghw4i2RYg7gy6vZcqFBAdXYXHpHi55iC241joUOrDF-7Og0G_SZFl0mVtrhWIjbL2FAwxA8xp_1cewSfhguQ1u-658mADQSdE9Rx6aABjvTPo-FEhAF41IkG_qUPNHyAtD9DOirGhRq8RZ8A9UNP_bWZolBk36TWBqm-Q",
+      "scope" : "GOOGLE",
+      "types" : "art_gallery",
+      "url" : "https://maps.google.com/?q=plac+%C5%9Awi%C4%99tego+Ducha+1,+Krak%C3%B3w,+Polska&ftid=0x47165b104fe07175:0xd0fb72d6a9e91af9",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["17","18","19","20","21","22"],
+      "capacity":700,
+      "spend_time":1.4
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "64",
+            "short_name" : "64",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Grodzka",
+            "short_name" : "Grodzka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eGrodzka 64\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Grodzka 64, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0550424,
+            "lng" : 19.9384582
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.05639328029149,
+               "lng" : 19.9398214802915
+            },
+            "southwest" : {
+               "lat" : 50.0536953197085,
+               "lng" : 19.9371235197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "13e8d935e8e4e70405383934e0115c13d7eb5833",
+      "name" : "Arsenał Królewski",
+      "place_id" : "ChIJI0NIwmxbFkcRrcM5bqjBkHE",
+      "reference" : "CmRbAAAANR8vqcGe-uXz4X9xRA12-VgctIIkatzYbdhM7_QMd-HEclQFZZK5acS6rGFW_wZS5DP-Ufd--2KJfe7C0Jawg6idPc3mnl8dGWjDDO0oV2kcwmmcPoPT-X--EqA3K7hjEhAavk6_txMCkjfEAMZmV-w4GhRO1mx0ALd8viO7x56cdW4iSSWtRQ",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Grodzka+64,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6cc2484323:0x7190c1a86e39c3ad",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":150,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "5",
+            "short_name" : "5",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Zamek Wawel",
+            "short_name" : "Zamek Wawel",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eZamek Wawel 5\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Zamek Wawel 5, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.054451,
+            "lng" : 19.9358327
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0557999802915,
+               "lng" : 19.9371816802915
+            },
+            "southwest" : {
+               "lat" : 50.0531020197085,
+               "lng" : 19.9344837197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "435e5d48c919799316ccd0b9b50f99bb7ba0f104",
+      "name" : "Zamek Wawel",
+      "place_id" : "ChIJsd5JBW1bFkcRcbgT1LwqHs4",
+      "reference" : "CmRbAAAAlW5pJEU4j9QEIwU2a6dksamzofhNAKlgf0iE5quWOkOLXXzg6gnUP_vQaItOveaS37wAHmTO4mkKONAVk_O71vVHgwyqEup4XM6KvJh9u3o2l2pBRANdmipNYzAb_8vREhAANaOMOu6oqPeARHTYQUxsGhRMrXvEIXW3azpM1DftUBOhcbTTLA",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Zamek+Wawel+5,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d0549deb1:0xce1e2abcd413b871",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["9","10", "11", "12","13","14","15","16","17"],
+      "capacity":400,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "3",
+            "short_name" : "3",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Zamek Wawel",
+            "short_name" : "Zamek Wawel",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eZamek Wawel 3\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Zamek Wawel 3, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05426300000001,
+            "lng" : 19.9348089
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0556119802915,
+               "lng" : 19.9361578802915
+            },
+            "southwest" : {
+               "lat" : 50.0529140197085,
+               "lng" : 19.9334599197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "1f783c097393c0ecb10292163c33775cbb0012b2",
+      "name" : "Muzeum Katedralne",
+      "place_id" : "ChIJY7-qdG1bFkcRUWWvcALT8y4",
+      "reference" : "CmRbAAAAmUMxPZLGBu5PEzrPVuiXxnbJA2BiHijNgRt74ShlSBgzvurrQH4w48rL0admko2tPAyIJuue7RuZJp_wgEs5jme1zxCPP9VsU9s4b2vyKaPfzxqwij5wbCGhmZ0jLZu0EhC4knirjaICOeJoap7j_2uFGhTzP6nERCmAUYme5IsYR1nuPRraIQ",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Zamek+Wawel+3,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d74aabf63:0x2ef3d30270af6551",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["9","10", "11", "12","13","14","15","16"],
+      "capacity":160,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "8",
+            "short_name" : "8",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Zamek Wawel",
+            "short_name" : "Zamek Wawel",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eZamek Wawel 8\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Zamek Wawel 8, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0541382,
+            "lng" : 19.9338946
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0554871802915,
+               "lng" : 19.9352435802915
+            },
+            "southwest" : {
+               "lat" : 50.0527892197085,
+               "lng" : 19.9325456197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "049394112048e99fa3e890efc5038f18c3332101",
+      "name" : "Baszta Złodziejska",
+      "place_id" : "ChIJ3Z6nnW1bFkcR6TMri4hriHE",
+      "reference" : "CmRbAAAAVYdQSgzQW4AWxg7XAjIzJFHYjKJEheclFHNCAAtyT8BaK92s8OauGlFq6cekpu9G-982_PTL8RfIi2CjaqOJJxGX7xjxuPIF5iQe16Y65J6Ora6UzWNEu3_SMt8jMXShEhDBEtBlpKfHUIFg7YWsSm9FGhTdw0bsquEr2D6hP3_9RuVc5QnFxg",
+      "scope" : "GOOGLE",
+      "types" : "old_town",
+      "url" : "https://maps.google.com/?q=Zamek+Wawel+8,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6d9da79edd:0x71886b888b2b33e9",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["9","10", "11", "12","13","14","15","16","17","18"],
+      "capacity":100,
+      "spend_time":0.8
+   },
+   "status" : "OK"
+},
+
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "droga Do Zamku",
+            "short_name" : "droga Do Zamku",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "31-001",
+            "short_name" : "31-001",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003edroga Do Zamku\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e31-001\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "droga Do Zamku, 31-001 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05319249999999,
+            "lng" : 19.935681
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.05454148029148,
+               "lng" : 19.93702998029151
+            },
+            "southwest" : {
+               "lat" : 50.05184351970849,
+               "lng" : 19.9343320197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "04f64cd97ea1d9be561990b25bfc7881d4878b7e",
+      "name" : "droga Do Zamku",
+      "place_id" : "ChIJqY1fsm1bFkcRIpeImwP_3Q8",
+      "reference" : "CmRbAAAA21adZcpYTydML5RAcF7hGjl9uCGY6f-TRCDO8IH8YYSxgApJfi_WDChX50bJjCxcLbCaSYkDw-NUXrV-HuzwedRPeNbUhlUrGHyES79YUchUHphrQDfVP385JfoVrtA_EhDzDdoiD0uTzlJg1XlYVqb3GhRyWCM2AC8IUVLhN8EoTxVatpkPXg",
+      "scope" : "GOOGLE",
+      "types" : "route",
+      "url" : "https://maps.google.com/?q=droga+Do+Zamku,+31-001+Krak%C3%B3w,+Polska&ftid=0x47165b6db25f8da9:0xfddff039b889722",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["0","1","2","3","4","5","6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":10000,
+      "spend_time":0.5
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "13",
+            "short_name" : "13",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Stradomska",
+            "short_name" : "Stradomska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStradomska 13\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Stradomska 13, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.052976,
+            "lng" : 19.939785
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0543993302915,
+               "lng" : 19.9413441302915
+            },
+            "southwest" : {
+               "lat" : 50.0517013697085,
+               "lng" : 19.9386461697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "469f838fd2cfefdee8c5609d6b437c03048e118c",
+      "name" : "Kraków Pinball Museum",
+      "place_id" : "ChIJW9iKf2xbFkcRewSo0oCeO7Y",
+      "reference" : "CmRbAAAAQAWCcmo-WDiD9UWjbGOKu2EfwguyTOiVa_ZnwFKIitlgdwekpHOg_1ZkiXge6_Tm6ATsIMARYF5i3aMhF33tFQ0eZBJLLoy5HoREuwyLiPnC3dmxJhlfQf3QJs621maEEhAyavqH7HNnAAVYIhsmEzcOGhTdAE2rl7dA3RGUXPtoW-gkNe67Yw",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Stradomska+13,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6c7f8ad85b:0xb63b9e80d2a8047b",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["12","13","14","15","16","17","18","19","20","21","22"],
+      "capacity":70,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "Świętego Idziego",
+            "short_name" : "Świętego Idziego",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eŚwiętego Idziego\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Świętego Idziego, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0549851,
+            "lng" : 19.9378114
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0563340802915,
+               "lng" : 19.9391603802915
+            },
+            "southwest" : {
+               "lat" : 50.0536361197085,
+               "lng" : 19.93646241970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "cd8722345dfa3f260d2b1a42b31104f949068623",
+      "name" : "Cruz De Katyń",
+      "place_id" : "ChIJCane3WxbFkcRxCDwJfMeAdk",
+      "reference" : "CmRbAAAA4FkCqAH5VLifK5pKHthHnIYpgR9ph4tfSg78qGDUvvdjmV0v-ptI4AI7wTeL636FNeYrYOhcXVA_dsVl9OvMWKeQmk5FbKLFGNY0OfuGbIlRvmV4CpmH0Dgw-NVJD-rtEhBW7RKN71xx4HRb3DyJzcgRGhQNh5q8okFIxZMZp59xcvHUI-DGpQ",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=%C5%9Awi%C4%99tego+Idziego,+Krak%C3%B3w,+Polska&ftid=0x47165b6cdddea909:0xd9011ef325f020c4",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["8","9","10", "11", "12","13","14","15","16"],
+      "capacity":10,
+      "spend_time":0.1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "15",
+            "short_name" : "15",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Stradomska",
+            "short_name" : "Stradomska",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Stare Miasto",
+            "short_name" : "Stare Miasto",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eStradomska 15\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Stradomska 15, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.052726,
+            "lng" : 19.939947
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0540749802915,
+               "lng" : 19.9412959802915
+            },
+            "southwest" : {
+               "lat" : 50.0513770197085,
+               "lng" : 19.93859801970849
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "a0ff98267891de7dc112489153f9a715d60d1f75",
+      "name" : "Muzeum Flipperów",
+      "place_id" : "ChIJNeA0gWtbFkcR0O1SMrJ45_I",
+      "reference" : "CmRbAAAAADQjMRw1CxHfgUZC3ZtvaKkxVmM5qC3x38-c2ldkmJ7YWTsenOi7qxXzuJ3v63MxJIZ9eBgw49_WoFaUcRP9_rNBSE1utbklWoCfRkxCkd5amH1kuElqlMW5GRvfdst2EhA5e3QGEWOSUJzUe0Af9HM3GhQMxAl-bQ54c8PJWRHkA3r8qEGr9Q",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Stradomska+15,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6b8134e035:0xf2e778b23252edd0",
+      "utc_offset" : 60,
+      "vicinity" : "Stare Miasto",
+      "open_hours" : ["12","13","14","15","16","17","18","19","20","21","22"],
+      "capacity":80,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "26",
+            "short_name" : "26",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Marii Konopnickiej",
+            "short_name" : "Marii Konopnickiej",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Dębniki",
+            "short_name" : "Dębniki",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         },
+         {
+            "long_name" : "33-332",
+            "short_name" : "33-332",
+            "types" : [ "postal_code" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eMarii Konopnickiej 26\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e33-332\u003c/span\u003e \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Marii Konopnickiej 26, 33-332 Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.05076099999999,
+            "lng" : 19.9315274
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0520386802915,
+               "lng" : 19.9327236802915
+            },
+            "southwest" : {
+               "lat" : 50.0493407197085,
+               "lng" : 19.9300257197085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "c697ad1f72098c00d318668f0a8a04b518f70fcf",
+      "name" : "Muzeum Sztuki i Techniki Japońskiej",
+      "place_id" : "ChIJF4FqFm5bFkcRyw47vQaD5OI",
+      "reference" : "CmRbAAAAieKs572RewsNu8cnwg1zw4y9R9FrtLtqq-UWbaDIvTALDTM1xNtcNiCLZ2WUYNXgKpTvdojfO5rNAhJSoY5Mh-deQ9teBsRBI2BuG0mMURSjZV9yetIl9kID6NaFY28rEhB2_DTXQriQbhQjPkcxxntcGhR3z4iIm-Ka1cIa7IN0Fl2tHtXh9g",
+      "scope" : "GOOGLE",
+      "types" : "museum",
+      "url" : "https://maps.google.com/?q=Marii+Konopnickiej+26,+33-332+Krak%C3%B3w,+Polska&ftid=0x47165b6e166a8117:0xe2e48306bd3b0ecb",
+      "utc_offset" : 60,
+      "vicinity" : "Dębniki",
+      "open_hours" : ["10", "11", "12","13","14","15","16","17","18"],
+      "capacity":100,
+      "spend_time":1
+   },
+   "status" : "OK"
+},
+{
+   "html_attributions" : [],
+   "result" : {
+      "address_components" : [
+         {
+            "long_name" : "6",
+            "short_name" : "6",
+            "types" : [ "street_number" ]
+         },
+         {
+            "long_name" : "Konfederacka",
+            "short_name" : "Konfederacka",
+            "types" : [ "route" ]
+         },
+         {
+            "long_name" : "Dębniki",
+            "short_name" : "Dębniki",
+            "types" : [ "sublocality_level_1", "sublocality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "locality", "political" ]
+         },
+         {
+            "long_name" : "Kraków",
+            "short_name" : "Kraków",
+            "types" : [ "administrative_area_level_2", "political" ]
+         },
+         {
+            "long_name" : "małopolskie",
+            "short_name" : "małopolskie",
+            "types" : [ "administrative_area_level_1", "political" ]
+         },
+         {
+            "long_name" : "Polska",
+            "short_name" : "PL",
+            "types" : [ "country", "political" ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eKonfederacka 6\u003c/span\u003e, \u003cspan class=\"locality\"\u003eKraków\u003c/span\u003e, \u003cspan class=\"country-name\"\u003ePolska\u003c/span\u003e",
+      "formatted_address" : "Konfederacka 6, Kraków, Polska",
+      "geometry" : {
+         "location" : {
+            "lat" : 50.0495541,
+            "lng" : 19.9271208
+         },
+         "viewport" : {
+            "northeast" : {
+               "lat" : 50.0508434802915,
+               "lng" : 19.9283756302915
+            },
+            "southwest" : {
+               "lat" : 50.0481455197085,
+               "lng" : 19.9256776697085
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+      "id" : "ef84d1590a1dbcf3ad5ffac0b1c33419529011f7",
+      "name" : "Kościół Rzymskokatolicki Pw. św. Stanisława Kostki",
+      "place_id" : "ChIJ76M-SHBbFkcRbfYpvWqMh-8",
+      "reference" : "CmRbAAAAOZShWJv_DOJSMTZt-WqNvd4ywptk6qbhoJSiLZfVrgKcp0SeYw3Sgewh8WJldZ9DMKSb4ZVjEYVNVzvdeXSJgJFzQ6JPRtd0lK89nQY1dAwyQq6I72__G1aNDPpjXxDjEhAVSidgWKUM4s0snXcDaFzlGhSPqlROKct8Q4FhmxIBpZ3DaYVQcQ",
+      "scope" : "GOOGLE",
+      "types" : "place_of_worship",
+      "url" : "https://maps.google.com/?q=Konfederacka+6,+Krak%C3%B3w,+Polska&ftid=0x47165b70483ea3ef:0xef878c6abd29f66d",
+      "utc_offset" : 60,
+      "vicinity" : "Dębniki",
+      "open_hours" : ["6","7","8","9","10", "11", "12","13","14","15","16","17","18","19","20","21","22","23"],
+      "capacity":1000,
+      "spend_time":1
+   },
+   "status" : "OK"
+}
 ]
