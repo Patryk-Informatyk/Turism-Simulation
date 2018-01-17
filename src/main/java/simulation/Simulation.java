@@ -22,7 +22,7 @@ import java.util.List;
  * @since       1.0
  */
 public class Simulation {
-    private static final int amountOfTourists=2000;
+    private static final int amountOfTourists=10000;
     RecommendationSystem recommendationSystem;
     List<Person> tourists;
     List<Location> locations;
@@ -53,6 +53,7 @@ public class Simulation {
         this.recommendationSystem = new RecommendationSystem(locations);
         this.tourists = touristInit();
     }
+
     /**
      *
      * @author      Patryk Zygmunt
@@ -112,7 +113,6 @@ public class Simulation {
      * @param day   Day number in month
      */
     public void simulate(int month, int day, int hour){
-
         for(int j=0;j<4;j++) {
             for (Person tourist : tourists) {
                 if(tourist.inQueue){
@@ -228,6 +228,7 @@ public class Simulation {
      * @author      Grzegorz Puczkowski
      * @author      Hubert Rędzia
      */
+
     public void endDayInLocations(){
         locations.stream().forEach(l->l.endDay());
         tourists.parallelStream().forEach(p->{

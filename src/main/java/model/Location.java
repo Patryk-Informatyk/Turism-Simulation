@@ -24,6 +24,8 @@ public class Location {
     String placeId;
     @JsonProperty("types")
     LocationType types;
+    @JsonProperty("formatted_address")
+    String address;
     @JsonProperty("capacity")
     private int maxSize;
     @JsonProperty("spend_time")
@@ -102,6 +104,11 @@ public class Location {
         this.types = types;
        isCovered = getTypes().getLocationProperties().isCovered();
     }
+
+    public void setAddress(String adr) {
+        this.address = adr;
+    }
+    public String getAddress() {return this.address;}
     /**
      *
      * @author      Patryk Zygmunt
