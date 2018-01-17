@@ -109,4 +109,54 @@ public class Functions {
     public static double attractiveFunction(double forPerson, double weather, double overflow,double distance) {
         return (forPerson + (weather) + (overflow*4)+distance)/7;
     }
+
+    /**
+     * Ja wiem, ze troche po ang i troche po pl to troche lipa, ale co tam.
+     * W 2016r w Krakowie było ~11.000.000 turystów w ciągu roku. Funkcja zwraca mnożnik
+     * ilości turystów w danym dniu w mieście. Baza 5000 turystów będzie przemnożona przez zwrócony licznik
+     * żeby nie wpływając na szybkość symulacji, przybliżyć faktyczną liczbę turystów
+     * Działam na intach, żeby uniknąć ew. bugów z ułamkami przy stanie turystów
+     * Od kwietnia do początku października ilość turystów jest niemal dwukrotnie większa
+     * niż w innych miesiącach, dlatego mnożnik w tych miesiącach musi byc odpowiednio wyższy
+     *
+     *
+     * @author      Patryk Zygmunt
+     * @author      Grzegorz Puczkowski
+     * @author      Hubert Rędzia
+     * @param month Month in year
+     * @param tourists Sample of tourists in simulation
+     * @return Indicator to multiply number of tourist in location that day
+     */
+    public static double touristsPerMonthIndicator(int month, int hour, int tourists){
+        /*
+        Próba turystów : tourists
+        liczba turystów na I-III ~2200000
+        liczba turystów na IV-VI ~3300000
+        liczba turystów na VI-IX ~3300000
+        liczba turystów na X-XII ~2200000
+         */
+        // probowalem na switchu, ale zwracalo zawsze jedna wartosc
+        double x = 1;
+
+        if      ((hour <= 3) || (hour > 18))  x = 0.4;
+        else if ((hour > 3) && (hour <= 8))   x = 0.1;
+        else if ((hour > 8) && (hour <= 10))  x = 0.7;
+        else if ((hour > 10) && (hour <= 16)) x = 1.0;
+        else if ((hour > 16) && (hour <= 18)) x = 0.8;
+
+
+        if     (month == 1) return x*(2200000/tourists)/31;   // ~7
+        else if(month == 2) return x*(2200000/tourists)/28;   // ~7 (8)?
+        else if(month == 3) return x*(2200000/tourists)/31;   // ~7
+        else if(month == 4) return x*(3300000/tourists)/30;   // ~11
+        else if(month == 5) return x*(3300000/tourists)/31;   // ~10
+        else if(month == 6) return x*(3300000/tourists)/30;   // ~11
+        else if(month == 7) return x*(3300000/tourists)/31;   // ~10
+        else if(month == 8) return x*(3300000/tourists)/31;   // ~10
+        else if(month == 9) return x*(3300000/tourists)/30;   // ~11
+        else if(month == 10) return x*(2200000/tourists)/31;  // ~7
+        else if(month == 11) return x*(2200000/tourists)/30;  // ~7
+        else if(month == 12) return x*(2200000/tourists)/31;  // ~7
+        return 1;   // el. neutralny
+    }
 }

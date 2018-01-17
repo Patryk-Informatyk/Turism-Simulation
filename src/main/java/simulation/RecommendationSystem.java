@@ -139,6 +139,7 @@ public double countAttractive(int month,int day,int hour,Location location,Perso
               ,getIndicatorForLocationOverflow(location),countDistanceIndicator(person,location));
     else {
         location.endDay();
+        person.restTimeInLocation += 6;
     }
     return 0;
 }
