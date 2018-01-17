@@ -105,6 +105,8 @@ public class Controller {
     @FXML private Button showStatisticsBtn;
     @FXML private ListView locationsListView  = new ListView();
     @FXML private ListView detailsListView = new ListView();
+    @FXML private DatePicker dateChanger;
+    @FXML private Button confirmBtn;
     public ObservableList details = FXCollections.observableArrayList(
             "Name: ",
             "Type: ",
@@ -199,6 +201,7 @@ public class Controller {
             stopBtn.setVisible(false);
             resumeBtn.setDisable(false);
             resumeBtn.setVisible(true);
+            confirmBtn.setDisable(false);
             time.stop();
         });
         resumeBtn.setOnAction(e -> {
@@ -206,6 +209,7 @@ public class Controller {
             stopBtn.setVisible(true);
             resumeBtn.setDisable(true);
             resumeBtn.setVisible(false);
+            confirmBtn.setDisable(true);
             time.play();
         });
         deselectBtn.setOnAction(e -> {
@@ -217,6 +221,14 @@ public class Controller {
                 locationClickedForDetailsFromDetailsListView();
             }
         });
+        confirmBtn.setOnAction(e -> {
+            simulation.endDayInLocations();
+            month = dateChanger.getValue().getMonthValue();
+            day = dateChanger.getValue().getDayOfMonth();
+            hour = 7;
+            currentDateAndHourLabel.setText(day + "." + month + ", "+ hour + ":00 - " + (hour+1) + ":00");
+        });
+
         numberOfTouristsLabel.setText(String.valueOf(simulation.getTourists().size()));
 
     }
@@ -235,8 +247,7 @@ public class Controller {
         details.set(2,"Address: " + currentLocationDetails.getAddress());
         details.set(3,"Amount of Tourists: " +
                 (int)(currentLocationDetails.getAmountOfTourists()
-                        *
-                        Functions.touristsPerMonthIndicator(month, hour, simulation.getTourists().size()))
+                        *Functions.touristsPerMonthIndicator(month, hour, simulation.getTourists().size()))
         );
         details.set(4,"Queue: " + currentLocationDetails.getQueue());
         details.set(5,"Maximal size ~ " + (int)(currentLocationDetails.getMaxSize()*7.15));
@@ -256,15 +267,10 @@ public class Controller {
         for(int i = 0; i < simulation.getLocations().size() ; i++){
             defaultLocationsView.set(i,
                     simulation.getLocationsName(i)
-                            +
-                            ", "
-                            +
+                            +", "+
                             (int)(simulation.getLocations().get(i).getAmountOfTourists()
-                                    *
-                                    Functions.touristsPerMonthIndicator(month,hour,simulation.getTourists().size()))
-                            +
-                            " + "
-                            +
+                            *Functions.touristsPerMonthIndicator(month,hour,simulation.getTourists().size()))
+                            +" + "+
                             simulation.getLocations().get(i).getQueue()
             );
         }

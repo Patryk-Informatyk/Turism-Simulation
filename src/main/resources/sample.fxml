@@ -37,12 +37,12 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label fx:id="numberOfTouristsText" layoutX="10.0" layoutY="70.0" text="Sample">
+                        <Label fx:id="numberOfTouristsText" layoutX="10.0" layoutY="136.0" text="Sample">
                            <font>
                               <Font name="System Italic" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="numberOfTouristsLabel" layoutX="10.0" layoutY="100.0" text="-">
+                        <Label fx:id="numberOfTouristsLabel" layoutX="10.0" layoutY="166.0" text="-">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -54,16 +54,13 @@
                         <ListView fx:id="locationsListView" layoutX="-1.0" layoutY="192.0" onMouseClicked="#locationClickedForDetails" prefHeight="278.0" prefWidth="208.0" />
                         <Button fx:id="deselectBtn" disable="true" layoutY="510.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="208.0" text="deselect" />
                         <Button fx:id="showStatisticsBtn" layoutY="550.0" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="208.0" text="show statistics" />
-                        <Label layoutX="10.0" layoutY="130.0" text="Population multiplicator">
+                        <DatePicker fx:id="dateChanger" layoutX="-1.0" layoutY="98.0" />
+                        <Label layoutX="10.0" layoutY="75.0" text="Change date">
                            <font>
                               <Font name="System Italic" size="14.0" />
                            </font>
                         </Label>
-                        <Label fx:id="multiplicatorLabel" layoutX="10.0" layoutY="160.0" text="-">
-                           <font>
-                              <Font name="System Italic" size="14.0" />
-                           </font>
-                        </Label>
+                        <Button fx:id="confirmBtn" disable="true" layoutX="121.0" layoutY="72.0" mnemonicParsing="false" text="confirm" />
                      </children></Pane>
                   <ScrollPane prefHeight="200.0" prefWidth="200.0">
                      <content>
